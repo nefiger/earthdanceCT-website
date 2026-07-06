@@ -1,0 +1,754 @@
+{
+ "note": "curated subset; full archive regenerable via scripts/build_photos.py",
+ "photos": [
+  {
+   "file": "alison-swan/alison-swan-001-earth-dance-2.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-001-earthdance-ct-2025-blf-02611.jpg",
+   "w": 520,
+   "h": 416,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-001-tamia-1.jpg",
+   "w": 520,
+   "h": 347,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-001-whatsapp-image-2025-09-22-at-11-12-53-12.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-005-earth-dance-6.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-007-earthdance-ct-2025-blf-03245.jpg",
+   "w": 520,
+   "h": 416,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-023-tamia-23.jpg",
+   "w": 520,
+   "h": 347,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-002-whatsapp-image-2025-09-22-at-11-12-53-13.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-021-earth-dance-23.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-009-earthdance-ct-2025-blf-03321.jpg",
+   "w": 520,
+   "h": 416,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-025-tamia-25.jpg",
+   "w": 449,
+   "h": 520,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-003-whatsapp-image-2025-09-22-at-11-12-53-14.jpg",
+   "w": 346,
+   "h": 520,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-025-earth-dance-27.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-011-earthdance-ct-2025-blf-03878.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-029-tamia-29.jpg",
+   "w": 520,
+   "h": 347,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-004-whatsapp-image-2025-09-22-at-11-12-54-6.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-029-earth-dance-31.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-017-earthdance-ct-2025-blf-lady-felangie.jpg",
+   "w": 520,
+   "h": 312,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-031-tamia-31.jpg",
+   "w": 347,
+   "h": 520,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-005-whatsapp-image-2025-09-22-at-11-12-54-7.jpg",
+   "w": 520,
+   "h": 360,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-033-earth-dance-35.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-025-earthdance-ct-2025-blf-01922.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-041-tamia-41.jpg",
+   "w": 520,
+   "h": 479,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-010-whatsapp-image-2025-09-22-at-11-12-56-4.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-037-earth-dance-39.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-031-earthdance-ct-2025-blf-01962.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-051-tamia-51.jpg",
+   "w": 520,
+   "h": 347,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-012-whatsapp-image-2025-09-22-at-11-12-57-1.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-041-earth-dance-43.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-033-earthdance-ct-2025-blf-01968.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "tamia-visagie/tamia-visagie-071-tamia-71.jpg",
+   "w": 520,
+   "h": 381,
+   "credit": "Tamia Visagie"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-016-whatsapp-image-2025-09-22-at-11-12-59-1.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-045-earth-dance-47.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-035-earthdance-ct-2025-blf-01977.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-017-whatsapp-image-2025-09-22-at-11-12-59.jpg",
+   "w": 511,
+   "h": 520,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-049-earth-dance-51.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-037-earthdance-ct-2025-blf-01983.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-022-whatsapp-image-2025-09-22-at-11-13-01-3.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-061-earth-dance-64.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-041-earthdance-ct-2025-blf-01992.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-023-whatsapp-image-2025-09-22-at-11-13-02-1.jpg",
+   "w": 465,
+   "h": 520,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-065-earth-dance-70.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-047-earthdance-ct-2025-blf-02022.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-027-whatsapp-image-2025-09-22-at-11-13-03-2.jpg",
+   "w": 346,
+   "h": 520,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-069-earth-dance-74.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-049-earthdance-ct-2025-blf-02026.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-028-whatsapp-image-2025-09-22-at-11-13-03.jpg",
+   "w": 520,
+   "h": 444,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-093-earth-dance-117.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-051-earthdance-ct-2025-blf-02041.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-030-whatsapp-image-2025-09-22-at-11-13-04-2.jpg",
+   "w": 372,
+   "h": 520,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-097-earth-dance-121.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-053-earthdance-ct-2025-blf-02052.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "jaco-brewer/jaco-brewer-031-whatsapp-image-2025-09-22-at-11-13-04-3.jpg",
+   "w": 520,
+   "h": 346,
+   "credit": "Jaco Brewer"
+  },
+  {
+   "file": "alison-swan/alison-swan-101-earth-dance-125.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-057-earthdance-ct-2025-blf-02437.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-109-earth-dance-133.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-065-earthdance-ct-2025-blf-03370.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-113-earth-dance-137.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-069-earthdance-ct-2025-blf-03441.jpg",
+   "w": 520,
+   "h": 416,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-117-earth-dance-141.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-071-earthdance-ct-2025-blf-03720.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-121-earth-dance-145.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "beeleaf/beeleaf-073-earthdance-ct-2025-blf-03742.jpg",
+   "w": 520,
+   "h": 520,
+   "credit": "BEELEAF Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-125-earth-dance-149.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-129-earth-dance-153.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-137-earth-dance-161.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-141-earth-dance-171.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-145-earth-dance-175.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-149-earth-dance-179.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-153-earth-dance-183.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-157-earth-dance-187.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-161-earth-dance-191.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-165-earth-dance-195.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-169-earth-dance-199.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-177-earth-dance-207.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-185-earth-dance-215.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-189-earth-dance-219.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-193-earth-dance-223.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-197-earth-dance-227.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-201-earth-dance-231.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-205-earth-dance-235.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-209-earth-dance-239.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-213-earth-dance-243.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-217-earth-dance-247.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-221-earth-dance-251.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-225-earth-dance-255.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-229-earth-dance-259.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-233-earth-dance-263.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-237-earth-dance-268.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-245-earth-dance-276.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-249-earth-dance-280.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-253-earth-dance-284.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-257-earth-dance-288.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-269-earth-dance-302.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-273-earth-dance-306.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-285-earth-dance-319.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-289-earth-dance-324.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-293-earth-dance-328.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-309-earth-dance-345.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-313-earth-dance-349.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-325-earth-dance-362.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-329-earth-dance-366.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-333-earth-dance-370.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-337-earth-dance-376.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-341-earth-dance-380.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-353-earth-dance-394.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-361-earth-dance-402.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-365-earth-dance-408.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-369-earth-dance-418.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-373-earth-dance-424.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-381-earth-dance-432.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-393-earth-dance-444.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-397-earth-dance-448.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-401-earth-dance-452.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-405-earth-dance-456.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-409-earth-dance-461.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-413-earth-dance-466.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-425-earth-dance-479.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-429-earth-dance-483.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-433-earth-dance-487.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-437-earth-dance-491.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-441-earth-dance-495.jpg",
+   "w": 292,
+   "h": 520,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-449-earth-dance-503.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  },
+  {
+   "file": "alison-swan/alison-swan-453-earth-dance-507.jpg",
+   "w": 520,
+   "h": 292,
+   "credit": "Alison Swan Photography"
+  }
+ ],
+ "page_images": [
+  "alison-swan/alison-swan-181-earth-dance-211.jpg",
+  "tamia-visagie/tamia-visagie-005-tamia-5.jpg",
+  "tamia-visagie/tamia-visagie-045-tamia-45.jpg"
+ ]
+}
