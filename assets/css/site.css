@@ -429,6 +429,16 @@ h1, .display {
 .card-accent { height: 3px; border-radius: 3px; background: var(--grad); margin: 0 0 18px; width: 46px; }
 .card .big-icon { font-size: 30px; margin-bottom: 12px; line-height: 1; }
 
+/* vivid variant: rotating colour washes so dense card sets don't read as a grey grid */
+.card-grid.vivid .card:nth-child(4n+1) { background: radial-gradient(150% 120% at 0% 0%, rgba(255, 138, 61, .13), transparent 62%), var(--bg-2); border-color: rgba(255, 138, 61, .24); }
+.card-grid.vivid .card:nth-child(4n+2) { background: radial-gradient(150% 120% at 0% 0%, rgba(240, 67, 156, .13), transparent 62%), var(--bg-2); border-color: rgba(240, 67, 156, .24); }
+.card-grid.vivid .card:nth-child(4n+3) { background: radial-gradient(150% 120% at 0% 0%, rgba(155, 108, 246, .15), transparent 62%), var(--bg-2); border-color: rgba(155, 108, 246, .26); }
+.card-grid.vivid .card:nth-child(4n)   { background: radial-gradient(150% 120% at 0% 0%, rgba(77, 181, 255, .13), transparent 62%), var(--bg-2); border-color: rgba(77, 181, 255, .24); }
+.card-grid.vivid .card:nth-child(4n+1) .card-accent { background: linear-gradient(90deg, var(--orange), var(--pink)); }
+.card-grid.vivid .card:nth-child(4n+2) .card-accent { background: linear-gradient(90deg, var(--magenta), var(--pink)); }
+.card-grid.vivid .card:nth-child(4n+3) .card-accent { background: linear-gradient(90deg, var(--violet), var(--pink)); }
+.card-grid.vivid .card:nth-child(4n)   .card-accent { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+
 .photo-card { padding: 0; overflow: hidden; }
 .photo-card img { height: 190px; width: 100%; object-fit: cover; }
 .photo-card .photo-card-body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
@@ -440,14 +450,25 @@ h1, .display {
   margin-top: 36px;
 }
 .stat {
-  background: var(--bg-2);
   border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 18px 20px;
+  border-radius: 16px;
+  padding: 20px 22px;
+  background: var(--bg-2);
 }
+.stat:nth-child(4n+1) { background: radial-gradient(140% 140% at 0% 0%, rgba(255, 138, 61, .17), transparent 62%), var(--bg-2); border-color: rgba(255, 138, 61, .3); }
+.stat:nth-child(4n+2) { background: radial-gradient(140% 140% at 0% 0%, rgba(240, 67, 156, .16), transparent 62%), var(--bg-2); border-color: rgba(240, 67, 156, .3); }
+.stat:nth-child(4n+3) { background: radial-gradient(140% 140% at 0% 0%, rgba(155, 108, 246, .18), transparent 62%), var(--bg-2); border-color: rgba(155, 108, 246, .32); }
+.stat:nth-child(4n)   { background: radial-gradient(140% 140% at 0% 0%, rgba(77, 181, 255, .16), transparent 62%), var(--bg-2); border-color: rgba(77, 181, 255, .3); }
 .stat b { display: block; font-size: 17px; font-weight: 650; color: var(--ink); }
 .stat span { font-size: 13px; color: var(--ink-faint); letter-spacing: .06em; text-transform: uppercase; }
-.stat .display { font-size: 26px; }
+.stat .big {
+  font-family: var(--font-body);
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  margin-bottom: 2px;
+}
 
 /* ---------- journey timeline ---------- */
 .chapters { margin-top: 40px; display: grid; gap: 26px; }

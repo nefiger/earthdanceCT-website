@@ -42,7 +42,7 @@ Known placeholders, all marked `TBC` in the copy:
 
 - Humanity warm-up date/venue/ticket link (`journey.html`, `faq.html`)
 - Prayer for Peace exact linkup time (`prayer-for-peace.html`)
-- Glamping packages/pricing (`glamping-camping.html`)
+- Accommodation arrival/check-in guidance (`glamping-camping.html`) — pricing and booking are live on Quicket; Morado Cottage removed for now, may return
 - Volunteer exchange/shift structure (`volunteers.html`)
 - Collaborator exchange terms (`collaborators.html`)
 - Bin locations / refill points (`sustainability.html`)
