@@ -2,7 +2,7 @@
 
 Static site for [Earthdance Cape Town 2026](https://earthdancecapetown.co.za) (18–20 September 2026, Kromrivier Farm). No build step — plain HTML/CSS/JS, deployable on GitHub Pages or any static host.
 
-**Status: staging preview.** Every page carries a "Staging preview" banner and a `<meta name="robots" content="noindex">` tag. Both are marked with comments and must be removed before go-live.
+**Status: go-live prep.** Public pages are ready to publish from a content/layout point of view. Remaining launch work is analytics setup and final confirmation of a few operational details that are currently worded as "closer to the event" rather than hard promises.
 
 ## Pages
 
@@ -38,10 +38,10 @@ Source docs live in the `earthdance-2026` planning repo under `docs/comms/`:
 
 Header and footer are duplicated in each page (deliberately — no build step). If you change nav or footer, change it in all pages: `grep -l 'site-nav' *.html`.
 
-Known placeholders, all marked `TBC` in the copy:
+Known soft-detail items that still depend on final operational confirmation:
 
-- Humanity warm-up date/venue/ticket link (`journey.html`, `faq.html`)
-- Prayer for Peace exact linkup time (`prayer-for-peace.html`)
+- Humanity warm-up announcement details (`journey.html`, `faq.html`, `index.html`)
+- Prayer for Peace surrounding local running order (`prayer-for-peace.html`) — exact global linkup time now confirmed
 - Accommodation arrival/check-in guidance (`glamping-camping.html`) — pricing and booking are live on Quicket; Morado Cottage removed for now, may return
 - Volunteer exchange/shift structure (`volunteers.html`)
 - Collaborator exchange terms (`collaborators.html`)
@@ -50,7 +50,7 @@ Known placeholders, all marked `TBC` in the copy:
 
 ## Go-live checklist
 
-1. Remove the `.preview-note` div from every page.
-2. Remove the `<meta name="robots" content="noindex">` line from every page.
-3. Point the real domain at the host (add `CNAME` file if using GitHub Pages).
-4. Fill remaining `TBC` items or confirm they should stay.
+1. Point the real domain at the host and add `CNAME` if using GitHub Pages.
+2. Add analytics/tracking only once the final tool choice and consent approach are settled.
+3. Add canonical URLs once the final domain is confirmed.
+4. Confirm the remaining soft-detail items as operations lock in, or leave the current "closer to the event" wording in place.

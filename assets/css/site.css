@@ -14,6 +14,12 @@
   font-weight: 700;
   font-display: swap;
 }
+@font-face {
+  font-family: "MagmaWave Caps";
+  src: url("../fonts/magmawave-caps.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
 
 :root {
   --bg: #151132;
@@ -34,6 +40,7 @@
   --radius: 18px;
   --font-body: "Outfit", "Avenir Next", sans-serif;
   --font-display: "Danube", "Comfortaa", "Outfit", sans-serif;
+  --font-display-numeric: "MagmaWave Caps", "Comfortaa", "Outfit", sans-serif;
   --maxw: 1120px;
 }
 
@@ -246,6 +253,7 @@ h1, .display {
 }
 .eyebrow {
   display: inline-block;
+  font-family: var(--font-display-numeric);
   font-size: 12.5px;
   font-weight: 650;
   letter-spacing: .28em;
@@ -281,14 +289,30 @@ h1, .display {
   font-size: clamp(34px, 5.6vw, 58px);
   line-height: 1.12;
   margin: 0 0 18px;
+  max-width: 12ch;
+  text-wrap: balance;
 }
 .hero .lede {
   font-size: clamp(18px, 2.4vw, 22px);
   font-weight: 400;
   color: var(--ink);
   margin: 0 0 14px;
+  max-width: 34ch;
+  text-wrap: pretty;
 }
-.hero .support { color: var(--ink-dim); font-size: 17px; margin: 0 0 30px; }
+.hero .support {
+  color: var(--ink-dim);
+  font-size: 17px;
+  margin: 0 0 30px;
+  max-width: 56ch;
+  text-wrap: pretty;
+}
+.hero-inner.center h1,
+.hero-inner.center .lede,
+.hero-inner.center .support {
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-mark {
   width: clamp(120px, 16vw, 176px);
   margin: 0 auto 26px;
@@ -313,8 +337,20 @@ h1, .display {
 }
 
 .page-hero { padding: 62px 0 52px; position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
-.page-hero h1 { font-size: clamp(30px, 4.4vw, 46px); line-height: 1.14; margin: 12px 0 16px; }
-.page-hero .lede { font-size: 18.5px; color: var(--ink-dim); max-width: 66ch; margin: 0; }
+.page-hero h1 {
+  font-size: clamp(30px, 4.4vw, 46px);
+  line-height: 1.14;
+  margin: 12px 0 16px;
+  max-width: 13ch;
+  text-wrap: balance;
+}
+.page-hero .lede {
+  font-size: 18.5px;
+  color: var(--ink-dim);
+  max-width: 38ch;
+  margin: 0;
+  text-wrap: pretty;
+}
 .page-hero .container { position: relative; }
 
 .journey-page {
@@ -391,7 +427,7 @@ h1, .display {
 .ticker-track {
   display: inline-block;
   animation: ticker-scroll 36s linear infinite;
-  font-family: var(--font-display);
+  font-family: var(--font-display-numeric);
   font-weight: 700;
   font-size: 17px;
   letter-spacing: .12em;
@@ -424,6 +460,8 @@ h1, .display {
   line-height: 1.14;
   letter-spacing: -0.01em;
   margin: 10px 0 22px;
+  max-width: 16ch;
+  text-wrap: balance;
 }
 .section h3 { font-size: 21px; font-weight: 650; margin: 34px 0 10px; }
 .section p { color: var(--ink-dim); max-width: 70ch; }
@@ -470,6 +508,43 @@ h1, .display {
   font-size: 12.5px; color: var(--ink-faint); margin-top: 10px; letter-spacing: .03em;
 }
 .split-media figure { margin: 0; }
+.map-figure {
+  margin: 0;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(140% 120% at 0% 0%, rgba(255, 255, 255, .05), transparent 56%),
+    rgba(40, 32, 84, .92);
+}
+.map-figure img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .03);
+}
+.map-figure figcaption {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  margin-top: 12px;
+  letter-spacing: .03em;
+}
+.map-figure-wide {
+  margin-top: 28px;
+}
+.map-intro {
+  max-width: 720px;
+}
+.map-note {
+  margin: 18px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.2;
+  color: var(--ink);
+}
 
 .collage {
   position: relative;
@@ -582,7 +657,7 @@ h1, .display {
     var(--bg-3);
 }
 .chapter-no {
-  font-family: var(--font-display);
+  font-family: var(--font-display-numeric);
   font-weight: 700;
   font-size: 15px;
   letter-spacing: .1em;
@@ -608,6 +683,7 @@ h1, .display {
 
 .chip {
   display: inline-block;
+  font-family: var(--font-display-numeric);
   font-size: 12.5px;
   font-weight: 650;
   letter-spacing: .06em;
@@ -882,7 +958,7 @@ details.faq .a p { margin: 0 0 10px; }
   width: 40px; height: 40px;
   border-radius: 50%;
   display: grid; place-items: center;
-  font-family: var(--font-display);
+  font-family: var(--font-display-numeric);
   font-weight: 700; font-size: 16px;
   color: #16081f;
   background: var(--grad);
