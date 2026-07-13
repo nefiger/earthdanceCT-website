@@ -413,6 +413,81 @@ h1, .display {
     #241d4c;
 }
 
+.history-page .page-hero {
+  min-height: 520px;
+  display: flex;
+  align-items: end;
+}
+.history-page .page-hero .hero-bg {
+  opacity: .76;
+  background-position: center 36%;
+  filter: saturate(.92) brightness(.88);
+}
+.history-page .page-hero .hero-veil {
+  background:
+    linear-gradient(180deg, rgba(18, 14, 41, .2), rgba(18, 14, 41, .56) 52%, rgba(18, 14, 41, .78)),
+    radial-gradient(70% 80% at 10% 10%, rgba(255, 138, 61, .12), transparent 58%);
+}
+.history-page .page-hero h1 {
+  max-width: 16ch;
+}
+.history-page .page-hero .lede {
+  color: rgba(245, 242, 255, .95);
+  max-width: 46ch;
+}
+.history-intro {
+  font-size: 19px;
+  line-height: 1.72;
+  max-width: 58ch;
+}
+.history-figure {
+  margin: 0;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(140% 120% at 0% 0%, rgba(255, 255, 255, .05), transparent 56%),
+    rgba(39, 33, 82, .94);
+}
+.history-figure img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03);
+}
+.history-page .split-media img,
+.history-page .history-stack img,
+.history-page .history-figure img {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+.history-figure figcaption {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  letter-spacing: .03em;
+}
+.history-stack {
+  display: grid;
+  gap: 18px;
+}
+.history-stack .history-figure {
+  padding: 0;
+  overflow: hidden;
+}
+.history-stack .history-figure img {
+  border: 0;
+  border-radius: 0;
+}
+.history-stack .history-figure figcaption {
+  padding: 0 18px 18px;
+  margin-top: 14px;
+}
+
 /* ---------- theme ticker ---------- */
 .ticker {
   overflow: hidden;
