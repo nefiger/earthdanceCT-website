@@ -68,6 +68,7 @@ img { max-width: 100%; display: block; }
 
 a { color: var(--cyan); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+main a, .site-footer a { overflow-wrap: anywhere; }
 
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
 
@@ -582,6 +583,7 @@ h1, .display {
   opacity: .05;
   pointer-events: none;
 }
+.section-mandala { overflow: hidden; }
 .section h2 {
   font-size: clamp(27px, 3.6vw, 38px);
   font-weight: 700;
