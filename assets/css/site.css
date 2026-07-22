@@ -850,6 +850,251 @@ h1, .display {
 }
 .event-facts li b { color: var(--ink-faint); font-weight: 500; margin-right: 6px; }
 
+/* ---------- Morado Experience ---------- */
+.morado-experience {
+  --morado-sand: oklch(84% .075 77);
+  --morado-ember: oklch(65% .12 48);
+  --morado-water: oklch(70% .085 225);
+  --morado-night: oklch(18% .025 284);
+  padding-block: clamp(64px, 8vw, 108px);
+  background:
+    radial-gradient(75% 55% at 12% 8%, color-mix(in oklch, var(--morado-ember) 16%, transparent), transparent 72%),
+    radial-gradient(70% 55% at 100% 76%, color-mix(in oklch, var(--morado-water) 13%, transparent), transparent 72%),
+    var(--morado-night);
+}
+.morado-hero {
+  position: relative;
+  min-height: clamp(500px, 66vw, 720px);
+  overflow: hidden;
+  border: 1px solid color-mix(in oklch, var(--morado-sand) 28%, transparent);
+  border-radius: 28px;
+  box-shadow: 0 34px 80px rgba(0, 0, 0, .4);
+}
+.morado-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(12, 10, 18, .05) 35%, rgba(12, 10, 18, .86) 100%),
+    linear-gradient(90deg, rgba(12, 10, 18, .58), transparent 68%);
+}
+.morado-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 52%;
+}
+.morado-hero-copy {
+  position: absolute;
+  z-index: 1;
+  left: clamp(24px, 6vw, 72px);
+  right: clamp(24px, 16vw, 180px);
+  bottom: clamp(28px, 6vw, 68px);
+}
+.morado-hero-copy h2 {
+  margin: 14px 0 12px;
+  max-width: 13ch;
+  color: #fff;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+.morado-hero-copy p {
+  max-width: 52ch;
+  margin: 0;
+  color: rgba(255, 255, 255, .9);
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.45;
+}
+.morado-kicker {
+  display: inline-block;
+  color: var(--morado-sand);
+  font-family: var(--font-display-numeric);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+.morado-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(32px, 7vw, 94px);
+  align-items: start;
+  padding: clamp(58px, 8vw, 96px) clamp(0px, 3vw, 34px) clamp(46px, 6vw, 72px);
+}
+.morado-intro h2,
+.morado-details h2,
+.morado-welcome h2 {
+  color: var(--morado-sand);
+}
+.morado-intro p {
+  font-size: clamp(17px, 1.7vw, 20px);
+  line-height: 1.7;
+}
+.morado-intro p:first-child { margin-top: 0; }
+.morado-moments {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-block: 1px solid color-mix(in oklch, var(--morado-sand) 26%, transparent);
+}
+.morado-moments > div {
+  min-width: 0;
+  padding: 28px 22px 30px;
+}
+.morado-moments > div + div {
+  border-left: 1px solid color-mix(in oklch, var(--morado-sand) 20%, transparent);
+}
+.morado-moments span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--morado-ember);
+  font-family: var(--font-display-numeric);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.morado-moments b {
+  display: block;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 550;
+  line-height: 1.45;
+}
+.morado-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, .88fr);
+  gap: clamp(40px, 7vw, 86px);
+  align-items: center;
+  padding: clamp(64px, 9vw, 112px) clamp(0px, 3vw, 34px);
+}
+.morado-copy p { line-height: 1.7; }
+.morado-copy h3 {
+  margin-top: 30px;
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+.morado-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+  margin: 18px 0 0;
+  padding: 0 !important;
+  list-style: none;
+}
+.morado-highlights li {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 0 10px 18px;
+  border-bottom: 1px solid color-mix(in oklch, var(--morado-sand) 14%, transparent);
+  color: var(--ink-dim);
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+.morado-highlights li::before {
+  content: "";
+  position: absolute;
+  top: .58em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--morado-ember);
+}
+.morado-landscape { margin: 0; }
+.morado-landscape img {
+  display: block;
+  width: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  border: 1px solid color-mix(in oklch, var(--morado-sand) 24%, transparent);
+  border-radius: 160px 160px 18px 18px;
+}
+.morado-landscape figcaption {
+  margin-top: 12px;
+  color: var(--ink-faint);
+  font-size: 12.5px;
+  letter-spacing: .04em;
+}
+.morado-welcome {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .78fr);
+  gap: clamp(38px, 7vw, 90px);
+  padding: clamp(42px, 6vw, 72px);
+  border: 1px solid color-mix(in oklch, var(--morado-sand) 26%, transparent);
+  border-radius: 24px;
+  background:
+    linear-gradient(120deg, color-mix(in oklch, var(--morado-ember) 12%, transparent), transparent 52%),
+    rgba(255, 255, 255, .035);
+}
+.morado-welcome p { line-height: 1.65; }
+.morado-enquiry {
+  padding-left: clamp(0px, 4vw, 52px);
+  border-left: 1px solid color-mix(in oklch, var(--morado-sand) 24%, transparent);
+}
+.morado-enquiry h3 {
+  margin: 18px 0 10px;
+  color: var(--ink);
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.2;
+}
+.morado-availability {
+  display: inline-block;
+  color: var(--morado-night);
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: var(--morado-sand);
+  font-family: var(--font-display-numeric);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.morado-btn {
+  margin-top: 10px;
+  color: var(--morado-night);
+  border-color: var(--morado-sand);
+  background: var(--morado-sand);
+  box-shadow: 0 12px 34px color-mix(in oklch, var(--morado-ember) 22%, transparent);
+}
+.morado-btn:hover {
+  color: var(--morado-night);
+  border-color: #fff;
+  background: #fff;
+}
+@media (max-width: 960px) {
+  .morado-moments { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .morado-moments > div { border-bottom: 1px solid color-mix(in oklch, var(--morado-sand) 20%, transparent); }
+  .morado-moments > div:nth-child(odd) { border-left: 0; }
+  .morado-moments > div:last-child { grid-column: 1 / -1; border-bottom: 0; }
+  .morado-details { grid-template-columns: 1fr; }
+  .morado-landscape { max-width: 620px; }
+  .morado-landscape img { min-height: 420px; }
+}
+@media (max-width: 740px) {
+  .morado-hero { min-height: 540px; border-radius: 20px; }
+  .morado-hero > img { object-position: 43% 50%; }
+  .morado-hero-copy { right: 24px; }
+  .morado-intro,
+  .morado-welcome { grid-template-columns: 1fr; }
+  .morado-highlights { grid-template-columns: 1fr; }
+  .morado-welcome { padding: 34px 26px; }
+  .morado-enquiry { padding: 30px 0 0; border-top: 1px solid color-mix(in oklch, var(--morado-sand) 24%, transparent); border-left: 0; }
+}
+@media (max-width: 500px) {
+  .morado-experience { padding-block: 44px 56px; }
+  .morado-hero { min-height: 500px; }
+  .morado-hero-copy h2 { font-size: 40px; }
+  .morado-moments { grid-template-columns: 1fr; }
+  .morado-moments > div,
+  .morado-moments > div + div { border-left: 0; }
+  .morado-moments > div:last-child { grid-column: auto; }
+  .morado-landscape img { min-height: 340px; border-radius: 110px 110px 16px 16px; }
+}
+
 /* ---------- tables ---------- */
 .table-wrap { overflow-x: auto; margin-top: 30px; border: 1px solid var(--line); border-radius: var(--radius); }
 table.data {
