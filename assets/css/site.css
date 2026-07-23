@@ -610,7 +610,7 @@ h1, .display {
 }
 
 /* Editorial sections: the heading establishes the section, then the copy
-   moves into a wider reading measure instead of being squeezed beside it. */
+   uses the same full container width as galleries, tables and CTA bands. */
 .editorial-flow {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -622,14 +622,19 @@ h1, .display {
   grid-column: 1 / span 8;
 }
 .editorial-flow > :last-child {
-  grid-column: 4 / -1;
+  grid-column: 1 / -1;
   grid-row: 2;
   min-width: 0;
-  max-width: 72ch;
+  max-width: none;
 }
 .editorial-flow > :first-child h2 {
   max-width: 22ch;
   margin-bottom: 0;
+}
+.editorial-flow > :last-child > p,
+.editorial-flow > :last-child > ul,
+.editorial-flow > :last-child > ol {
+  max-width: none;
 }
 .editorial-flow > :last-child > :first-child {
   margin-top: 0;
