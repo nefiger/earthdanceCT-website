@@ -597,9 +597,9 @@ h1, .display {
   text-wrap: balance;
 }
 .section h3 { font-size: 21px; font-weight: 650; margin: 34px 0 10px; }
-.section p { color: var(--ink-dim); max-width: 70ch; }
+.section p { color: var(--ink-dim); }
 .section p.bright, .section .bright p { color: var(--ink); }
-.section ul, .section ol { color: var(--ink-dim); max-width: 70ch; padding-left: 24px; }
+.section ul, .section ol { color: var(--ink-dim); padding-left: 24px; }
 .section li { margin: 6px 0; }
 .section li b, .section li strong { color: var(--ink); font-weight: 600; }
 .two-col {
@@ -630,11 +630,6 @@ h1, .display {
 .editorial-flow > :first-child h2 {
   max-width: 22ch;
   margin-bottom: 0;
-}
-.editorial-flow > :last-child > p,
-.editorial-flow > :last-child > ul,
-.editorial-flow > :last-child > ol {
-  max-width: none;
 }
 .editorial-flow > :last-child > :first-child {
   margin-top: 0;
@@ -728,9 +723,6 @@ h1, .display {
 }
 .map-figure-wide {
   margin-top: 28px;
-}
-.map-intro {
-  max-width: 720px;
 }
 .map-note {
   margin: 18px 0 0;
