@@ -42,11 +42,11 @@ Known soft-detail items that still depend on final operational confirmation:
 
 - Humanity warm-up announcement details (`journey.html`, `faq.html`, `index.html`)
 - Prayer for Peace surrounding local running order (`prayer-for-peace.html`) — exact global linkup time now confirmed
-- Accommodation arrival/check-in guidance (`glamping-camping.html`) — camp and glamping pricing is live on Quicket; the one-only Morado Experience is a separate direct enquiry
+- Accommodation arrival/check-in guidance (`glamping-camping.html`) — camp and glamping pricing is live on Quicket; price-per-tent, separate festival tickets, parking, security, bedding and ablution details are confirmed; the one-only Morado Experience is a separate direct enquiry
 - Volunteer exchange/shift structure (`volunteers.html`)
 - Collaborator exchange terms (`collaborators.html`)
 - Bin locations / refill points (`sustainability.html`)
-- Site facilities / re-entry / shuttles (`practical-info.html`)
+- Re-entry / shuttles (`practical-info.html`)
 
 ## Go-live checklist
 
