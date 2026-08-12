@@ -13,6 +13,7 @@ Cloudflare.
 
 The dashboard Worker code is stored in `meta-capi-worker.mjs`.
 
-`Purchase` requests are accepted only while `META_TEST_EVENT_CODE` is present,
-so test purchases cannot enter production reporting. Real purchase tracking will
-require a trusted Quicket webhook or other server-to-server integration.
+`Purchase` requests are accepted with or without `META_TEST_EVENT_CODE`. When
+the test code is present, Meta routes them to Test Events; without it, they are
+production events. Confirmed purchase tracking should be sent by a trusted
+Quicket webhook or other server-to-server integration.

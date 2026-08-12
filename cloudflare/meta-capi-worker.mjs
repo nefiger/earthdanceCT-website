@@ -93,10 +93,6 @@ export default {
       return json({ ok: false, error: 'Event is not allowed.' }, 400, cors);
     }
 
-    if (eventName === 'Purchase' && !env.META_TEST_EVENT_CODE) {
-      return json({ ok: false, error: 'Purchase is only enabled in test mode.' }, 400, cors);
-    }
-
     const eventId = optionalString(body.event_id, 128);
     if (!eventId || !/^[A-Za-z0-9._:-]+$/.test(eventId)) {
       return json({ ok: false, error: 'Invalid event ID.' }, 400, cors);
