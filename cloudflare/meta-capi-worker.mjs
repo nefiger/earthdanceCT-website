@@ -1,4 +1,4 @@
-const ALLOWED_EVENTS = new Set(['PageView', 'InitiateCheckout']);
+const ALLOWED_EVENTS = new Set(['PageView', 'InitiateCheckout', 'Purchase']);
 const MAX_BODY_BYTES = 16 * 1024;
 
 function json(body, status = 200, extraHeaders = {}) {
@@ -93,6 +93,10 @@ export default {
       return json({ ok: false, error: 'Event is not allowed.' }, 400, cors);
     }
 
+    if (eventName === 'Purchase' && !env.META_TEST_EVENT_CODE) {
+      return json({ ok: false, error: 'Purchase is only enabled in test mode.' }, 400, cors);
+    }
+
     const eventId = optionalString(body.event_id, 128);
     if (!eventId || !/^[A-Za-z0-9._:-]+$/.test(eventId)) {
       return json({ ok: false, error: 'Invalid event ID.' }, 400, cors);
@@ -130,6 +134,19 @@ export default {
     if (eventName === 'InitiateCheckout') {
       serverEvent.custom_data = {
         content_name: 'Earthdance Cape Town 2026 tickets',
+      };
+    }
+
+    if (eventName === 'Purchase') {
+      const value = Number(body.value);
+      if (!Number.isFinite(value) || value <= 0 || value > 1000000) {
+        return json({ ok: false, error: 'Invalid purchase value.' }, 400, cors);
+      }
+      serverEvent.custom_data = {
+        currency: 'ZAR',
+        value,
+        content_name: 'Earthdance Cape Town 2026 test purchase',
+        order_id: 'test-' + eventId,
       };
     }
 

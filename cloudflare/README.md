@@ -12,3 +12,7 @@ Cloudflare.
 - `META_TEST_EVENT_CODE` — optional secret used temporarily during Meta Test Events
 
 The dashboard Worker code is stored in `meta-capi-worker.mjs`.
+
+`Purchase` requests are accepted only while `META_TEST_EVENT_CODE` is present,
+so test purchases cannot enter production reporting. Real purchase tracking will
+require a trusted Quicket webhook or other server-to-server integration.
