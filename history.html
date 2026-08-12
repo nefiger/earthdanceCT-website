@@ -19,7 +19,9 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '3564053623773252');
-fbq('track', 'PageView');
+window.earthdanceMetaPageViewEventId = 'pageview-' + Date.now() + '-' +
+  Math.random().toString(36).slice(2, 12);
+fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 </script>
 <!-- End Meta Pixel Code -->
 <meta charset="utf-8">
@@ -258,6 +260,6 @@ alt=""></noscript>
     </div>
   </div>
 </footer>
-<script src="assets/js/site.js"></script>
+<script src="assets/js/site.js?v=20260812-capi1"></script>
 </body>
 </html>
