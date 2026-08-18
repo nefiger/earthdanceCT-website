@@ -1,6 +1,6 @@
 {
   "event": "Earthdance Cape Town 2026",
-  "note": "Source of truth for the September lineup. Edit here, then run: python3 scripts/build_lineup.py",
+  "note": "Source of truth for the September lineup and programme. Edit here, then run: python3 scripts/build_lineup.py. Blocks take kind ('music' or 'programme') and status ('announced' or 'coming'). A 'coming' block renders its holding line instead of a list — fill acts/items and flip status when names are confirmed.",
   "stages": [
     {
       "id": "sonic-horizon",
@@ -94,7 +94,9 @@
             {
               "name": "Ward 10 and the Outpatients"
             }
-          ]
+          ],
+          "kind": "music",
+          "status": "announced"
         }
       ]
     },
@@ -102,6 +104,28 @@
       "id": "mellow-meadow",
       "name": "Mellow Meadow",
       "blocks": [
+        {
+          "id": "workshops",
+          "name": "Workshops &amp; movement",
+          "kind": "programme",
+          "status": "coming",
+          "holding": "The daytime programme is being put together now.",
+          "items": [
+            "Yoga",
+            "Conscious dance",
+            "Workshops",
+            "Flow sessions",
+            "Ceremony"
+          ]
+        },
+        {
+          "id": "live-acoustic",
+          "name": "Live &amp; acoustic",
+          "kind": "music",
+          "status": "coming",
+          "holding": "Live and acoustic artists are still being confirmed.",
+          "acts": []
+        },
         {
           "id": "techno",
           "name": "Techno takeover",
@@ -142,7 +166,9 @@
             {
               "name": "Veroni"
             }
-          ]
+          ],
+          "kind": "music",
+          "status": "announced"
         },
         {
           "id": "dnb",
@@ -179,7 +205,9 @@
               "name": "Xervious",
               "country": "USA"
             }
-          ]
+          ],
+          "kind": "music",
+          "status": "announced"
         }
       ]
     }

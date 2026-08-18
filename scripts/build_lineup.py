@@ -46,7 +46,7 @@ BLURB = {
 def act_markup(act: dict) -> str:
     name = html.escape(act["name"], quote=False)
     if act.get("country"):
-        name += f' <span class="act-country">{html.escape(act["country"], quote=False)}</span>'
+        name += f'&nbsp;<span class="act-country">{html.escape(act["country"], quote=False)}</span>'
     if act.get("profile"):
         return f'              <li><a href="{act["profile"]}">{name}</a></li>'
     return f"              <li>{name}</li>"
@@ -64,14 +64,32 @@ def main() -> None:
         out.append(f"      <h2>{heading}</h2>")
         out.append(f'      <p class="bright">{body}</p>')
         for block in stage["blocks"]:
-            count = len(block["acts"])
+            coming = block.get("status") == "coming"
+            if coming:
+                tag = "To be announced"
+            elif block.get("kind") == "programme":
+                tag = f'{len(block["items"])} strands'
+            else:
+                tag = f'{len(block["acts"])} acts'
             out.append(
                 f'      <h3 class="act-heading">{block["name"]}'
-                f' <span class="act-count">{count} acts</span></h3>'
+                f' <span class="act-count">{tag}</span></h3>'
             )
-            out.append('      <ul class="act-index">')
-            out += [act_markup(a) for a in block["acts"]]
-            out.append("      </ul>")
+            if coming:
+                out.append(f'      <p class="act-holding">{block["holding"]}</p>')
+                items = block.get("items") or []
+                if items:
+                    out.append('      <ul class="act-index act-index-quiet">')
+                    out += [f"              <li>{i}</li>" for i in items]
+                    out.append("      </ul>")
+            elif block.get("kind") == "programme":
+                out.append('      <ul class="act-index">')
+                out += [f"              <li>{i}</li>" for i in block["items"]]
+                out.append("      </ul>")
+            else:
+                out.append('      <ul class="act-index">')
+                out += [act_markup(a) for a in block["acts"]]
+                out.append("      </ul>")
         out.append("    </div>")
         out.append("  </section>")
         out.append("")
@@ -81,7 +99,7 @@ def main() -> None:
     after = page.split(END, 1)[1]
     PAGE.write_text(before + START + "\n" + "\n".join(out) + END + after)
 
-    total = sum(len(b["acts"]) for a in data["stages"] for b in a["blocks"])
+    total = sum(len(b.get("acts", [])) for a in data["stages"] for b in a["blocks"])
     print(f"lineup.html — {total} acts across {len(data['stages'])} stages")
 
 
