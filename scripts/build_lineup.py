@@ -33,12 +33,12 @@ BLURB = {
         "Earthdance communities around the world.",
     ),
     "mellow-meadow": (
-        "Soft by day, taken over by night",
-        "Through the daylight hours Mellow Meadow is the gentler side of the "
-        "gathering — workshops, ceremony, slower moments and the central sacred fire. "
-        "After dark it changes character entirely, handing the space first to a "
-        "techno takeover and then to drum &amp; bass. Same stretch of grass, a "
-        "completely different night.",
+        "The meadow doesn't stay mellow",
+        "Through the daylight hours this is where the gathering does its deepest "
+        "work — workshops, ceremony, and the central sacred fire that burns all "
+        "weekend. Then the light goes and the stage is handed over: a techno "
+        "takeover first, then drum &amp; bass until the early hours. Same stretch "
+        "of grass, an entirely different night.",
     ),
 }
 
