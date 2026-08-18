@@ -1126,6 +1126,69 @@ h1, .display {
   .morado-landscape img { min-height: 340px; border-radius: 110px 110px 16px 16px; }
 }
 
+/* ---------- act lists (warm-up lineups, festival lineup) ---------- */
+.act-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 26px 0 14px;
+  color: var(--ink);
+  font-size: 15px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.act-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.act-list li {
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .04);
+  color: var(--ink-dim);
+  font-size: 14.5px;
+  line-height: 1.3;
+}
+.set-times {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.set-times li {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 16px;
+  align-items: baseline;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .035);
+}
+.set-times li:nth-child(odd) { background: rgba(255, 255, 255, .06); }
+.set-time {
+  color: var(--cyan);
+  font-family: var(--font-display-numeric);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.set-act {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 520px) {
+  .set-times li { grid-template-columns: 1fr; gap: 3px; padding: 10px 12px; }
+}
+
 /* ---------- tables ---------- */
 .table-wrap { overflow-x: auto; margin-top: 30px; border: 1px solid var(--line); border-radius: var(--radius); }
 table.data {
