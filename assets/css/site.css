@@ -928,6 +928,28 @@ h1, .display {
   object-fit: cover;
   object-position: 50% 52%;
 }
+.morado-soldout {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 50%;
+  width: 128%;
+  padding: clamp(12px, 1.8vw, 22px) 0;
+  transform: translate(-50%, -50%) rotate(-4deg);
+  background: color-mix(in oklch, var(--morado-ember) 92%, transparent);
+  color: var(--morado-night);
+  text-align: center;
+  font-family: var(--font-display-numeric);
+  font-size: clamp(30px, 5vw, 62px);
+  font-weight: 750;
+  letter-spacing: .16em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-indent: .16em;
+  border-block: 1px solid color-mix(in oklch, var(--morado-sand) 55%, transparent);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .45);
+}
+
 .morado-hero-copy {
   position: absolute;
   z-index: 1;
@@ -1073,40 +1095,7 @@ h1, .display {
     rgba(255, 255, 255, .035);
 }
 .morado-welcome p { line-height: 1.65; }
-.morado-enquiry {
-  padding-left: clamp(0px, 4vw, 52px);
-  border-left: 1px solid color-mix(in oklch, var(--morado-sand) 24%, transparent);
-}
-.morado-enquiry h3 {
-  margin: 18px 0 10px;
-  color: var(--ink);
-  font-size: clamp(22px, 2.5vw, 30px);
-  line-height: 1.2;
-}
-.morado-availability {
-  display: inline-block;
-  color: var(--morado-night);
-  border-radius: 999px;
-  padding: 6px 12px;
-  background: var(--morado-sand);
-  font-family: var(--font-display-numeric);
-  font-size: 11px;
-  font-weight: 750;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-.morado-btn {
-  margin-top: 10px;
-  color: var(--morado-night);
-  border-color: var(--morado-sand);
-  background: var(--morado-sand);
-  box-shadow: 0 12px 34px color-mix(in oklch, var(--morado-ember) 22%, transparent);
-}
-.morado-btn:hover {
-  color: var(--morado-night);
-  border-color: #fff;
-  background: #fff;
-}
+.morado-welcome.is-solo { grid-template-columns: minmax(0, 1fr); }
 @media (max-width: 960px) {
   .morado-moments { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .morado-moments > div { border-bottom: 1px solid color-mix(in oklch, var(--morado-sand) 20%, transparent); }
@@ -1124,10 +1113,10 @@ h1, .display {
   .morado-welcome { grid-template-columns: 1fr; }
   .morado-highlights { grid-template-columns: 1fr; }
   .morado-welcome { padding: 34px 26px; }
-  .morado-enquiry { padding: 30px 0 0; border-top: 1px solid color-mix(in oklch, var(--morado-sand) 24%, transparent); border-left: 0; }
 }
 @media (max-width: 500px) {
   .morado-experience { padding-block: 44px 56px; }
+  .morado-soldout { letter-spacing: .1em; text-indent: .1em; }
   .morado-hero { min-height: 500px; }
   .morado-hero-copy h2 { font-size: 40px; }
   .morado-moments { grid-template-columns: 1fr; }
