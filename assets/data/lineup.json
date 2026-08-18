@@ -1,0 +1,187 @@
+{
+  "event": "Earthdance Cape Town 2026",
+  "note": "Source of truth for the September lineup. Edit here, then run: python3 scripts/build_lineup.py",
+  "stages": [
+    {
+      "id": "sonic-horizon",
+      "name": "Sonic Horizon",
+      "blocks": [
+        {
+          "id": "psytrance",
+          "name": "Psytrance",
+          "acts": [
+            {
+              "name": "A.Geoffrey b2b Drifter"
+            },
+            {
+              "name": "Amoraim"
+            },
+            {
+              "name": "Arcane b2b Pixie"
+            },
+            {
+              "name": "Bruce"
+            },
+            {
+              "name": "Craig A"
+            },
+            {
+              "name": "Dan Scot"
+            },
+            {
+              "name": "Flower Power"
+            },
+            {
+              "name": "Graymatter"
+            },
+            {
+              "name": "Jester"
+            },
+            {
+              "name": "MacAttack"
+            },
+            {
+              "name": "Midiclorian"
+            },
+            {
+              "name": "Mikey Dredd"
+            },
+            {
+              "name": "Mr Shakahuchi"
+            },
+            {
+              "name": "Phylth"
+            },
+            {
+              "name": "Prefix"
+            },
+            {
+              "name": "Psyanomic"
+            },
+            {
+              "name": "Psyborg"
+            },
+            {
+              "name": "Psymantis"
+            },
+            {
+              "name": "Psyrenex"
+            },
+            {
+              "name": "Ras"
+            },
+            {
+              "name": "Rave Mustaine"
+            },
+            {
+              "name": "Skitzo"
+            },
+            {
+              "name": "Spacemonk"
+            },
+            {
+              "name": "Thomas"
+            },
+            {
+              "name": "Tune Raider"
+            },
+            {
+              "name": "Uncle Frank"
+            },
+            {
+              "name": "Verax"
+            },
+            {
+              "name": "Ward 10 and the Outpatients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mellow-meadow",
+      "name": "Mellow Meadow",
+      "blocks": [
+        {
+          "id": "techno",
+          "name": "Techno takeover",
+          "acts": [
+            {
+              "name": "Asterion"
+            },
+            {
+              "name": "AurallaurA"
+            },
+            {
+              "name": "Big E b2b Sledge"
+            },
+            {
+              "name": "Dave Irish"
+            },
+            {
+              "name": "Firehorse"
+            },
+            {
+              "name": "JamDay"
+            },
+            {
+              "name": "Nyx"
+            },
+            {
+              "name": "Sol"
+            },
+            {
+              "name": "Sublime"
+            },
+            {
+              "name": "Tristan Mountain"
+            },
+            {
+              "name": "Ty Teknition"
+            },
+            {
+              "name": "Veroni"
+            }
+          ]
+        },
+        {
+          "id": "dnb",
+          "name": "Drum &amp; bass takeover",
+          "acts": [
+            {
+              "name": "Counterstrike",
+              "country": "CZ/ZA"
+            },
+            {
+              "name": "Django"
+            },
+            {
+              "name": "Kyo"
+            },
+            {
+              "name": "Lolo"
+            },
+            {
+              "name": "RedHat",
+              "country": "USA/ZA"
+            },
+            {
+              "name": "Skam"
+            },
+            {
+              "name": "TeHsynes"
+            },
+            {
+              "name": "To-Wa",
+              "country": "NL"
+            },
+            {
+              "name": "Xervious",
+              "country": "USA"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
