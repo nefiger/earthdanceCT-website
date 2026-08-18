@@ -10,7 +10,7 @@ Static site for [Earthdance Cape Town 2026](https://earthdancecapetown.co.za) (1
 |---|---|---|
 | Home | `index.html` | website-copy-draft (adapted, expanded) |
 | About Earthdance | `about.html` | drafted from storytelling-reset guidance + live-site history |
-| Journey to September | `journey.html` | website-copy-draft + warm-ups merged in |
+| Gatherings | `gatherings.html` | website-copy-draft + warm-ups merged in; `journey.html` is a redirect stub for old links |
 | Heart at Love in a Bowl | `love-in-a-bowl.html` | drafted; grounded in loveinabowl.co.za + Heart recap material |
 | Prayer for Peace | `prayer-for-peace.html` | drafted from storytelling-reset guidance + live-site history |
 | Vendors | `vendors.html` | website-copy-draft + confirmed packages table |
@@ -20,7 +20,8 @@ Static site for [Earthdance Cape Town 2026](https://earthdancecapetown.co.za) (1
 | Practical Info | `practical-info.html` | drafted from live-site facts |
 | FAQ | `faq.html` | drafted, slimmed per storytelling-reset |
 | Sustainability & Waste | `sustainability.html` | drafted from policy brief |
-| Gallery | `gallery.html` | curated subset from photo manifest |
+| Lineup | `lineup.html` | generated from `assets/data/lineup.json` by `scripts/build_lineup.py` |
+| Gallery | `gallery.html` | curated 2025 subset, plus the uncredited past-events band |
 
 Source docs live in the `earthdance-2026` planning repo under `docs/comms/`:
 `website-copy-draft-2026-06-21.md` and `website-storytelling-reset-2026-06-21.md`.
@@ -33,6 +34,9 @@ Source docs live in the `earthdance-2026` planning repo under `docs/comms/`:
 - `assets/photos/heart/` — Heart gathering photos (Love in a Bowl, 20 June 2026).
 - `assets/photos/stay/` — glamping tent photos for the accommodation page.
 - `scripts/build_photos.py` — regenerates the full deduped archive from `earthdance-2026/assets/social/raw/PHOTOS 2025` (macOS: uses `sips`); re-run when more photos arrive, then re-prune to the curated list.
+- `assets/photos/past/` — the "Through the Years" band on the gallery: ~100 Facebook exports from the Drive folder "PAST EVENTS PICS". No photographer metadata and many carry their own watermark, so they go up **uncredited by decision** — do not invent credits. Rebuild with `scripts/build_past_photos.py SOURCE_DIR`.
+- `scripts/build_lineup.py` — renders `assets/data/lineup.json` into `lineup.html` between the `LINEUP:START`/`LINEUP:END` markers. Edit the JSON, run the script, commit both.
+- `scripts/build_sitemap.py` — regenerates `sitemap.xml` from the repo-root HTML pages. Run after adding or renaming a page.
 
 ## Updating content
 
@@ -40,7 +44,7 @@ Header and footer are duplicated in each page (deliberately — no build step). 
 
 Known soft-detail items that still depend on final operational confirmation:
 
-- Humanity warm-up announcement details (`journey.html`, `faq.html`, `index.html`)
+- Live/acoustic artists and the Mellow Meadow day programme (`assets/data/lineup.json`, both marked to be announced)
 - Prayer for Peace surrounding local running order (`prayer-for-peace.html`) — exact global linkup time now confirmed
 - Accommodation arrival/check-in guidance (`glamping-camping.html`) — camp and glamping pricing is live on Quicket; price-per-tent, separate festival tickets, parking, security, bedding and ablution details are confirmed; the one-only Morado Experience is sold out for 2026
 - Volunteer exchange/shift structure (`volunteers.html`)

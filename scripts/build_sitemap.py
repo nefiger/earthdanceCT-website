@@ -17,15 +17,16 @@ from pathlib import Path
 BASE = "https://www.earthdancecapetown.co.za/"
 ROOT = Path(__file__).resolve().parent.parent
 
-# Not indexable: error page.
-EXCLUDE = {"404.html"}
+# Not indexable: error page, and the journey.html redirect stub kept for old links.
+EXCLUDE = {"404.html", "journey.html"}
 
 # Anything unlisted defaults to 0.6.
 PRIORITY = {
     "index.html": "1.0",
+    "lineup.html": "0.9",
     "glamping-camping.html": "0.9",
     "about.html": "0.8",
-    "journey.html": "0.8",
+    "gatherings.html": "0.8",
     "practical-info.html": "0.8",
     "faq.html": "0.7",
     "vendors.html": "0.7",
@@ -38,7 +39,7 @@ PRIORITY = {
 
 CHANGEFREQ = {
     "index.html": "weekly",
-    "journey.html": "weekly",
+    "gatherings.html": "weekly",
     "glamping-camping.html": "weekly",
     "faq.html": "weekly",
     "practical-info.html": "weekly",
