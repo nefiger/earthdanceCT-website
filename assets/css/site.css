@@ -440,7 +440,7 @@ h1, .display {
     radial-gradient(70% 80% at 10% 10%, rgba(255, 138, 61, .12), transparent 58%);
 }
 .history-page .page-hero h1 {
-  max-width: 16ch;
+  max-width: 30ch;
 }
 .history-page .page-hero .lede {
   color: rgba(245, 242, 255, .95);
@@ -461,7 +461,7 @@ h1, .display {
   max-width: 58ch;
 }
 .history-page .section h2 {
-  max-width: 14ch;
+  max-width: 34ch;
 }
 .history-page .split,
 .history-page .two-col {
@@ -470,10 +470,13 @@ h1, .display {
 .history-kicker {
   text-align: center;
 }
+.history-kicker h2,
 .history-kicker p {
-  max-width: 62ch;
   margin-left: auto;
   margin-right: auto;
+}
+.history-kicker p {
+  max-width: 62ch;
 }
 .history-kicker .stat-strip {
   margin-top: 30px;
@@ -593,7 +596,6 @@ h1, .display {
   line-height: 1.14;
   letter-spacing: -0.01em;
   margin: 10px 0 22px;
-  max-width: 28ch;
   text-wrap: balance;
 }
 .section h3 { font-size: 21px; font-weight: 650; margin: 34px 0 10px; }
@@ -619,7 +621,7 @@ h1, .display {
   align-items: start;
 }
 .editorial-flow > :first-child {
-  grid-column: 1 / span 8;
+  grid-column: 1 / -1;
 }
 .editorial-flow > :last-child {
   grid-column: 1 / -1;
@@ -628,7 +630,6 @@ h1, .display {
   max-width: none;
 }
 .editorial-flow > :first-child h2 {
-  max-width: 22ch;
   margin-bottom: 0;
 }
 .editorial-flow > :last-child > :first-child {
