@@ -589,6 +589,141 @@ h1, .display {
 .ticker-track span { margin: 0 26px; }
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
+/* ---------- Cape Town shuttle ---------- */
+.shuttle-promo {
+  background:
+    radial-gradient(70% 130% at 0% 0%, rgba(200, 240, 95, .08), transparent 58%),
+    radial-gradient(80% 130% at 100% 100%, rgba(240, 67, 156, .13), transparent 62%),
+    #17133f;
+}
+.shuttle-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #211b4d;
+  box-shadow: 0 28px 70px rgba(7, 6, 24, .22);
+}
+.shuttle-feature-media { min-height: 430px; }
+.shuttle-feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 54% center;
+}
+.shuttle-feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 5vw, 56px);
+}
+.shuttle-feature-copy h2 { margin-bottom: 16px; }
+.shuttle-feature-copy > p { max-width: 47ch; }
+.shuttle-quick-facts {
+  display: grid;
+  gap: 0;
+  margin: 24px 0 18px;
+  border-top: 1px solid var(--line);
+}
+.shuttle-quick-facts > div {
+  display: grid;
+  grid-template-columns: minmax(140px, .72fr) 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.shuttle-quick-facts b { color: var(--ink); font-weight: 650; }
+.shuttle-quick-facts span { color: var(--ink-dim); }
+.shuttle-deadline {
+  color: var(--lime) !important;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .03em;
+}
+.shuttle-feature-copy .btn-row { margin-top: 10px; }
+
+.shuttle-detail {
+  background:
+    radial-gradient(70% 115% at 0% 0%, rgba(255, 138, 61, .09), transparent 58%),
+    radial-gradient(80% 120% at 100% 100%, rgba(77, 181, 255, .14), transparent 62%),
+    var(--bg-2);
+}
+.shuttle-detail-heading { max-width: 780px; }
+.shuttle-detail-heading h2 { max-width: 24ch; }
+.shuttle-itinerary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 38px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.shuttle-leg { padding: 30px clamp(0px, 3vw, 38px) 34px 0; }
+.shuttle-leg + .shuttle-leg {
+  padding-right: 0;
+  padding-left: clamp(24px, 3vw, 38px);
+  border-left: 1px solid var(--line);
+}
+.shuttle-direction {
+  color: var(--lime);
+  font-family: var(--font-display-numeric);
+  font-size: 15px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.shuttle-leg h3 { margin: 10px 0 10px; }
+.shuttle-leg p { max-width: 46ch; }
+.shuttle-times { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.shuttle-times span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 8px 18px;
+  border: 1px solid rgba(200, 240, 95, .35);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(200, 240, 95, .07);
+  font-family: var(--font-display-numeric);
+  font-size: 22px;
+}
+.shuttle-booking-row {
+  display: grid;
+  grid-template-columns: auto minmax(280px, 1fr) auto;
+  align-items: center;
+  gap: clamp(26px, 4vw, 52px);
+  padding-top: 34px;
+}
+.shuttle-price { display: flex; gap: 24px; white-space: nowrap; }
+.shuttle-price span { color: var(--ink-dim); }
+.shuttle-price b {
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-display-numeric);
+  font-size: 30px;
+  line-height: 1.1;
+}
+.shuttle-booking-copy p { margin: 0 0 6px; font-size: 15px; }
+.shuttle-booking-copy strong { color: var(--ink); }
+
+@media (max-width: 900px) {
+  .shuttle-feature { grid-template-columns: 1fr; }
+  .shuttle-feature-media { min-height: 340px; max-height: 460px; }
+  .shuttle-booking-row { grid-template-columns: 1fr; gap: 22px; }
+}
+@media (max-width: 640px) {
+  .shuttle-feature-media { min-height: 250px; }
+  .shuttle-feature-copy { padding: 30px 24px 34px; }
+  .shuttle-quick-facts > div { grid-template-columns: 1fr; gap: 2px; }
+  .shuttle-itinerary { grid-template-columns: 1fr; }
+  .shuttle-leg { padding: 26px 0 28px; }
+  .shuttle-leg + .shuttle-leg {
+    padding: 28px 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .shuttle-price { white-space: normal; }
+}
+
 /* ---------- sections ---------- */
 .section { padding: 56px 0; position: relative; }
 .section + .section { border-top: 1px solid var(--line); }
