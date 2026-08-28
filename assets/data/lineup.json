@@ -1,14 +1,14 @@
 {
   "event": "Earthdance Cape Town 2026",
-  "note": "Source of truth for the September lineup and programme. Edit here, then run: python3 scripts/build_lineup.py. Blocks take kind ('music' or 'programme') and status ('announced' or 'coming'). A 'coming' block renders its holding line instead of a list — fill acts/items and flip status when names are confirmed.",
+  "note": "Source of truth for the announced September lineup. Artist stage allocations and set times are not yet confirmed. Edit here, then run: python3 scripts/build_lineup.py.",
   "stages": [
     {
-      "id": "sonic-horizon",
-      "name": "Sonic Horizon",
+      "id": "announced-artists",
+      "name": "Announced lineup",
       "blocks": [
         {
-          "id": "psytrance",
-          "name": "Psytrance",
+          "id": "artist-list",
+          "name": "Artists",
           "acts": [
             {
               "name": "A.Geoffrey b2b Drifter"
@@ -26,7 +26,8 @@
               "name": "Craig A"
             },
             {
-              "name": "Dan Scot"
+              "name": "Dan Scot",
+              "profile": "artists/dan-scot/"
             },
             {
               "name": "Flower Power"
@@ -41,7 +42,8 @@
               "name": "MacAttack"
             },
             {
-              "name": "Midiclorian"
+              "name": "Midiclorian",
+              "profile": "artists/midiclorian/"
             },
             {
               "name": "Mikey Dredd"
@@ -80,58 +82,25 @@
               "name": "Spacemonk"
             },
             {
-              "name": "Thomas"
+              "name": "Thomas",
+              "profile": "artists/thomas/"
             },
             {
               "name": "Tune Raider"
             },
             {
-              "name": "Uncle Frank"
+              "name": "Uncle Frank",
+              "profile": "artists/uncle-frank/"
             },
             {
               "name": "Verax"
             },
             {
               "name": "Ward 10 and the Outpatients"
-            }
-          ],
-          "kind": "music",
-          "status": "announced"
-        }
-      ]
-    },
-    {
-      "id": "mellow-meadow",
-      "name": "Mellow Meadow",
-      "blocks": [
-        {
-          "id": "workshops",
-          "name": "Workshops &amp; movement",
-          "kind": "programme",
-          "status": "coming",
-          "holding": "The daytime programme is being put together now.",
-          "items": [
-            "Yoga",
-            "Conscious dance",
-            "Workshops",
-            "Flow sessions",
-            "Ceremony"
-          ]
-        },
-        {
-          "id": "live-acoustic",
-          "name": "Live &amp; acoustic",
-          "kind": "music",
-          "status": "coming",
-          "holding": "Live and acoustic artists are still being confirmed.",
-          "acts": []
-        },
-        {
-          "id": "techno",
-          "name": "Techno takeover",
-          "acts": [
+            },
             {
-              "name": "Asterion"
+              "name": "Asterion",
+              "profile": "artists/asterion/"
             },
             {
               "name": "AurallaurA"
@@ -143,10 +112,12 @@
               "name": "Dave Irish"
             },
             {
-              "name": "Firehorse"
+              "name": "Firehorse",
+              "profile": "artists/firehorse/"
             },
             {
-              "name": "JamDay"
+              "name": "JamDay",
+              "profile": "artists/jamday/"
             },
             {
               "name": "Nyx"
@@ -165,15 +136,7 @@
             },
             {
               "name": "Veroni"
-            }
-          ],
-          "kind": "music",
-          "status": "announced"
-        },
-        {
-          "id": "dnb",
-          "name": "Drum &amp; bass takeover",
-          "acts": [
+            },
             {
               "name": "Counterstrike",
               "country": "CZ/ZA"
@@ -192,7 +155,8 @@
               "country": "USA/ZA"
             },
             {
-              "name": "Skam"
+              "name": "Skam",
+              "profile": "artists/skam/"
             },
             {
               "name": "TeHsynes"

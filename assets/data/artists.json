@@ -1,0 +1,168 @@
+{
+  "event": {
+    "name": "Earthdance Cape Town 2026",
+    "dates": "18–20 September 2026",
+    "venue": "Kromrivier Farm",
+    "ticket_url": "https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&lc=website#/"
+  },
+  "artists": [
+    {
+      "name": "Asterion",
+      "slug": "asterion",
+      "summary": "DJ Asterion. Sound engineer turned storyteller. Hypnotic grooves, soaring synths and moments that move the dancefloor.",
+      "bio": [
+        "Every set is a new chapter."
+      ],
+      "image": "assets/artists/images/asterion.jpg",
+      "image_alt": "Asterion performing behind the decks",
+      "image_position": "50% 43%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen & follow",
+        "url": "https://linktr.ee/DJ_Asterion"
+      },
+      "links": [
+        {"label": "Linktree", "url": "https://linktr.ee/DJ_Asterion"},
+        {"label": "Instagram", "url": "https://www.instagram.com/dj_asterion_25/"}
+      ]
+    },
+    {
+      "name": "Dan Scot",
+      "slug": "dan-scot",
+      "summary": "Dan Scot is a psytrance DJ with a passion for music and community, known for energetic performances and a deep connection with his dancefloor.",
+      "bio": [
+        "His music reflects his love for the genre, and for the last 18 years he has kept pushing the boundaries of what is possible with his sets.",
+        "Dan Scot takes his dancefloor on a journey through a dystopic wonderland."
+      ],
+      "image": "assets/artists/images/dan-scot.jpg",
+      "image_alt": "Dan Scot smiling while performing at a festival",
+      "image_position": "62% 48%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://soundcloud.com/dan-scot"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://soundcloud.com/dan-scot"},
+        {"label": "Instagram", "url": "https://www.instagram.com/dan.scot/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/danthescot"}
+      ]
+    },
+    {
+      "name": "Firehorse",
+      "slug": "firehorse",
+      "summary": "DJ Firehorse has been playing sacred world music for over 30 years.",
+      "bio": [
+        "Her sets blend mantras and tribal music with a modern beat."
+      ],
+      "image": "assets/artists/images/firehorse.jpg",
+      "image_alt": "Portrait of DJ Firehorse",
+      "image_position": "50% 38%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow Firehorse",
+        "url": "https://www.facebook.com/share/1DHF95qU2s/"
+      },
+      "links": [
+        {"label": "Facebook", "url": "https://www.facebook.com/share/1DHF95qU2s/"}
+      ]
+    },
+    {
+      "name": "JamDay",
+      "slug": "jamday",
+      "summary": "Signed to Sonic Tantra / Flying Woofer Records in Goa, JamDay has been contributing to the South African psy and festival tribe since the early 2000s.",
+      "bio": [
+        "With a collection of EPs and a unique recipe of live sets, Oli is known for conjuring cheeky, vibrational magic at sunset and unleashing crushing psychedelic fire at sunrise."
+      ],
+      "image": "assets/artists/images/jamday.jpg",
+      "image_alt": "JamDay working at a music setup with headphones",
+      "image_position": "63% 47%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Explore Sonic Tantra",
+        "url": "https://sonictantra.com/"
+      },
+      "links": [
+        {"label": "Sonic Tantra", "url": "https://sonictantra.com/"},
+        {"label": "Instagram", "url": "https://www.instagram.com/oliverjamday/"}
+      ]
+    },
+    {
+      "name": "Midiclorian",
+      "slug": "midiclorian",
+      "summary": "Cape Town DJ Ryan Wallis brings a storyteller's instinct to the dancefloor, blending powerful melodies with driving rhythms.",
+      "bio": [
+        "With over 23 years of music production experience and a background in sound engineering, Ryan has been making waves in the local scene over the last few years."
+      ],
+      "image": "assets/artists/images/midiclorian.png",
+      "image_alt": "Midiclorian performing behind the decks",
+      "image_position": "58% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"},
+        {"label": "Instagram", "url": "https://www.instagram.com/ryanwallis100/"}
+      ]
+    },
+    {
+      "name": "SKAM",
+      "slug": "skam",
+      "summary": "While deep tech and deep house laid the foundation, SKAM's true passion is exploring new sonic territories.",
+      "bio": [
+        "His productions move through hip hop, techno, dubstep, drum & bass and future jungle. Synthesizers, raw dark basslines, intricate effects and polyrhythms keep listeners locked in and longing for more.",
+        "Notable appearances include RAMFEST, FRAT, Sizzled, SA Cocktail Week, Don't Mind The Bass and the Global Annual 420 Party."
+      ],
+      "image": "assets/artists/images/skam.jpg",
+      "image_alt": "SKAM artist logo",
+      "image_position": "50% 50%",
+      "image_kind": "logo",
+      "primary_link": {
+        "label": "Listen & follow",
+        "url": "https://linktr.ee/skamcpt"
+      },
+      "links": [
+        {"label": "Linktree", "url": "https://linktr.ee/skamcpt"},
+        {"label": "SoundCloud", "url": "https://soundcloud.com/skamcpt"},
+        {"label": "Instagram", "url": "https://www.instagram.com/skam_cpt/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/shadley.kamaldien/"}
+      ]
+    },
+    {
+      "name": "Thomas",
+      "slug": "thomas",
+      "summary": "Thomas is looking forward to playing at Earthdance and being there for the whole experience.",
+      "bio": [],
+      "image": "assets/artists/images/thomas.jpg",
+      "image_alt": "Thomas performing in front of psychedelic stage art",
+      "image_position": "50% 46%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Mixcloud",
+        "url": "https://www.mixcloud.com/thomasmixes/"
+      },
+      "links": [
+        {"label": "Mixcloud", "url": "https://www.mixcloud.com/thomasmixes/"}
+      ]
+    },
+    {
+      "name": "Uncle Frank",
+      "slug": "uncle-frank",
+      "summary": "Uncle Frank is a Cape Town-based uplifting psychedelic DJ.",
+      "bio": [],
+      "image": "assets/artists/images/uncle-frank.jpg",
+      "image_alt": "Portrait of Uncle Frank",
+      "image_position": "50% 43%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/uncle_frank_dj/"
+      },
+      "links": [
+        {"label": "Instagram", "url": "https://www.instagram.com/uncle_frank_dj/"}
+      ]
+    }
+  ]
+}

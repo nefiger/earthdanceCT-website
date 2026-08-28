@@ -21,24 +21,12 @@ DATA = ROOT / "assets/data/lineup.json"
 PAGE = ROOT / "lineup.html"
 START, END = "<!-- LINEUP:START -->", "<!-- LINEUP:END -->"
 
-# Per-stage editorial copy. Keyed on the stage id in the JSON.
+# Editorial copy keyed on the section id in the JSON.
 BLURB = {
-    "sonic-horizon": (
-        "The kinetic heart of the weekend",
-        "Sonic Horizon carries the festival's stronger pulse: psytrance from the "
-        "early sets through to the sunrise, and the stage most people mean when they "
-        "talk about the Earthdance dancefloor. It is also where the global "
-        "<a href=\"prayer-for-peace.html\">Prayer for Peace</a> lands at 01:00 on "
-        "Saturday, when the music stops and the whole gathering links up with "
-        "Earthdance communities around the world.",
-    ),
-    "mellow-meadow": (
-        "The meadow doesn't stay mellow",
-        "Through the daylight hours this is where the gathering does its deepest "
-        "work — workshops, ceremony, and the central sacred fire that burns all "
-        "weekend. Then the light goes and the stage is handed over: a techno "
-        "takeover first, then drum &amp; bass until the early hours. Same stretch "
-        "of grass, an entirely different night.",
+    "announced-artists": (
+        "The lineup so far",
+        "These artists are confirmed for Earthdance Cape Town 2026. Stage details "
+        "and set times will be shared closer to the festival.",
     ),
 }
 
@@ -48,7 +36,8 @@ def act_markup(act: dict) -> str:
     if act.get("country"):
         name += f'&nbsp;<span class="act-country">{html.escape(act["country"], quote=False)}</span>'
     if act.get("profile"):
-        return f'              <li><a href="{act["profile"]}">{name}</a></li>'
+        label = html.escape(f'View {act["name"]} artist profile', quote=True)
+        return f'              <li><a href="{act["profile"]}" aria-label="{label}">{name}</a></li>'
     return f"              <li>{name}</li>"
 
 
@@ -72,7 +61,7 @@ def main() -> None:
             else:
                 tag = f'{len(block["acts"])} acts'
             out.append(
-                f'      <h3 class="act-heading">{block["name"]}'
+                f'      <h3 class="act-heading" id="{block["id"]}">{block["name"]}'
                 f' <span class="act-count">{tag}</span></h3>'
             )
             if coming:

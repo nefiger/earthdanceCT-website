@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # Not indexable: error page, and the journey.html redirect stub kept for old links.
 EXCLUDE = {"404.html", "journey.html"}
 
-# Anything unlisted defaults to 0.6.
+# Anything unlisted defaults to 0.6. Artist profile pages use 0.7 below.
 PRIORITY = {
     "index.html": "1.0",
     "lineup.html": "0.9",
@@ -49,33 +49,57 @@ CHANGEFREQ = {
 }
 
 
+def relative_name(path: Path) -> str:
+    return path.relative_to(ROOT).as_posix()
+
+
 def lastmod(path: Path) -> str:
     out = subprocess.run(
-        ["git", "log", "-1", "--format=%cs", "--", path.name],
+        ["git", "log", "-1", "--format=%cs", "--", relative_name(path)],
         cwd=ROOT, capture_output=True, text=True,
     ).stdout.strip()
     return out or date.today().isoformat()
 
 
-def loc(name: str) -> str:
-    return BASE if name == "index.html" else BASE + name
+def loc(path: Path) -> str:
+    name = relative_name(path)
+    if name == "index.html":
+        return BASE
+    if name.startswith("artists/") and name.endswith("/index.html"):
+        return BASE + name.removesuffix("index.html")
+    return BASE + name
+
+
+def priority(path: Path) -> str:
+    name = relative_name(path)
+    if name.startswith("artists/"):
+        return "0.7"
+    return PRIORITY.get(name, "0.6")
+
+
+def changefreq(path: Path) -> str:
+    name = relative_name(path)
+    if name.startswith("artists/"):
+        return "monthly"
+    return CHANGEFREQ.get(name, "monthly")
 
 
 def main() -> None:
-    pages = sorted(p for p in ROOT.glob("*.html") if p.name not in EXCLUDE)
+    pages = [p for p in ROOT.glob("*.html") if p.name not in EXCLUDE]
+    pages += sorted((ROOT / "artists").glob("*/index.html"))
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ]
     # Home first, then the rest alphabetically.
-    pages.sort(key=lambda p: (p.name != "index.html", p.name))
+    pages.sort(key=lambda p: (relative_name(p) != "index.html", relative_name(p)))
     for page in pages:
         lines += [
             "  <url>",
-            f"    <loc>{loc(page.name)}</loc>",
+            f"    <loc>{loc(page)}</loc>",
             f"    <lastmod>{lastmod(page)}</lastmod>",
-            f"    <changefreq>{CHANGEFREQ.get(page.name, 'monthly')}</changefreq>",
-            f"    <priority>{PRIORITY.get(page.name, '0.6')}</priority>",
+            f"    <changefreq>{changefreq(page)}</changefreq>",
+            f"    <priority>{priority(page)}</priority>",
             "  </url>",
         ]
     lines.append("</urlset>")
