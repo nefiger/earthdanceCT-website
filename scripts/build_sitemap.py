@@ -17,8 +17,9 @@ from pathlib import Path
 BASE = "https://www.earthdancecapetown.co.za/"
 ROOT = Path(__file__).resolve().parent.parent
 
-# Not indexable: error page, and the journey.html redirect stub kept for old links.
-EXCLUDE = {"404.html", "journey.html"}
+# Not indexable: error page, private campaign pages, and the journey.html
+# redirect stub kept for old links.
+EXCLUDE = {"404.html", "journey.html", "homecoming-6f1b92.html"}
 
 # Anything unlisted defaults to 0.6. Artist profile pages use 0.7 below.
 PRIORITY = {
