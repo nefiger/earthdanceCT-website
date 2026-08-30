@@ -7,6 +7,29 @@
   },
   "artists": [
     {
+      "name": "AMORAIM",
+      "slug": "amoraim",
+      "compact_name": true,
+      "summary": "AMORAIM is a South African electronic music veteran whose sets range from ambient and dub to high-energy psychedelic sound.",
+      "bio": [
+        "He began making recordings at around 10 years old and released an early African ambient space music project in 1985. His first dub and reggae DJ set followed at The Base in 1988, and he released 20 titles between 1985 and 1995.",
+        "From 1997 to 1999, AMORAIM was a resident psychedelic DJ at the original Getafix. In 2001 he released Africa in Trance, described as South Africa's first psytrance CD, and helped bring Skazi to South Africa under Transgression.",
+        "Across more than 400 sets, his music has ranged from ambient to 177 BPM dark psy, with 170 titles released through Microdot Records. His next 145–150 BPM psychedelic release is planned for Earthdance 2026."
+      ],
+      "image": "assets/artists/images/amoraim-composite-v2.jpg",
+      "image_alt": "The two members of AMORAIM",
+      "image_position": "50% 50%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Bandcamp",
+        "url": "https://microdotrecords.bandcamp.com/"
+      },
+      "links": [
+        {"label": "Bandcamp", "url": "https://microdotrecords.bandcamp.com/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/amoraim.amoraim"}
+      ]
+    },
+    {
       "name": "Asterion",
       "slug": "asterion",
       "summary": "DJ Asterion. Sound engineer turned storyteller. Hypnotic grooves, soaring synths and moments that move the dancefloor.",
@@ -46,6 +69,29 @@
         {"label": "SoundCloud", "url": "https://soundcloud.com/dan-scot"},
         {"label": "Instagram", "url": "https://www.instagram.com/dan.scot/"},
         {"label": "Facebook", "url": "https://www.facebook.com/danthescot"}
+      ]
+    },
+    {
+      "name": "DJ Skitzo",
+      "slug": "dj-skitzo",
+      "summary": "DJ Skitzo has been part of festival lineups since beginning his DJ journey in 1996, with a love for progressive and full-on psytrance.",
+      "bio": [
+        "Contributing to the atmosphere and energy of festivals has been a huge part of his life.",
+        "Progressive psytrance sits at the heart of his sets, though on the right occasion he draws on his psychedelic full-on collection.",
+        "Sunset slots are a particular favourite: a chance to begin with progressive sounds, then let the full-on collection take over as the moon rises."
+      ],
+      "image": "assets/artists/images/dj-skitzo.jpg",
+      "image_alt": "DJ Skitzo performing at a festival",
+      "image_position": "54% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Mixcloud",
+        "url": "https://www.mixcloud.com/paulo-mendon%C3%A7a/"
+      },
+      "links": [
+        {"label": "Mixcloud", "url": "https://www.mixcloud.com/paulo-mendon%C3%A7a/"},
+        {"label": "Instagram", "url": "https://www.instagram.com/djskitzo_sa/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/TheSkitzo/"}
       ]
     },
     {
@@ -105,6 +151,30 @@
       "links": [
         {"label": "SoundCloud", "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"},
         {"label": "Instagram", "url": "https://www.instagram.com/ryanwallis100/"}
+      ]
+    },
+    {
+      "name": "Psyrenex",
+      "slug": "psyrenex",
+      "compact_name": true,
+      "summary": "Psyrenex is a South African progressive psytrance DJ crafting immersive journeys through hypnotic grooves, melodic textures and emotional storytelling.",
+      "bio": [
+        "Every set builds with intention, creating moments of connection, release and collective energy on the dancefloor."
+      ],
+      "image": "assets/artists/images/psyrenex.jpg",
+      "image_alt": "Psyrenex performing behind the decks",
+      "image_position": "55% 42%",
+      "image_scale": "1.18",
+      "image_translate_y": "13%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://soundcloud.com/sandyg-840920185"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://soundcloud.com/sandyg-840920185"},
+        {"label": "Instagram", "url": "https://www.instagram.com/dj.sandyg/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/SandiVG16"}
       ]
     },
     {

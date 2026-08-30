@@ -1378,6 +1378,7 @@ h1, .display {
   height: 100%;
   object-fit: cover;
   object-position: var(--artist-image-position);
+  transform: translateY(var(--artist-image-translate-y, 0%)) scale(var(--artist-image-scale, 1));
 }
 .lineup-profile-frame {
   position: absolute;
@@ -1681,6 +1682,7 @@ h3.act-heading {
   height: 100%;
   object-fit: cover;
   object-position: var(--artist-image-position);
+  transform: translateY(var(--artist-image-translate-y, 0%)) scale(var(--artist-image-scale, 1));
 }
 .artist-portrait-frame {
   position: absolute;

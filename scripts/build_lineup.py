@@ -36,8 +36,10 @@ def act_markup(act: dict) -> str:
     if act.get("country"):
         name += f'&nbsp;<span class="act-country">{html.escape(act["country"], quote=False)}</span>'
     if act.get("profile"):
-        label = html.escape(f'View {act["name"]} artist profile', quote=True)
-        return f'              <li><a href="{act["profile"]}" aria-label="{label}">{name}</a></li>'
+        profile_name = act.get("profile_label", act["name"])
+        label = html.escape(f'View {profile_name} artist profile', quote=True)
+        suffix = html.escape(act.get("profile_suffix", ""), quote=False)
+        return f'              <li><a href="{act["profile"]}" aria-label="{label}">{name}</a>{suffix}</li>'
     return f"              <li>{name}</li>"
 
 
