@@ -134,7 +134,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260830-portraits">
+<link rel="stylesheet" href="assets/css/site.css?v=20260902-crops">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -247,10 +247,12 @@ def lineup_browser(artists: list[dict]) -> str:
             continue
         logo_class = " lineup-profile-logo" if artist["image_kind"] == "logo" else ""
         image_scale = esc(str(artist.get("image_scale", "1")))
+        image_translate_x = esc(str(artist.get("image_translate_x", "0%")))
         image_translate_y = esc(str(artist.get("image_translate_y", "0%")))
+        image_background = esc(str(artist.get("image_background", "#0d0a24")))
         profiles.append(
             f"""        <a class="lineup-profile" href="artists/{esc(artist['slug'])}/">
-          <span class="lineup-profile-medallion{logo_class}" style="--artist-image-position:{esc(artist['image_position'])};--artist-image-scale:{image_scale};--artist-image-translate-y:{image_translate_y}">
+          <span class="lineup-profile-medallion{logo_class}" style="--artist-image-position:{esc(artist['image_position'])};--artist-image-scale:{image_scale};--artist-image-translate-x:{image_translate_x};--artist-image-translate-y:{image_translate_y};--artist-image-background:{image_background}">
             <span class="lineup-profile-crop"><img src="{esc(artist['image'])}" alt="" loading="lazy" decoding="async"></span>
             <img class="lineup-profile-frame" src="assets/artists/flower-frame-small.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
           </span>
@@ -296,7 +298,9 @@ def page_for(
     name = esc(artist["name"])
     position = esc(artist["image_position"])
     image_scale = esc(str(artist.get("image_scale", "1")))
+    image_translate_x = esc(str(artist.get("image_translate_x", "0%")))
     image_translate_y = esc(str(artist.get("image_translate_y", "0%")))
+    image_background = esc(str(artist.get("image_background", "#0d0a24")))
     compact_name = artist.get("compact_name") or (
         len(artist["name"]) > 9 and " " not in artist["name"]
     )
@@ -388,7 +392,7 @@ alt=""></noscript>
             <a class="artist-back-link" href="{lineup_href}">Back to the lineup</a>
           </div>
         </div>
-        <figure class="artist-portrait{image_class}" style="--artist-image-position:{position};--artist-image-scale:{image_scale};--artist-image-translate-y:{image_translate_y}">
+        <figure class="artist-portrait{image_class}" style="--artist-image-position:{position};--artist-image-scale:{image_scale};--artist-image-translate-x:{image_translate_x};--artist-image-translate-y:{image_translate_y};--artist-image-background:{image_background}">
           <div class="artist-portrait-crop">
             <img src="{esc(artist['image'])}" alt="{esc(artist['image_alt'])}">
           </div>

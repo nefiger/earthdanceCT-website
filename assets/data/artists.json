@@ -7,6 +7,28 @@
   },
   "artists": [
     {
+      "name": "A-GEOFFREY",
+      "slug": "a-geoffrey",
+      "compact_name": true,
+      "summary": "A-GEOFFREY brings high-energy psychedelic trance shaped by full-on, funky and twisted sounds, built for both day and night dancefloors.",
+      "bio": [
+        "Geoffrey Smith, known behind the decks as A-GEOFFREY, has been active in the electronic music scene since the early 2000s and performing under this name for more than a decade. He is signed to Cape Town label State Alchemy Music.",
+        "His driving psychedelic sets move through full-on, funky, twisted and intelligent sounds. Equally at home in day and night slots, A-GEOFFREY is known for high energy and mind-bending soundscapes."
+      ],
+      "image": "assets/artists/images/a-geoffrey.png",
+      "image_alt": "Portrait of A-GEOFFREY",
+      "image_position": "50% 42%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen & follow",
+        "url": "https://linktr.ee/a_geoffrey"
+      },
+      "links": [
+        {"label": "Linktree", "url": "https://linktr.ee/a_geoffrey"},
+        {"label": "Instagram", "url": "https://www.instagram.com/a_geoffrey_state_alchemy_music/"}
+      ]
+    },
+    {
       "name": "AMORAIM",
       "slug": "amoraim",
       "compact_name": true,
@@ -47,6 +69,32 @@
       "links": [
         {"label": "Linktree", "url": "https://linktr.ee/DJ_Asterion"},
         {"label": "Instagram", "url": "https://www.instagram.com/dj_asterion_25/"}
+      ]
+    },
+    {
+      "name": "AurallaurA",
+      "slug": "aurallaura",
+      "compact_name": true,
+      "summary": "AurallaurA is an audiophile-turned-DJ who moves playfully across electronic genres, layering samples, hidden messages and driving basslines.",
+      "bio": [
+        "AurallaurA is both palindromic and rhythmical: aural, of the ear, to listen. Listening is precisely what Laura Baasch has been doing with electronic music for 25 years — an audiophile first and a DJ second.",
+        "A mischievous selector who is not afraid to flirt across genres, she works with samples, hidden messages and layers, schooling the listener in electronic flavours like a modern Pied Piper.",
+        "Her sets carry a playful feminine energy, then throw down unexpected gauntlets of thick, driving basslines that have kicked the pants off many a dancefloor."
+      ],
+      "image": "assets/artists/images/aurallaura.png",
+      "image_alt": "AurallaurA performing behind the decks",
+      "image_position": "50% 50%",
+      "image_scale": "1.80",
+      "image_translate_x": "26%",
+      "image_translate_y": "17%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/uGN0Nfrv7bvP4tW66k"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://on.soundcloud.com/uGN0Nfrv7bvP4tW66k"},
+        {"label": "Instagram", "url": "https://www.instagram.com/aurallauradj/"}
       ]
     },
     {
@@ -95,6 +143,27 @@
       ]
     },
     {
+      "name": "Django",
+      "slug": "django",
+      "summary": "Django is a Cape Town DJ, producer and percussionist whose work moves between eclectic DJ sets, live electronic performance and original releases.",
+      "bio": [
+        "Django Flaherty has performed in live electronic acts including Pravda and Ward 10 & The Outpatients at festivals such as Vortex, Origin and Freaky Forest.",
+        "He has been behind the decks since 2006 and releasing original electronic music as DjangoZa since 2018. His releases include tracks on Do Work and Ambious, as well as collaborations with South African vocalist Tasha Baxter."
+      ],
+      "image": "assets/artists/images/django.jpeg",
+      "image_alt": "Black-and-white portrait of Django",
+      "image_position": "50% 50%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Spotify",
+        "url": "https://open.spotify.com/playlist/5NXJ1Bcg6fJg1U4PimxUpg?si=cbef0c6d5dc843f3"
+      },
+      "links": [
+        {"label": "Spotify", "url": "https://open.spotify.com/playlist/5NXJ1Bcg6fJg1U4PimxUpg?si=cbef0c6d5dc843f3"},
+        {"label": "Instagram", "url": "https://www.instagram.com/djangoza_music/"}
+      ]
+    },
+    {
       "name": "Firehorse",
       "slug": "firehorse",
       "summary": "DJ Firehorse has been playing sacred world music for over 30 years.",
@@ -134,6 +203,26 @@
       ]
     },
     {
+      "name": "Lolo",
+      "slug": "lolo",
+      "summary": "Lolo brings melodic liquid and deep-rolling drum & bass, with a careful ear for the underground minimal sound.",
+      "bio": [
+        "Since debuting at Rubricate in 2021, Lolo has steadily built a reputation for carefully curated sets that showcase her love of melodic liquid and deep-rolling drum & bass. As co-founder of the underground DnB collective Liminil, she is committed to sharing the underground minimal sound with fellow enthusiasts."
+      ],
+      "image": "assets/artists/images/lolo.png",
+      "image_alt": "Portrait of Lolo",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://soundcloud.com/loisschwartz"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://soundcloud.com/loisschwartz"},
+        {"label": "Instagram", "url": "https://www.instagram.com/lolo_dnb_/"}
+      ]
+    },
+    {
       "name": "Midiclorian",
       "slug": "midiclorian",
       "summary": "Cape Town DJ Ryan Wallis brings a storyteller's instinct to the dancefloor, blending powerful melodies with driving rhythms.",
@@ -151,6 +240,28 @@
       "links": [
         {"label": "SoundCloud", "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"},
         {"label": "Instagram", "url": "https://www.instagram.com/ryanwallis100/"}
+      ]
+    },
+    {
+      "name": "Prefix",
+      "slug": "prefix",
+      "summary": "Prefix reads the room and builds a new journey every time, moving from second-floor grooves to powerful main-floor sets.",
+      "bio": [
+        "Prefix captures the attention of a crowd and holds it. He moves with the dancefloor and builds on what it feeds back, taking listeners on a new journey every time.",
+        "For him, psychedelic culture speaks to our place on this planet and the people within it are family. His role is to be a medium for music between source and listener, opening an avenue towards the trance dance experience.",
+        "Behind the alias is John Vichos, co-founder of MOOV Festival and a familiar face on dancefloors nationwide."
+      ],
+      "image": "assets/artists/images/prefix.png",
+      "image_alt": "Portrait of Prefix",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://www.soundcloud.com/prefixsoundsystem"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://www.soundcloud.com/prefixsoundsystem"},
+        {"label": "Instagram", "url": "https://www.instagram.com/john_prefix/"}
       ]
     },
     {
@@ -198,6 +309,26 @@
         {"label": "SoundCloud", "url": "https://soundcloud.com/skamcpt"},
         {"label": "Instagram", "url": "https://www.instagram.com/skam_cpt/"},
         {"label": "Facebook", "url": "https://www.facebook.com/shadley.kamaldien/"}
+      ]
+    },
+    {
+      "name": "SOL",
+      "slug": "sol",
+      "summary": "SOL plays bright, energetic music chosen for the joy it brings and the way it lifts a dancefloor.",
+      "bio": [
+        "SOL lives for the moment she discovers new music — the kind that hits hard, lifts the room and gets everyone dancing. For her, DJing is not just about mixing tracks; it is about sharing the sound she loves and creating bright, energetic, lasting impressions."
+      ],
+      "image": "assets/artists/images/sol.png",
+      "image_alt": "Portrait of SOL wearing headphones",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://soundcloud.com/dj_sol_capetown"
+      },
+      "links": [
+        {"label": "SoundCloud", "url": "https://soundcloud.com/dj_sol_capetown"},
+        {"label": "Instagram", "url": "https://www.instagram.com/dj._sol/"}
       ]
     },
     {

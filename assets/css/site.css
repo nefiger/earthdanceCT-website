@@ -1371,14 +1371,14 @@ h1, .display {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
-  background: #0d0a24;
+  background: var(--artist-image-background, #0d0a24);
 }
 .lineup-profile-crop img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: var(--artist-image-position);
-  transform: translateY(var(--artist-image-translate-y, 0%)) scale(var(--artist-image-scale, 1));
+  transform: translate(var(--artist-image-translate-x, 0%), var(--artist-image-translate-y, 0%)) scale(var(--artist-image-scale, 1));
 }
 .lineup-profile-frame {
   position: absolute;
@@ -1675,14 +1675,14 @@ h3.act-heading {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
-  background: #0d0a24;
+  background: var(--artist-image-background, #0d0a24);
 }
 .artist-portrait-crop img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: var(--artist-image-position);
-  transform: translateY(var(--artist-image-translate-y, 0%)) scale(var(--artist-image-scale, 1));
+  transform: translate(var(--artist-image-translate-x, 0%), var(--artist-image-translate-y, 0%)) scale(var(--artist-image-scale, 1));
 }
 .artist-portrait-frame {
   position: absolute;

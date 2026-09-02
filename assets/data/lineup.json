@@ -11,7 +11,10 @@
           "name": "Artists",
           "acts": [
             {
-              "name": "A.Geoffrey b2b Drifter"
+              "name": "A.Geoffrey",
+              "profile": "artists/a-geoffrey/",
+              "profile_label": "A-GEOFFREY",
+              "profile_suffix": " b2b Drifter"
             },
             {
               "name": "AMORAIM",
@@ -56,7 +59,8 @@
               "name": "Phylth"
             },
             {
-              "name": "Prefix"
+              "name": "Prefix",
+              "profile": "artists/prefix/"
             },
             {
               "name": "Psyanomic"
@@ -106,7 +110,8 @@
               "profile": "artists/asterion/"
             },
             {
-              "name": "AurallaurA"
+              "name": "AurallaurA",
+              "profile": "artists/aurallaura/"
             },
             {
               "name": "Big E b2b Sledge"
@@ -126,7 +131,8 @@
               "name": "Nyx"
             },
             {
-              "name": "Sol"
+              "name": "SOL",
+              "profile": "artists/sol/"
             },
             {
               "name": "Sublime"
@@ -145,13 +151,15 @@
               "country": "CZ/ZA"
             },
             {
-              "name": "Django"
+              "name": "Django",
+              "profile": "artists/django/"
             },
             {
               "name": "Kyo"
             },
             {
-              "name": "Lolo"
+              "name": "Lolo",
+              "profile": "artists/lolo/"
             },
             {
               "name": "RedHat",
