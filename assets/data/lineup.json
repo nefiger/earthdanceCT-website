@@ -1,113 +1,121 @@
 {
   "event": "Earthdance Cape Town 2026",
-  "note": "Source of truth for the announced September lineup. Artist stage allocations and set times are not yet confirmed. Edit here, then run: python3 scripts/build_lineup.py.",
+  "note": "Source of truth for the announced lineup, grouped by stage and day. Set times are deliberately not published here — they live in schedule.json. Edit here, then run: python3 scripts/build_lineup.py.",
+  "intro": {
+    "id": "announced-artists",
+    "eyebrow": "Announced lineup",
+    "heading": "The lineup so far",
+    "body": "Two stages, three days. These artists are confirmed for Earthdance Cape Town 2026 and are listed in playing order. Set times follow once the running order is locked."
+  },
   "stages": [
     {
-      "id": "announced-artists",
-      "name": "Announced lineup",
+      "id": "mellow-meadow",
+      "name": "Mellow Meadow",
+      "heading": "Mellow Meadow",
+      "tagline": "Chilled, live and acoustic through the day, turning up after dark. This is where the mornings happen — yoga, tai chi, movement and song.",
       "blocks": [
         {
-          "id": "artist-list",
-          "name": "Artists",
+          "id": "mellow-meadow-friday",
+          "name": "Friday",
           "acts": [
             {
-              "name": "A.Geoffrey",
-              "profile": "artists/a-geoffrey/",
-              "profile_label": "A-GEOFFREY",
-              "profile_suffix": " b2b Drifter"
+              "name": "Opening DJ sets",
+              "note": "chilled music"
             },
             {
-              "name": "AMORAIM",
-              "profile": "artists/amoraim/"
+              "name": "Spliff Politix"
             },
             {
-              "name": "Arcane b2b Pixie"
+              "name": "Jamie Jupiter",
+              "note": "live loops"
             },
             {
-              "name": "Bruce"
-            },
-            {
-              "name": "Craig A"
-            },
-            {
-              "name": "Dan Scot",
-              "profile": "artists/dan-scot/"
-            },
-            {
-              "name": "Flower Power"
-            },
-            {
-              "name": "Graymatter"
-            },
-            {
-              "name": "Jester"
-            },
-            {
-              "name": "MacAttack"
-            },
-            {
-              "name": "Midiclorian",
-              "profile": "artists/midiclorian/"
+              "name": "Zendrix",
+              "profile": "artists/zendrix/",
+              "note": "live set"
             },
             {
               "name": "Mikey Dredd"
             },
             {
-              "name": "Mr Shakahuchi"
+              "name": "TehSynes"
             },
             {
-              "name": "Phylth"
+              "name": "RedHat"
             },
             {
-              "name": "Prefix",
-              "profile": "artists/prefix/"
+              "name": "Counterstrike"
+            }
+          ]
+        },
+        {
+          "id": "mellow-meadow-saturday",
+          "name": "Saturday",
+          "acts": [
+            {
+              "name": "To-Wa"
             },
             {
-              "name": "Psyanomic"
+              "name": "Xervious"
             },
             {
-              "name": "Psyborg"
+              "name": "Lolo",
+              "profile": "artists/lolo/"
             },
             {
-              "name": "Psymantis"
+              "name": "Skam",
+              "profile": "artists/skam/",
+              "profile_label": "SKAM"
             },
             {
-              "name": "Psyrenex",
-              "profile": "artists/psyrenex/"
+              "name": "Django",
+              "profile": "artists/django/"
             },
             {
-              "name": "Ras"
+              "name": "Kayflow",
+              "profile": "artists/kayflow/",
+              "note": "morning yoga"
             },
             {
-              "name": "Rave Mustaine"
+              "name": "Hans Menck",
+              "note": "Swimming Dragon tai chi"
             },
             {
-              "name": "DJ Skitzo",
-              "profile": "artists/dj-skitzo/"
+              "name": "Jamie Jupiter",
+              "note": "live loops"
             },
             {
-              "name": "Spacemonk"
+              "name": "Maya Joy"
             },
             {
-              "name": "Thomas",
-              "profile": "artists/thomas/"
+              "name": "Almost a Sin",
+              "profile": "artists/almost-a-sin/",
+              "note": "live looping"
             },
             {
-              "name": "Tune Raider"
+              "name": "Bush Diva",
+              "note": "live songs"
             },
             {
-              "name": "Uncle Frank",
-              "profile": "artists/uncle-frank/"
+              "name": "Firehorse",
+              "profile": "artists/firehorse/"
             },
             {
-              "name": "Verax"
+              "name": "Changa Manga",
+              "profile": "artists/changa-manga/"
             },
             {
-              "name": "Ward 10 and the Outpatients"
+              "name": "Sublime",
+              "profile": "artists/dj-sublime/",
+              "profile_label": "DJ Sublime"
             },
             {
               "name": "Asterion",
               "profile": "artists/asterion/"
+            },
+            {
+              "name": "JamDay",
+              "profile": "artists/jamday/"
             },
             {
               "name": "AurallaurA",
@@ -117,15 +125,18 @@
               "name": "Big E b2b Sledge"
             },
             {
-              "name": "Dave Irish"
-            },
+              "name": "Ty Teknition",
+              "profile": "artists/ty-teknition/"
+            }
+          ]
+        },
+        {
+          "id": "mellow-meadow-sunday",
+          "name": "Sunday",
+          "acts": [
             {
-              "name": "Firehorse",
-              "profile": "artists/firehorse/"
-            },
-            {
-              "name": "JamDay",
-              "profile": "artists/jamday/"
+              "name": "Prayer for Peace link-up",
+              "note": "the global moment"
             },
             {
               "name": "Nyx"
@@ -135,54 +146,255 @@
               "profile": "artists/sol/"
             },
             {
-              "name": "Sublime"
-            },
-            {
               "name": "Tristan Mountain"
             },
             {
-              "name": "Ty Teknition"
+              "name": "Nick E Louder"
             },
             {
-              "name": "Veroni"
+              "name": "The Great Veroni",
+              "note": "live for the movement session"
             },
             {
-              "name": "Counterstrike",
-              "country": "CZ/ZA"
+              "name": "Kayflow",
+              "profile": "artists/kayflow/",
+              "note": "morning yoga"
             },
             {
-              "name": "Django",
-              "profile": "artists/django/"
+              "name": "Karen Justine"
             },
             {
-              "name": "Kyo"
+              "name": "Makeeda",
+              "note": "movement session"
             },
             {
-              "name": "Lolo",
-              "profile": "artists/lolo/"
+              "name": "Thomas",
+              "profile": "artists/thomas/"
             },
             {
-              "name": "RedHat",
-              "country": "USA/ZA"
-            },
-            {
-              "name": "Skam",
-              "profile": "artists/skam/"
-            },
-            {
-              "name": "TeHsynes"
-            },
-            {
-              "name": "To-Wa",
-              "country": "NL"
-            },
-            {
-              "name": "Xervious",
-              "country": "USA"
+              "name": "Zendrix",
+              "profile": "artists/zendrix/",
+              "note": "live set"
             }
-          ],
-          "kind": "music",
-          "status": "announced"
+          ]
+        }
+      ],
+      "hero_image": "assets/photos/web/archive/earthdance-2018-dancefloor.jpg",
+      "hero_alt": "Dancers under a painted shade canopy at Earthdance, mountains behind",
+      "lede": "Workshops, ceremony and the sacred fire by day. A techno takeover and a drum &amp; bass takeover after dark.",
+      "story": [
+        "Mellow Meadow opens the festival at noon on Friday and is still going on Sunday afternoon. It is the stage where the tempo follows the light."
+      ],
+      "page": "stages/mellow-meadow/",
+      "hero_credit": "VSV Photography",
+      "facts": [
+        {
+          "value": "36",
+          "label": "Acts across the weekend"
+        },
+        {
+          "value": "12:00",
+          "label": "Friday, first stage open"
+        },
+        {
+          "value": "2",
+          "label": "Mornings of yoga and movement"
+        },
+        {
+          "value": "1",
+          "label": "Sacred fire, burning all weekend"
+        }
+      ],
+      "character": [
+        {
+          "title": "By day",
+          "body": "Chilled sets, live instruments and acoustic sessions, with the workshops and ceremony that give the daylight hours their shape."
+        },
+        {
+          "title": "After dark",
+          "body": "The meadow hands over. A techno takeover, then drum &amp; bass, carrying both nights through to sunrise."
+        },
+        {
+          "title": "The mornings",
+          "body": "Yoga at nine on Saturday and Sunday, tai chi, and a movement session played live. The part of the weekend that happens nowhere else."
+        },
+        {
+          "title": "The sacred fire",
+          "body": "A central fire burns here all weekend. It is where the procession gathers before the linkup."
+        }
+      ]
+    },
+    {
+      "id": "sonic-horizon",
+      "name": "Sonic Horizon",
+      "heading": "Sonic Horizon",
+      "tagline": "The psytrance floor, running from the opening ceremony on Friday straight through to Sunday afternoon.",
+      "blocks": [
+        {
+          "id": "sonic-horizon-friday",
+          "name": "Friday",
+          "acts": [
+            {
+              "name": "Opening ceremony"
+            },
+            {
+              "name": "Ras"
+            },
+            {
+              "name": "Spacemonk"
+            },
+            {
+              "name": "Rave Mustaine",
+              "profile": "artists/rave-mustaine/"
+            },
+            {
+              "name": "Midiclorian",
+              "profile": "artists/midiclorian/"
+            },
+            {
+              "name": "A.Geoffrey b2b Drifter",
+              "profile": "artists/a-geoffrey/",
+              "profile_label": "A-GEOFFREY"
+            }
+          ]
+        },
+        {
+          "id": "sonic-horizon-saturday",
+          "name": "Saturday",
+          "acts": [
+            {
+              "name": "Psymantis"
+            },
+            {
+              "name": "Jester"
+            },
+            {
+              "name": "Gray Matter",
+              "profile": "artists/gray-matter/"
+            },
+            {
+              "name": "Phylth"
+            },
+            {
+              "name": "Psyanomic"
+            },
+            {
+              "name": "Mikey Dredd"
+            },
+            {
+              "name": "Imtyaaz"
+            },
+            {
+              "name": "AMORAIM",
+              "profile": "artists/amoraim/"
+            },
+            {
+              "name": "Thomas",
+              "profile": "artists/thomas/"
+            },
+            {
+              "name": "Ward 10 and the Outpatients"
+            },
+            {
+              "name": "Psyborg"
+            },
+            {
+              "name": "DJ Skitzo",
+              "profile": "artists/dj-skitzo/"
+            },
+            {
+              "name": "Verax"
+            },
+            {
+              "name": "Flower Power"
+            },
+            {
+              "name": "MacAttack"
+            }
+          ]
+        },
+        {
+          "id": "sonic-horizon-sunday",
+          "name": "Sunday",
+          "acts": [
+            {
+              "name": "Prayer for Peace link-up",
+              "note": "the global moment"
+            },
+            {
+              "name": "Tune Raider",
+              "profile": "artists/tune-raider/"
+            },
+            {
+              "name": "Dan Scot",
+              "profile": "artists/dan-scot/"
+            },
+            {
+              "name": "Prefix",
+              "profile": "artists/prefix/"
+            },
+            {
+              "name": "Psyrenex",
+              "profile": "artists/psyrenex/"
+            },
+            {
+              "name": "Craig A"
+            },
+            {
+              "name": "Arcane vs Pixie"
+            },
+            {
+              "name": "Bruce"
+            },
+            {
+              "name": "Uncle Frank",
+              "profile": "artists/uncle-frank/"
+            }
+          ]
+        }
+      ],
+      "hero_image": "assets/photos/web/archive/earthdance-2019-night-stage.jpg",
+      "hero_alt": "The Earthdance main stage lit up at night in ultraviolet purple and green",
+      "lede": "The psytrance floor. Opening ceremony on Friday afternoon, then it does not stop until Sunday evening.",
+      "story": [
+        "Sonic Horizon carries the opening ceremony, and from the moment the first set starts the floor never closes again — through Friday night, all of Saturday, and on to Sunday afternoon."
+      ],
+      "page": "stages/sonic-horizon/",
+      "hero_credit": "Aumaga Photography",
+      "facts": [
+        {
+          "value": "28",
+          "label": "Acts across the weekend"
+        },
+        {
+          "value": "49",
+          "label": "Hours without a break"
+        },
+        {
+          "value": "15:45",
+          "label": "Friday, opening ceremony"
+        },
+        {
+          "value": "01:00",
+          "label": "The Prayer for Peace linkup"
+        }
+      ],
+      "character": [
+        {
+          "title": "The opening",
+          "body": "Ceremony at quarter to four on Friday. Everything else on this stage follows from it."
+        },
+        {
+          "title": "Through the nights",
+          "body": "Psytrance in its full range, from the driving and full-on to the dark and hypnotic, held from dusk to well past dawn."
+        },
+        {
+          "title": "The linkup",
+          "body": "The gathering reaches this dancefloor for the Prayer for Peace — the fifteen minutes shared with every Earthdance on Earth."
+        },
+        {
+          "title": "The close",
+          "body": "Sunday afternoon brings the last sets of the weekend, and the floor finally falls quiet."
         }
       ]
     }

@@ -14,6 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "assets/data/artists.json"
+LINEUP_DATA = ROOT / "assets/data/lineup.json"
 ARTISTS_DIR = ROOT / "artists"
 LINEUP_PAGE = ROOT / "lineup.html"
 LINEUP_START = "<!-- ARTIST-BROWSER:START -->"
@@ -23,6 +24,28 @@ BASE_URL = "https://www.earthdancecapetown.co.za/"
 
 def esc(value: str) -> str:
     return html.escape(value, quote=True)
+
+
+def stages_by_slug() -> dict[str, list[dict]]:
+    """slug -> the stages that artist plays, so a profile can lead back to them."""
+    lineup = json.loads(LINEUP_DATA.read_text())
+    out: dict[str, list[dict]] = {}
+    for stage in lineup["stages"]:
+        for block in stage["blocks"]:
+            for act in block["acts"]:
+                slug = (act.get("profile") or "").strip("/").removeprefix("artists/")
+                if not slug:
+                    continue
+                seen = out.setdefault(slug, [])
+                if not any(x["id"] == stage["id"] for x in seen):
+                    seen.append({"id": stage["id"], "name": stage["name"], "page": stage["page"]})
+    return out
+
+
+def stage_links(stages: list[dict]) -> str:
+    return " <span aria-hidden=\"true\">&middot;</span> ".join(
+        f'<a href="{esc(st["page"])}">{esc(st["name"])}</a>' for st in stages
+    )
 
 
 def description_for(artist: dict) -> str:
@@ -134,7 +157,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260902-crops">
+<link rel="stylesheet" href="assets/css/site.css?v=20260903-stagelinks">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -163,7 +186,14 @@ def header() -> str:
           <a href="love-in-a-bowl.html">Heart at Love in a Bowl</a>
         </div>
       </div>
-      <a href="lineup.html" class="active">Lineup</a>
+      <div class="nav-group">
+        <button class="nav-group-btn" type="button">Lineup</button>
+        <div class="nav-drop">
+          <a href="lineup.html">Full lineup</a>
+          <a href="stages/mellow-meadow/">Mellow Meadow</a>
+          <a href="stages/sonic-horizon/">Sonic Horizon</a>
+        </div>
+      </div>
       <div class="nav-group">
         <button class="nav-group-btn" type="button">Get Involved</button>
         <div class="nav-drop">
@@ -294,6 +324,7 @@ def page_for(
     event: dict,
     previous: dict | None,
     following: dict | None,
+    stages: list[dict],
 ) -> str:
     name = esc(artist["name"])
     position = esc(artist["image_position"])
@@ -308,6 +339,22 @@ def page_for(
     lineup_href = "lineup.html#announced-artists"
     image_class = " artist-portrait-logo" if artist["image_kind"] == "logo" else ""
     bio = "".join(f"        <p>{esc(paragraph)}</p>\n" for paragraph in artist["bio"])
+
+    stage_cell = stage_links(stages) if stages else "To be announced"
+    crumb_stage = (
+        f'<a href="{esc(stages[0]["page"])}">{esc(stages[0]["name"])}</a>'
+        '<span aria-hidden="true">/</span>'
+        if len(stages) == 1 else ""
+    )
+    if len(stages) == 1:
+        stage_sentence = f'{name} plays {stage_links(stages)} at Earthdance Cape Town 2026.'
+    elif len(stages) > 1:
+        prose = " and ".join(
+            f'<a href="{esc(st["page"])}">{esc(st["name"])}</a>' for st in stages
+        )
+        stage_sentence = f'{name} plays both stages at Earthdance Cape Town 2026: {prose}.'
+    else:
+        stage_sentence = f'{name} joins the Earthdance Cape Town 2026 lineup.'
     about = ""
     if bio:
         about = f"""  <section class="section artist-about">
@@ -380,7 +427,7 @@ alt=""></noscript>
     <div class="artist-hero-wash" aria-hidden="true"></div>
     <div class="container">
       <nav class="artist-breadcrumb" aria-label="Breadcrumb">
-        <a href="lineup.html">Lineup</a><span aria-hidden="true">/</span><span>{name}</span>
+        <a href="lineup.html">Lineup</a><span aria-hidden="true">/</span>{crumb_stage}<span>{name}</span>
       </nav>
       <div class="artist-hero-grid">
         <div class="artist-intro">
@@ -402,6 +449,7 @@ alt=""></noscript>
       <div class="artist-event-facts" aria-label="Performance details">
         <div><span class="artist-fact-label">Appearing at</span><strong>{esc(event['name'])}</strong></div>
         <div><span class="artist-fact-label">Weekend</span><strong>{esc(event['dates'])}</strong></div>
+        <div><span class="artist-fact-label">Stage</span><strong>{stage_cell}</strong></div>
         <div><span class="artist-fact-label">Set time</span><strong>Coming soon</strong></div>
       </div>
     </div>
@@ -412,7 +460,7 @@ alt=""></noscript>
       <div>
         <span class="eyebrow">Meet us on the farm</span>
         <h2>{name} at Earthdance Cape Town</h2>
-        <p>{name} joins the Earthdance Cape Town 2026 lineup. Set times and performance details will be added once the full running order is locked.</p>
+        <p>{stage_sentence} Set times and performance details will be added once the full running order is locked.</p>
       </div>
       <div class="artist-ticket-callout">
         <p>See {name} at Kromrivier Farm, 18–20 September.</p>
@@ -445,6 +493,7 @@ def main() -> None:
             raise ValueError(f"Duplicate artist slug: {slug}")
         slugs.add(slug)
 
+    by_stage = stages_by_slug()
     ARTISTS_DIR.mkdir(exist_ok=True)
     for artist in artists:
         group = artists
@@ -458,7 +507,7 @@ def main() -> None:
         output_dir = ARTISTS_DIR / artist["slug"]
         output_dir.mkdir(parents=True, exist_ok=True)
         (output_dir / "index.html").write_text(
-            page_for(artist, data["event"], previous, following)
+            page_for(artist, data["event"], previous, following, by_stage.get(artist["slug"], []))
         )
 
     lineup = LINEUP_PAGE.read_text()
