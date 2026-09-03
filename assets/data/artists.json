@@ -439,6 +439,31 @@
       ]
     },
     {
+      "name": "Mikey Dredd",
+      "slug": "mikey-dredd",
+      "compact_name": true,
+      "summary": "Part of the foundational South African psytrance scene, Mikey Dredd is a seasoned selector whose sonic palette defies easy categorisation.",
+      "bio": [
+        "With over 30 years of experience anchoring the dance music scene, Mikey Dredd is a seasoned selector whose career reflects the evolution of electronic sound itself. A true musical chameleon, his sets are defined by an expansive sonic palette that defies easy categorisation.",
+        "Moving fluidly across the spectrum, he navigates seamlessly from the deep, reverberating basslines of dub and the atmospheric grooves of trip-hop and downtempo, to the high-octane energy of drum and bass and the hypnotic, driving rhythms of psytrance.",
+        "His approach to the decks is rooted in pure passion and a deep-seated commitment to the dancefloor. Every set is meticulously curated to create an infectious energy, blending “dank” underground tracks with a vibrant, high-spirited vibe designed to keep the crowd moving from the first beat to the last. More than just a DJ set, a performance by Mikey Dredd is an invitation to experience genuine musical joy — a rhythmic celebration crafted by a veteran who lives for the connection between the music and the movement."
+      ],
+      "image": "assets/artists/images/mikey-dredd.jpg",
+      "image_alt": "Portrait of Mikey Dredd wearing headphones and pointing at the camera",
+      "image_position": "50% 38%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Facebook",
+        "url": "https://www.facebook.com/mikey.dredd.9"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/mikey.dredd.9"
+        }
+      ]
+    },
+    {
       "name": "Prefix",
       "slug": "prefix",
       "summary": "Prefix reads the room and builds a new journey every time, moving from second-floor grooves to powerful main-floor sets.",
