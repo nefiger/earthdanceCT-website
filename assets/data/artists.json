@@ -24,8 +24,41 @@
         "url": "https://linktr.ee/a_geoffrey"
       },
       "links": [
-        {"label": "Linktree", "url": "https://linktr.ee/a_geoffrey"},
-        {"label": "Instagram", "url": "https://www.instagram.com/a_geoffrey_state_alchemy_music/"}
+        {
+          "label": "Linktree",
+          "url": "https://linktr.ee/a_geoffrey"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/a_geoffrey_state_alchemy_music/"
+        }
+      ]
+    },
+    {
+      "name": "Almost a Sin",
+      "slug": "almost-a-sin",
+      "summary": "Almost a Sin is Zenn Viljoen's live looping project, crossing the boundary between musician and DJ.",
+      "bio": [
+        "Zenn Viljoen builds Almost a Sin in real time. Parts are played, captured and layered on stage until a full arrangement stands where a single instrument started, which means no two performances resolve the same way.",
+        "It is a set that sits deliberately between two worlds: the hands of a live musician and the flow of a DJ reading a room."
+      ],
+      "image": "assets/artists/images/almost-a-sin.jpg",
+      "image_alt": "Portrait of Zenn Viljoen of Almost a Sin",
+      "image_position": "45% 40%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen & follow",
+        "url": "https://zennviljoen.com/"
+      },
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://zennviljoen.com/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/almostasin/"
+        }
       ]
     },
     {
@@ -47,8 +80,14 @@
         "url": "https://microdotrecords.bandcamp.com/"
       },
       "links": [
-        {"label": "Bandcamp", "url": "https://microdotrecords.bandcamp.com/"},
-        {"label": "Facebook", "url": "https://www.facebook.com/amoraim.amoraim"}
+        {
+          "label": "Bandcamp",
+          "url": "https://microdotrecords.bandcamp.com/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/amoraim.amoraim"
+        }
       ]
     },
     {
@@ -67,8 +106,14 @@
         "url": "https://linktr.ee/DJ_Asterion"
       },
       "links": [
-        {"label": "Linktree", "url": "https://linktr.ee/DJ_Asterion"},
-        {"label": "Instagram", "url": "https://www.instagram.com/dj_asterion_25/"}
+        {
+          "label": "Linktree",
+          "url": "https://linktr.ee/DJ_Asterion"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/dj_asterion_25/"
+        }
       ]
     },
     {
@@ -93,8 +138,38 @@
         "url": "https://on.soundcloud.com/uGN0Nfrv7bvP4tW66k"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://on.soundcloud.com/uGN0Nfrv7bvP4tW66k"},
-        {"label": "Instagram", "url": "https://www.instagram.com/aurallauradj/"}
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/uGN0Nfrv7bvP4tW66k"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/aurallauradj/"
+        }
+      ]
+    },
+    {
+      "name": "Changa Manga",
+      "slug": "changa-manga",
+      "compact_name": true,
+      "summary": "Changa Manga come in from the intergalactic psybass and chill cosmic swamp, bass-heavy and sometimes gloriously glitchy.",
+      "bio": [
+        "Changa Manga Soundsystem have been bending innocent minds since 2014, delighting the discerning followers of all tunes bass heavy, sometimes glitchy, and reliably upbeat at the downtempo end of things.",
+        "Their own promise for the weekend is simple enough: to share the good vibes on a dancefloor near you, whenever they can."
+      ],
+      "image": "assets/artists/images/changa-manga.jpg",
+      "image_alt": "Changa Manga Soundsystem portrait and logo",
+      "image_position": "50% 40%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Mixcloud",
+        "url": "https://www.mixcloud.com/Changamangamusic/sonic-alchemy-35-guest-mix-changa-manga-visionary-shamanics-records/"
+      },
+      "links": [
+        {
+          "label": "Mixcloud",
+          "url": "https://www.mixcloud.com/Changamangamusic/sonic-alchemy-35-guest-mix-changa-manga-visionary-shamanics-records/"
+        }
       ]
     },
     {
@@ -114,9 +189,18 @@
         "url": "https://soundcloud.com/dan-scot"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://soundcloud.com/dan-scot"},
-        {"label": "Instagram", "url": "https://www.instagram.com/dan.scot/"},
-        {"label": "Facebook", "url": "https://www.facebook.com/danthescot"}
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/dan-scot"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/dan.scot/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/danthescot"
+        }
       ]
     },
     {
@@ -137,9 +221,42 @@
         "url": "https://www.mixcloud.com/paulo-mendon%C3%A7a/"
       },
       "links": [
-        {"label": "Mixcloud", "url": "https://www.mixcloud.com/paulo-mendon%C3%A7a/"},
-        {"label": "Instagram", "url": "https://www.instagram.com/djskitzo_sa/"},
-        {"label": "Facebook", "url": "https://www.facebook.com/TheSkitzo/"}
+        {
+          "label": "Mixcloud",
+          "url": "https://www.mixcloud.com/paulo-mendon%C3%A7a/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/djskitzo_sa/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/TheSkitzo/"
+        }
+      ]
+    },
+    {
+      "name": "DJ Sublime",
+      "slug": "dj-sublime",
+      "compact_name": true,
+      "summary": "DJ Sublime doesn't simply play music; she creates an atmosphere where bodies move and strangers become one collective pulse.",
+      "bio": [
+        "Michelle Lobel plays with an instinct for reading the energy of a dancefloor, shaping a room rather than filling it. Bodies move, hearts open, and a crowd of strangers arrives somewhere together.",
+        "Expect lush textures, seductive rhythms, unexpected moments and a steadily rising invitation to let go."
+      ],
+      "image": "assets/artists/images/dj-sublime.jpg",
+      "image_alt": "Portrait of DJ Sublime behind carved festival stage art",
+      "image_position": "50% 40%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/soulfoodssa/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/soulfoodssa/"
+        }
       ]
     },
     {
@@ -159,8 +276,14 @@
         "url": "https://open.spotify.com/playlist/5NXJ1Bcg6fJg1U4PimxUpg?si=cbef0c6d5dc843f3"
       },
       "links": [
-        {"label": "Spotify", "url": "https://open.spotify.com/playlist/5NXJ1Bcg6fJg1U4PimxUpg?si=cbef0c6d5dc843f3"},
-        {"label": "Instagram", "url": "https://www.instagram.com/djangoza_music/"}
+        {
+          "label": "Spotify",
+          "url": "https://open.spotify.com/playlist/5NXJ1Bcg6fJg1U4PimxUpg?si=cbef0c6d5dc843f3"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/djangoza_music/"
+        }
       ]
     },
     {
@@ -179,7 +302,38 @@
         "url": "https://www.facebook.com/share/1DHF95qU2s/"
       },
       "links": [
-        {"label": "Facebook", "url": "https://www.facebook.com/share/1DHF95qU2s/"}
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/share/1DHF95qU2s/"
+        }
+      ]
+    },
+    {
+      "name": "Gray Matter",
+      "slug": "gray-matter",
+      "compact_name": true,
+      "summary": "Gray Matter brings modern, contemporary psytrance drawn from a multitude of genres — is this psytrance, or something more?",
+      "bio": [
+        "Graydon Fortuin describes himself as a music maker and alien enthusiast, visiting Planet Earth to bring his own expression of modern, contemporary psytrance.",
+        "Inspirations from a multitude of genres surface inside a single psychedelic body of work, which raises the question his sets keep asking: is this psytrance, or is it something more?"
+      ],
+      "image": "assets/artists/images/gray-matter.jpg",
+      "image_alt": "Portrait of Gray Matter DJing under red light",
+      "image_position": "50% 40%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Spotify",
+        "url": "https://open.spotify.com/artist/4hrXUhkdbbkBZzbEHKozfI"
+      },
+      "links": [
+        {
+          "label": "Spotify",
+          "url": "https://open.spotify.com/artist/4hrXUhkdbbkBZzbEHKozfI"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/graymatter_statealchemy/"
+        }
       ]
     },
     {
@@ -198,8 +352,38 @@
         "url": "https://sonictantra.com/"
       },
       "links": [
-        {"label": "Sonic Tantra", "url": "https://sonictantra.com/"},
-        {"label": "Instagram", "url": "https://www.instagram.com/oliverjamday/"}
+        {
+          "label": "Sonic Tantra",
+          "url": "https://sonictantra.com/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/oliverjamday/"
+        }
+      ]
+    },
+    {
+      "name": "Kayflow",
+      "slug": "kayflow",
+      "summary": "Kaylee Terblanche teaches yoga in its traditional sense, using simple, intentional movement and breath as our greatest source of strength.",
+      "bio": [
+        "Kaylee Terblanche is a yoga teacher and a student of Ayurveda. After completing her 500-hour teacher training she went further inward, and found the power of connecting with our energy from within.",
+        "Her classes begin at the heart, in the space of Anahata, where awareness softens and energy begins to reorganise itself. We create length through the spine. We breathe into places that have been quiet for too long. We allow what is ready to rise to rise.",
+        "Nothing forced, nothing performed — just subtle shifts that change everything, focusing less on how we look and more on how we feel."
+      ],
+      "image": "assets/artists/images/kayflow.jpg",
+      "image_alt": "Portrait of Kaylee Terblanche of Kayflow",
+      "image_position": "50% 35%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/kaylee_terblanche/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/kaylee_terblanche/"
+        }
       ]
     },
     {
@@ -218,8 +402,14 @@
         "url": "https://soundcloud.com/loisschwartz"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://soundcloud.com/loisschwartz"},
-        {"label": "Instagram", "url": "https://www.instagram.com/lolo_dnb_/"}
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/loisschwartz"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/lolo_dnb_/"
+        }
       ]
     },
     {
@@ -238,8 +428,14 @@
         "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"},
-        {"label": "Instagram", "url": "https://www.instagram.com/ryanwallis100/"}
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/yTL2qzMlIZevY3zbIy"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ryanwallis100/"
+        }
       ]
     },
     {
@@ -260,8 +456,14 @@
         "url": "https://www.soundcloud.com/prefixsoundsystem"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://www.soundcloud.com/prefixsoundsystem"},
-        {"label": "Instagram", "url": "https://www.instagram.com/john_prefix/"}
+        {
+          "label": "SoundCloud",
+          "url": "https://www.soundcloud.com/prefixsoundsystem"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/john_prefix/"
+        }
       ]
     },
     {
@@ -283,9 +485,42 @@
         "url": "https://soundcloud.com/sandyg-840920185"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://soundcloud.com/sandyg-840920185"},
-        {"label": "Instagram", "url": "https://www.instagram.com/dj.sandyg/"},
-        {"label": "Facebook", "url": "https://www.facebook.com/SandiVG16"}
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/sandyg-840920185"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/dj.sandyg/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/SandiVG16"
+        }
+      ]
+    },
+    {
+      "name": "Rave Mustaine",
+      "slug": "rave-mustaine",
+      "compact_name": true,
+      "summary": "Nobody knows exactly who Rave Mustaine is. They just know he's been lurking in the shadows.",
+      "bio": [
+        "A mysterious figure moving through the darker corners of the South African and Mozambican underground, Rave Mustaine brings dark psytech and hypnotic frequencies designed to bend minds and rearrange dancefloors.",
+        "He has appeared in places nobody remembers, at hours nobody should have been awake, leaving behind little more than distorted memories and suspiciously heavy basslines. Come find out what happens when Rave Mustaine comes out to play."
+      ],
+      "image": "assets/artists/images/rave-mustaine.jpg",
+      "image_alt": "Rave Mustaine DJing in a skull mask under psychedelic stage lighting",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/art_by_moog/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/art_by_moog/"
+        }
       ]
     },
     {
@@ -305,10 +540,22 @@
         "url": "https://linktr.ee/skamcpt"
       },
       "links": [
-        {"label": "Linktree", "url": "https://linktr.ee/skamcpt"},
-        {"label": "SoundCloud", "url": "https://soundcloud.com/skamcpt"},
-        {"label": "Instagram", "url": "https://www.instagram.com/skam_cpt/"},
-        {"label": "Facebook", "url": "https://www.facebook.com/shadley.kamaldien/"}
+        {
+          "label": "Linktree",
+          "url": "https://linktr.ee/skamcpt"
+        },
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/skamcpt"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/skam_cpt/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/shadley.kamaldien/"
+        }
       ]
     },
     {
@@ -327,8 +574,14 @@
         "url": "https://soundcloud.com/dj_sol_capetown"
       },
       "links": [
-        {"label": "SoundCloud", "url": "https://soundcloud.com/dj_sol_capetown"},
-        {"label": "Instagram", "url": "https://www.instagram.com/dj._sol/"}
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/dj_sol_capetown"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/dj._sol/"
+        }
       ]
     },
     {
@@ -345,7 +598,76 @@
         "url": "https://www.mixcloud.com/thomasmixes/"
       },
       "links": [
-        {"label": "Mixcloud", "url": "https://www.mixcloud.com/thomasmixes/"}
+        {
+          "label": "Mixcloud",
+          "url": "https://www.mixcloud.com/thomasmixes/"
+        }
+      ]
+    },
+    {
+      "name": "Tune Raider",
+      "slug": "tune-raider",
+      "compact_name": true,
+      "summary": "A prominent psytrance DJ from South Africa and part of United Beats Records, Tune Raider has driven the scene for over two decades.",
+      "bio": [
+        "Pamm Legg has been a driving force in South African psytrance for more than twenty years. Known for electrifying sets at Alien Safari, Vortex and Earthdance, she has long since become a key figure in the country's psytrance landscape.",
+        "Her influence reaches well beyond it, with standout performances at Universo Paralello in Brazil, Hadra Festival in France and Boomtown Fair in the UK. She is currently exploring a new chapter with a high-energy psychedelic full-on set, at home in daytime and nighttime slots alike.",
+        "Tight beat mixing, impeccable track selection and an enchanting stage presence keep her connecting deeply with dancefloors wherever she plays."
+      ],
+      "image": "assets/artists/images/tune-raider.png",
+      "image_alt": "Portrait of Tune Raider",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen & follow",
+        "url": "https://linktr.ee/djtuneraider"
+      },
+      "links": [
+        {
+          "label": "Linktree",
+          "url": "https://linktr.ee/djtuneraider"
+        },
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/djtuneraider"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/djtuneraider"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/DJTuneRaider"
+        }
+      ]
+    },
+    {
+      "name": "Ty Teknition",
+      "slug": "ty-teknition",
+      "compact_name": true,
+      "summary": "Ty Teknition is a Cape Town DJ, producer and co-founder of Umbrella Rave and Kindred, known for a bouncy, driving and intelligent sound.",
+      "bio": [
+        "Tyrone Platt's sets seamlessly blend tech house, progressive house, psy tech and psytrance, with a slight fusion of reggae, dub and broken beats folded into fresh, high-energy underground journeys.",
+        "He builds dancefloors where groove, storytelling and connection come first. Through Umbrella Rave and Kindred he helps deliver world-class electronic music experiences while supporting local communities, working with NGOs and purpose-driven events.",
+        "His sets are designed to move people spiritually and physically, spark connection and leave a lasting impression."
+      ],
+      "image": "assets/artists/images/ty-teknition.jpg",
+      "image_alt": "Portrait of Ty Teknition",
+      "image_position": "52% 26%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/HI7c47rvbJ1nBNX8c3"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/HI7c47rvbJ1nBNX8c3"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ty_teknition/"
+        }
       ]
     },
     {
@@ -362,7 +684,40 @@
         "url": "https://www.instagram.com/uncle_frank_dj/"
       },
       "links": [
-        {"label": "Instagram", "url": "https://www.instagram.com/uncle_frank_dj/"}
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/uncle_frank_dj/"
+        }
+      ]
+    },
+    {
+      "name": "Zendrix",
+      "slug": "zendrix",
+      "compact_name": true,
+      "summary": "Somatic therapist, ecstatic dance facilitator and multi-instrumentalist, Zendrix plays live looping ngoni, woodwinds, poetry and mantras.",
+      "bio": [
+        "Hendrik van der Merwe has been part of South African electronic music since the beginning of it. He was a member of Earthlings in 1992 and EarthDreams in 1994, then, as Zendrik, a founder member of Nagual from 1995 to 2000, playing regular live sets at Rustler's Valley, Vortex and Alien Safari.",
+        "Collaborations and live sets at the Gwaing River Mouth on the Garden Route followed through the 2000s. From 2014 to 2018 he facilitated ecstatic dance in San Marcos La Laguna, Guatemala, performing with Mose and joining the Tambour Collective and Raga Funk Spaceship.",
+        "Zendrix Live has since travelled from Arambol in Goa to Dharamshala, Summer Solstice, SpiritFest and Louvain Burn. The set moves from ambient to dance beats, built live from Ableton with looping ngoni harp, handpan, woodwinds, poetry and mantras, and joined along the way by guest solo artists.",
+        "Alongside the music he works as a somatic therapist and teacher, sound healer and ceremony musician."
+      ],
+      "image": "assets/artists/images/zendrix.jpg",
+      "image_alt": "Zendrix playing the ngoni harp at night",
+      "image_position": "48% 28%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Explore Anahata",
+        "url": "https://anahata.live"
+      },
+      "links": [
+        {
+          "label": "Anahata",
+          "url": "https://anahata.live"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/zendrik_anahata/"
+        }
       ]
     }
   ]

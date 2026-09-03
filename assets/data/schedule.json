@@ -1,0 +1,394 @@
+{
+  "event": "Earthdance Cape Town 2026",
+  "note": "Running order as supplied on 2026-09-03 and confirmed 2026-09-03. Slots before 06:00 belong to the night of the previous day. Deliberate gaps: Mellow Meadow Sat 12:00-12:30 and Sun 11:00-12:30.",
+  "status": "draft",
+  "stages": [
+    {
+      "id": "mellow-meadow",
+      "name": "Mellow Meadow",
+      "days": [
+        {
+          "name": "Friday 18 September",
+          "slots": [
+            {
+              "start": "12:00",
+              "end": "15:45",
+              "act": "DJ set",
+              "note": "chilled music"
+            },
+            {
+              "start": "16:15",
+              "end": "18:00",
+              "act": "Spliff Politix"
+            },
+            {
+              "start": "18:00",
+              "end": "18:30",
+              "act": "Jamie Jupiter"
+            },
+            {
+              "start": "18:30",
+              "end": "19:00",
+              "act": "Zendrix"
+            },
+            {
+              "start": "19:00",
+              "end": "20:30",
+              "act": "Mikey Dredd"
+            },
+            {
+              "start": "20:30",
+              "end": "22:00",
+              "act": "TehSynes"
+            },
+            {
+              "start": "22:00",
+              "end": "23:30",
+              "act": "RedHat"
+            },
+            {
+              "start": "23:30",
+              "end": "01:00",
+              "act": "Counterstrike"
+            }
+          ]
+        },
+        {
+          "name": "Saturday 19 September",
+          "slots": [
+            {
+              "start": "01:00",
+              "end": "02:30",
+              "act": "To-Wa"
+            },
+            {
+              "start": "02:30",
+              "end": "04:00",
+              "act": "Xervious"
+            },
+            {
+              "start": "04:00",
+              "end": "05:30",
+              "act": "Lolo"
+            },
+            {
+              "start": "05:30",
+              "end": "07:00",
+              "act": "Skam"
+            },
+            {
+              "start": "07:00",
+              "end": "09:00",
+              "act": "Django"
+            },
+            {
+              "start": "09:00",
+              "end": "09:30",
+              "act": "Kayflow",
+              "note": "yoga"
+            },
+            {
+              "start": "09:30",
+              "end": "10:15",
+              "act": "Hans Menck"
+            },
+            {
+              "start": "10:15",
+              "end": "11:00",
+              "act": "Jamie Jupiter"
+            },
+            {
+              "start": "11:00",
+              "end": "11:30",
+              "act": "Maya Joy"
+            },
+            {
+              "start": "11:30",
+              "end": "12:00",
+              "act": "Almost a Sin"
+            },
+            {
+              "start": "12:30",
+              "end": "13:00",
+              "act": "Bush Diva"
+            },
+            {
+              "start": "13:00",
+              "end": "14:30",
+              "act": "Firehorse"
+            },
+            {
+              "start": "14:30",
+              "end": "16:00",
+              "act": "Changa Manga"
+            },
+            {
+              "start": "16:00",
+              "end": "17:30",
+              "act": "Sublime"
+            },
+            {
+              "start": "17:30",
+              "end": "18:30",
+              "act": "Asterion"
+            },
+            {
+              "start": "18:30",
+              "end": "20:00",
+              "act": "JamDay"
+            },
+            {
+              "start": "20:00",
+              "end": "21:30",
+              "act": "AurallaurA"
+            },
+            {
+              "start": "21:30",
+              "end": "23:30",
+              "act": "Ernest b2b Sledge"
+            },
+            {
+              "start": "23:30",
+              "end": "01:00",
+              "act": "Ty Teknition"
+            }
+          ]
+        },
+        {
+          "name": "Sunday 20 September",
+          "slots": [
+            {
+              "start": "01:00",
+              "end": "01:15",
+              "act": "Linkup"
+            },
+            {
+              "start": "01:15",
+              "end": "03:00",
+              "act": "Nyx"
+            },
+            {
+              "start": "03:00",
+              "end": "04:30",
+              "act": "SOL"
+            },
+            {
+              "start": "04:30",
+              "end": "06:30",
+              "act": "Tristan Mountain"
+            },
+            {
+              "start": "06:30",
+              "end": "08:00",
+              "act": "Nick E Louder"
+            },
+            {
+              "start": "08:00",
+              "end": "09:30",
+              "act": "The Great Veroni",
+              "note": "playing for Kayflow's movement set"
+            },
+            {
+              "start": "09:00",
+              "end": "09:30",
+              "act": "Kayflow",
+              "note": "yoga"
+            },
+            {
+              "start": "09:30",
+              "end": "10:15",
+              "act": "Karen Justine"
+            },
+            {
+              "start": "10:15",
+              "end": "11:00",
+              "act": "Makeeda",
+              "note": "movement session"
+            },
+            {
+              "start": "12:30",
+              "end": "14:30",
+              "act": "Thomas"
+            },
+            {
+              "start": "14:30",
+              "end": "close",
+              "act": "Zendrix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sonic-horizon",
+      "name": "Sonic Horizon",
+      "days": [
+        {
+          "name": "Friday 18 September",
+          "slots": [
+            {
+              "start": "15:45",
+              "end": "16:15",
+              "act": "Opening ceremony"
+            },
+            {
+              "start": "16:15",
+              "end": "18:00",
+              "act": "Ras"
+            },
+            {
+              "start": "18:00",
+              "end": "19:30",
+              "act": "Spacemonk"
+            },
+            {
+              "start": "19:30",
+              "end": "21:00",
+              "act": "Rave Mustaine"
+            },
+            {
+              "start": "21:00",
+              "end": "22:30",
+              "act": "Midiclorian"
+            },
+            {
+              "start": "22:30",
+              "end": "00:00",
+              "act": "Geoffrey and Brad"
+            }
+          ]
+        },
+        {
+          "name": "Saturday 19 September",
+          "slots": [
+            {
+              "start": "00:00",
+              "end": "01:30",
+              "act": "Psymantis"
+            },
+            {
+              "start": "01:30",
+              "end": "03:00",
+              "act": "Jester"
+            },
+            {
+              "start": "03:00",
+              "end": "04:00",
+              "act": "Gray Matter"
+            },
+            {
+              "start": "04:00",
+              "end": "05:00",
+              "act": "Phylth"
+            },
+            {
+              "start": "05:00",
+              "end": "06:30",
+              "act": "Psyanomic"
+            },
+            {
+              "start": "06:30",
+              "end": "09:00",
+              "act": "Mikey Dredd"
+            },
+            {
+              "start": "09:00",
+              "end": "11:00",
+              "act": "Imtyaaz"
+            },
+            {
+              "start": "11:00",
+              "end": "12:30",
+              "act": "AMORAIM"
+            },
+            {
+              "start": "12:30",
+              "end": "14:00",
+              "act": "Thomas"
+            },
+            {
+              "start": "14:00",
+              "end": "15:30",
+              "act": "Ward 10 and the Outpatients"
+            },
+            {
+              "start": "15:30",
+              "end": "17:00",
+              "act": "Psyborg"
+            },
+            {
+              "start": "17:00",
+              "end": "19:00",
+              "act": "Skitzo"
+            },
+            {
+              "start": "19:00",
+              "end": "21:00",
+              "act": "Verax"
+            },
+            {
+              "start": "21:00",
+              "end": "23:00",
+              "act": "Flower Power"
+            },
+            {
+              "start": "23:00",
+              "end": "01:00",
+              "act": "MacAttack"
+            }
+          ]
+        },
+        {
+          "name": "Sunday 20 September",
+          "slots": [
+            {
+              "start": "01:00",
+              "end": "01:15",
+              "act": "Linkup"
+            },
+            {
+              "start": "01:15",
+              "end": "03:00",
+              "act": "Tune Raider"
+            },
+            {
+              "start": "03:00",
+              "end": "05:00",
+              "act": "Dan Scot"
+            },
+            {
+              "start": "05:00",
+              "end": "07:00",
+              "act": "Prefix"
+            },
+            {
+              "start": "07:00",
+              "end": "09:00",
+              "act": "Psyrenex"
+            },
+            {
+              "start": "09:00",
+              "end": "11:00",
+              "act": "Craig A"
+            },
+            {
+              "start": "11:00",
+              "end": "13:00",
+              "act": "Arcane vs Pixie"
+            },
+            {
+              "start": "13:00",
+              "end": "15:00",
+              "act": "Bruce"
+            },
+            {
+              "start": "15:00",
+              "end": "17:00",
+              "act": "Uncle Frank"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

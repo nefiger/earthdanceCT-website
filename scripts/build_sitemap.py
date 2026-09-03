@@ -66,13 +66,15 @@ def loc(path: Path) -> str:
     name = relative_name(path)
     if name == "index.html":
         return BASE
-    if name.startswith("artists/") and name.endswith("/index.html"):
+    if name.startswith(("artists/", "stages/")) and name.endswith("/index.html"):
         return BASE + name.removesuffix("index.html")
     return BASE + name
 
 
 def priority(path: Path) -> str:
     name = relative_name(path)
+    if name.startswith("stages/"):
+        return "0.8"
     if name.startswith("artists/"):
         return "0.7"
     return PRIORITY.get(name, "0.6")
@@ -80,7 +82,7 @@ def priority(path: Path) -> str:
 
 def changefreq(path: Path) -> str:
     name = relative_name(path)
-    if name.startswith("artists/"):
+    if name.startswith(("artists/", "stages/")):
         return "monthly"
     return CHANGEFREQ.get(name, "monthly")
 
@@ -88,6 +90,7 @@ def changefreq(path: Path) -> str:
 def main() -> None:
     pages = [p for p in ROOT.glob("*.html") if p.name not in EXCLUDE]
     pages += sorted((ROOT / "artists").glob("*/index.html"))
+    pages += sorted((ROOT / "stages").glob("*/index.html"))
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
