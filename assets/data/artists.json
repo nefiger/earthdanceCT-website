@@ -464,6 +464,37 @@
       ]
     },
     {
+      "name": "Nick E Louder",
+      "slug": "nick-e-louder",
+      "compact_name": true,
+      "summary": "A London-born DJ and producer immersed in electronic music for over three decades, Nick E Louder marks 33 years on the decks with a worldwide tour in 2026.",
+      "bio": [
+        "Nick E Louder is a London-born DJ and producer who has been immersed in electronic music for over three decades. After arriving in South Africa in the early 1990s, he became part of the movement that helped shape the country's evolving electronic dance music scene.",
+        "In 2026, Nick celebrates 33 years as a professional DJ and producer with his 33 Years on the Decks worldwide tour, beginning with performances across South Africa before taking the sound overseas.",
+        "His current sound is driven by techno, psy-tech and trance, combining rolling basslines, hypnotic grooves, driving percussion, psychedelic textures and relentless four-to-the-floor energy. His sets move between dark, atmospheric techno, rolling psy-tech and powerful melodic and progressive elements, creating an immersive journey designed for the dancefloor.",
+        "With an international performance history spanning clubs, festivals and events around the world, Nick brings decades of experience behind the decks together with a modern production-driven sound.",
+        "Now signed to two UK record labels, Nick has released several tracks over the past year and is firmly back in the studio, focusing on new techno and psy-tech productions. He is also collaborating with other artists on original material and remixes, continuing to evolve his sound and push his music forward."
+      ],
+      "image": "assets/artists/images/nick-e-louder.jpg",
+      "image_alt": "Portrait of Nick E Louder at the decks",
+      "image_position": "50% 25%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Visit his website",
+        "url": "https://www.nickelouder.com/"
+      },
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.nickelouder.com/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/nickelouder/"
+        }
+      ]
+    },
+    {
       "name": "Prefix",
       "slug": "prefix",
       "summary": "Prefix reads the room and builds a new journey every time, moving from second-floor grooves to powerful main-floor sets.",
