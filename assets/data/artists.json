@@ -495,6 +495,36 @@
       ]
     },
     {
+      "name": "NYX.",
+      "slug": "nyx",
+      "compact_name": true,
+      "summary": "NYX. doesn't just play sets; she engineers memories, drawing on a 16-year career and a classically trained musical foundation.",
+      "bio": [
+        "With a career spanning sixteen years and a musical foundation built on a BMus degree and classical training, NYX. has spent a lifetime mastering the science of sound.",
+        "As founder of NYX Level Productions and creator of the TECHNOTRONYX, OCEANYX and SOULTONYX brands, her influence on the underground scene runs deep. Her journey has spanned corporate environments, festivals and weddings — from the dust of Botswana to the beaches of Egypt and Zanzibar.",
+        "Whether mentoring, curating or tearing through a midnight techno set, NYX. remains a purist. No requests.",
+        "“Meet me on the dance floor. That’s how you’ll know me.”"
+      ],
+      "image": "assets/artists/images/nyx.jpg",
+      "image_alt": "Portrait of NYX. at the decks",
+      "image_position": "50% 20%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/v2CrGbzQ1qixvXpYsM"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/v2CrGbzQ1qixvXpYsM"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/djnyx.sa/"
+        }
+      ]
+    },
+    {
       "name": "Prefix",
       "slug": "prefix",
       "summary": "Prefix reads the room and builds a new journey every time, moving from second-floor grooves to powerful main-floor sets.",

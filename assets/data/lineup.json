@@ -140,7 +140,9 @@
               "note": "the global moment"
             },
             {
-              "name": "Nyx"
+              "name": "Nyx",
+              "profile": "artists/nyx/",
+              "profile_label": "NYX."
             },
             {
               "name": "SOL",
