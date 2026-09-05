@@ -314,7 +314,9 @@
               "name": "Flower Power"
             },
             {
-              "name": "MacAttack"
+              "name": "MacAttack",
+              "profile": "artists/mac-attack/",
+              "profile_label": "Mac Attack"
             }
           ]
         },

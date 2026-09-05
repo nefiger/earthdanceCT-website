@@ -413,6 +413,31 @@
       ]
     },
     {
+      "name": "Mac Attack",
+      "slug": "mac-attack",
+      "summary": "A father/son duo, Dave Mac and Josh Mac bring a deadly combo of youth and experience to South Africa's psytrance scene.",
+      "bio": [
+        "Father/son duo Dave Mac and Josh Mac, known as Mac Attack, are a deadly combo of youth and experience.",
+        "When seasoned psytrance DJ Dave Mac teams up with his son Josh, anything can happen. Their sets are spontaneous and unrehearsed, as they serve up a heady mix of psychedelic groove music.",
+        "This unique father/son duo — a first in the South African psytrance scene — is a psy-family affair served with a massive dose of respect for the dancefloor and an appreciation for the incredible psychedelic music they get to play. Expect a scintillating and fresh journey full of energy, sexy psychedelia, positive vibrations and bouncing bass.",
+        "Mac Attack are also in the throes of completing an album's worth of original psy cooked up in their studio — coming to a speaker near you."
+      ],
+      "image": "assets/artists/images/mac-attack.jpg",
+      "image_alt": "Dave Mac and Josh Mac of Mac Attack",
+      "image_position": "50% 42%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/macattack.duo/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/macattack.duo/"
+        }
+      ]
+    },
+    {
       "name": "Midiclorian",
       "slug": "midiclorian",
       "summary": "Cape Town DJ Ryan Wallis brings a storyteller's instinct to the dancefloor, blending powerful melodies with driving rhythms.",
