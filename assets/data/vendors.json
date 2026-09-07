@@ -162,6 +162,18 @@
         {
           "image": "assets/vendors/images/geovinty-leggings-green-side.jpg",
           "alt": "Green sacred-geometry leggings with laser-cut side panels, side view"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-halter-sage.jpg",
+          "alt": "Sage-green halter top with a laser-cut flower-of-life lattice at the chest"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-halter-maroon.jpg",
+          "alt": "Maroon halter top with a laser-cut flower-of-life lattice at the chest"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-batik-tank.jpg",
+          "alt": "Batik-dyed tank top with a laser-cut panel and a scalloped hem"
         }
       ],
       "price_notes": null,
@@ -171,7 +183,7 @@
           "url": "https://www.instagram.com/geovintyclothing/"
         }
       ],
-      "location": null
+      "location": "Vendor Village"
     },
     {
       "name": "Chai'la",
