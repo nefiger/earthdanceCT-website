@@ -99,7 +99,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors6">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors7">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -306,7 +306,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors6">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors7">
 </head>"""
 
 
@@ -323,13 +323,13 @@ def directory_card(vendor: dict) -> str:
     else:
         initial = esc(vendor["name"][0].upper())
         thumb = f'<span class="vendor-directory-thumb vendor-directory-thumb-blank">{initial}</span>'
-    return f"""        <a class="vendor-directory-card" href="{href}">
-          {thumb}
-          <span class="vendor-directory-card-body">
-            <strong>{name}</strong>
-            <span>{esc(vendor['summary'])}</span>
-          </span>
-        </a>"""
+    return f"""          <a class="vendor-directory-card" href="{href}">
+            {thumb}
+            <span class="vendor-directory-card-body">
+              <strong>{name}</strong>
+              <span>{esc(vendor['summary'])}</span>
+            </span>
+          </a>"""
 
 
 def directory_page(data: dict) -> str:
@@ -355,7 +355,7 @@ def directory_page(data: dict) -> str:
         cards = "\n".join(directory_card(v) for v in group)
         sections.append(f"""      <div class="vendor-directory-category">
         <h2>{esc(category)}</h2>
-        <div class="vendor-directory-grid">
+        <div class="vendor-directory-list">
 {cards}
         </div>
       </div>""")
@@ -390,7 +390,9 @@ alt=""></noscript>
 
   <section class="section">
     <div class="container">
+      <div class="vendor-directory-columns">
 {sections_html}
+      </div>
     </div>
   </section>
 </main>

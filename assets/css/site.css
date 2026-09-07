@@ -2191,43 +2191,54 @@ h3.act-heading {
 }
 
 /* ---------- vendor directory ---------- */
-.vendor-directory-category { margin-top: 56px; }
-.vendor-directory-category:first-child { margin-top: 0; }
-.vendor-directory-grid {
+/* Three category columns side by side, so Food & Drink / Craft & Goods /
+   Wellness are all visible together at the top instead of one huge section
+   at a time. Cards are a compact row (small thumb + text), not a big photo
+   tile — a whole category should read at a glance, not feel like a wall
+   of oversized tiles. */
+.vendor-directory-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 24px;
+  gap: 32px;
+  align-items: start;
 }
 @media (max-width: 900px) {
-  .vendor-directory-grid { grid-template-columns: repeat(2, 1fr); }
+  .vendor-directory-columns { grid-template-columns: 1fr; gap: 40px; }
 }
-@media (max-width: 560px) {
-  .vendor-directory-grid { grid-template-columns: 1fr; }
+.vendor-directory-category { min-width: 0; }
+.vendor-directory-category h2 { font-size: 19px; }
+.vendor-directory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
 }
 .vendor-directory-card {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
+  border-radius: 12px;
   background: var(--bg-2);
   color: inherit;
 }
 .vendor-directory-card:hover { border-color: var(--cyan); }
 .vendor-directory-card:hover strong { color: var(--cyan); }
 .vendor-directory-thumb {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 9px;
   object-fit: cover;
   display: block;
+  flex-shrink: 0;
 }
 .vendor-directory-thumb-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
-  padding: 20px;
+  padding: 6px;
 }
 .vendor-directory-thumb-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .vendor-directory-thumb-blank {
@@ -2237,11 +2248,19 @@ h3.act-heading {
   background: radial-gradient(140% 140% at 0% 0%, rgba(255, 255, 255, .09), transparent 56%), var(--bg-3);
   color: var(--ink-faint);
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: 18px;
 }
-.vendor-directory-card-body { padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 6px; }
-.vendor-directory-card-body strong { font-size: 16.5px; font-weight: 650; }
-.vendor-directory-card-body span:last-child { font-size: 13.5px; color: var(--ink-dim); line-height: 1.5; }
+.vendor-directory-card-body { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.vendor-directory-card-body strong { font-size: 14px; font-weight: 650; }
+.vendor-directory-card-body span:last-child {
+  font-size: 12px;
+  color: var(--ink-dim);
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
 /* ---------- inline ticket nudge ---------- */
 .ticket-nudge {
