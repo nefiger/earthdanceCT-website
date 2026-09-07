@@ -2195,9 +2195,15 @@ h3.act-heading {
 .vendor-directory-category:first-child { margin-top: 0; }
 .vendor-directory-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-top: 24px;
+}
+@media (max-width: 900px) {
+  .vendor-directory-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .vendor-directory-grid { grid-template-columns: 1fr; }
 }
 .vendor-directory-card {
   display: flex;
