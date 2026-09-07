@@ -387,7 +387,7 @@ def page_for(
             </div>
           </div>
         </div>""")
-        links_section = f"""  <section class="section section-tint artist-links-section">
+        links_section = f"""  <section class="section section-tint artist-links-section" id="individual-links">
     <div class="container">
       <span class="eyebrow">Meet the duo</span>
       <h2>{name}, individually</h2>
@@ -414,6 +414,15 @@ def page_for(
     </div>
   </section>
 """
+
+    if artist.get("members"):
+        primary_cta = f'<a class="btn btn-lime" href="#individual-links">Find their links <span aria-hidden="true">↓</span></a>'
+    else:
+        primary_cta = (
+            f'<a class="btn btn-lime" href="{esc(artist["primary_link"]["url"])}" '
+            f'target="_blank" rel="noopener">{esc(artist["primary_link"]["label"])} '
+            f'<span aria-hidden="true">↗</span></a>'
+        )
 
     if previous and following:
         profile_nav = f"""<div class="artist-profile-nav">
@@ -462,7 +471,7 @@ alt=""></noscript>
           <h1{name_class}>{name}</h1>
           <p class="artist-summary">{esc(artist['summary'])}</p>
           <div class="btn-row artist-actions">
-            <a class="btn btn-lime" href="{esc(artist['primary_link']['url'])}" target="_blank" rel="noopener">{esc(artist['primary_link']['label'])} <span aria-hidden="true">↗</span></a>
+            {primary_cta}
             <a class="artist-back-link" href="{lineup_href}">Back to the lineup</a>
           </div>
         </div>
