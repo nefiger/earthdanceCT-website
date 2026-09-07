@@ -3,10 +3,11 @@
 
 Usage: python3 scripts/build_vendors.py
 
-Each vendor is written to vendors/<slug>/index.html, mirroring the artist
-profile pattern in build_artists.py. Pages are not yet linked from vendors.html
-or any nav — they exist so content can be built and reviewed ahead of a public
-vendor directory.
+Each vendor is written to vendors/<slug>/index.html: a photo-hero page (like
+stage pages) with a full gallery below, not a single circular portrait like
+an artist profile — vendors bring many stall/product photos, not one
+headshot. Pages are not yet linked from vendors.html or any nav — they exist
+so content can be built and reviewed ahead of a public vendor directory.
 """
 
 import json
@@ -35,7 +36,7 @@ def head(vendor: dict) -> str:
     name = vendor["name"]
     slug = vendor["slug"]
     canonical = f"{BASE_URL}vendors/{slug}/"
-    image_url = BASE_URL + vendor["image"]
+    image_url = BASE_URL + vendor["gallery"][0]["image"]
     description = description_for(vendor)
     same_as = [link["url"] for link in vendor["links"]]
     schema = {
@@ -45,6 +46,7 @@ def head(vendor: dict) -> str:
         "name": name,
         "url": canonical,
         "image": image_url,
+        "logo": BASE_URL + vendor["logo"],
         "description": vendor["summary"],
         "sameAs": same_as,
     }
@@ -81,7 +83,6 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <meta property="og:title" content="{esc(name)} — Earthdance Cape Town 2026">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{esc(image_url)}">
-<meta property="og:image:alt" content="{esc(vendor['image_alt'])}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{esc(canonical)}">
 <meta property="og:site_name" content="Earthdance Cape Town">
@@ -95,14 +96,13 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors2">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
 
 def page_for(vendor: dict, event: dict, previous: dict | None, following: dict | None) -> str:
     name = esc(vendor["name"])
-    position = esc(vendor["image_position"])
     bio = "".join(f"        <p>{esc(paragraph)}</p>\n" for paragraph in vendor["bio"])
 
     about = ""
@@ -115,6 +115,11 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
     </div>
   </section>
 """
+
+    gallery_tiles = "\n".join(
+        f'        <img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async">'
+        for shot in vendor["gallery"]
+    )
 
     links_section = ""
     if vendor["links"]:
@@ -157,7 +162,7 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
     return f"""<!DOCTYPE html>
 <html lang="en">
 {head(vendor)}
-<body class="artist-page">
+<body class="vendor-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W467DMKQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -170,32 +175,39 @@ alt=""></noscript>
 {header()}
 
 <main>
-  <section class="vendor-hero">
-    <div class="vendor-hero-wash" aria-hidden="true"></div>
+  <section class="page-hero hero">
+    <div class="hero-bg" style="background-image:url('{esc(vendor["gallery"][0]["image"])}')"></div>
+    <div class="hero-veil"></div>
     <div class="container">
       <nav class="vendor-breadcrumb" aria-label="Breadcrumb">
         <a href="vendors.html">Vendors</a><span aria-hidden="true">/</span><span>{name}</span>
       </nav>
-      <div class="vendor-hero-grid">
-        <div class="vendor-intro">
+      <div class="vendor-title-row">
+        <img class="vendor-logo" src="{esc(vendor['logo'])}" alt="{esc(vendor['logo_alt'])}">
+        <div>
           <span class="eyebrow">{esc(vendor['category'])}</span>
           <h1>{name}</h1>
-          <p class="vendor-summary">{esc(vendor['summary'])}</p>
-          <div class="btn-row vendor-actions">
-            <a class="vendor-back-link" href="vendors.html">Back to vendors</a>
-          </div>
         </div>
-        <figure class="vendor-portrait" style="--artist-image-position:{position};--artist-image-background:#0d0a24">
-          <div class="vendor-portrait-crop">
-            <img src="{esc(vendor['image'])}" alt="{esc(vendor['image_alt'])}">
-          </div>
-        </figure>
       </div>
-      <div class="vendor-event-facts" aria-label="Vendor details">
-        <div><span class="artist-fact-label">Find them at</span><strong>{esc(event['name'])}</strong></div>
-        <div><span class="artist-fact-label">Weekend</span><strong>{esc(event['dates'])}</strong></div>
-        <div><span class="artist-fact-label">Category</span><strong>{esc(vendor['category'])}</strong></div>
-        <div><span class="artist-fact-label">Price range</span><strong>{esc(vendor.get('price_notes') or 'On the day')}</strong></div>
+      <p class="lede">{esc(vendor['summary'])}</p>
+      <div class="stat-strip vendor-facts">
+        <div class="stat"><b class="big">{esc(vendor['category'])}</b><span>Category</span></div>
+        <div class="stat"><b class="big">{esc(event['venue'])}</b><span>Find them at</span></div>
+        <div class="stat"><b class="big">{esc(event['dates'])}</b><span>Weekend</span></div>
+        <div class="stat"><b class="big">{esc(vendor.get('price_notes') or 'On the day')}</b><span>Price range</span></div>
+      </div>
+      <div class="btn-row vendor-actions">
+        <a class="vendor-back-link" href="vendors.html">Back to vendors</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section vendor-gallery-section">
+    <div class="container">
+      <span class="eyebrow">In the market</span>
+      <h2>See {name}</h2>
+      <div class="vendor-gallery">
+{gallery_tiles}
       </div>
     </div>
   </section>
