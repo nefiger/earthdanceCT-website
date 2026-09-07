@@ -2158,17 +2158,16 @@ h3.act-heading {
 /* Default: a plain crop — clean and seamless, right for most photos.
    Some photos (tall garment shots, wide text graphics) lose something
    important when cropped; those are curated per-image in vendors.json
-   with "fit": "contain" and get a softened blurred-letterbox treatment
-   instead, so the full photo stays visible. Judgement call, not a
-   blanket rule — most tiles should just use the plain crop. */
+   with "fit": "contain" and letterbox on the tile's own flat background
+   instead, so the full photo stays visible with no cropping and no
+   messy blurred-edge seam. Judgement call, not a blanket rule — most
+   tiles should just use the plain crop. */
 .vendor-gallery-tile {
   position: relative;
   aspect-ratio: 4 / 3;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
 }
 .vendor-gallery-tile img {
   display: block;
@@ -2181,20 +2180,8 @@ h3.act-heading {
   grid-row: span 2;
   aspect-ratio: 1;
 }
-.vendor-gallery-tile-contain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  filter: blur(40px) brightness(0.85) saturate(1.05);
-  transform: scale(1.15);
-}
-.vendor-gallery-tile-contain img {
-  position: relative;
-  z-index: 1;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, .45));
-}
+.vendor-gallery-tile-contain { background: var(--bg-3); }
+.vendor-gallery-tile-contain img { object-fit: contain; }
 @media (max-width: 700px) {
   .vendor-title-row { gap: 12px; }
   .vendor-logo { width: 48px; height: 48px; }

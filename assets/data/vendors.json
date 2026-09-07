@@ -244,8 +244,27 @@
         "The menu runs from a classic Margherita through Hawaiian, Rosa (cherry tomato, feta and basil pesto), Daisy (chicken, feta and peppadews), Trio (bacon, feta and mushrooms), S.O.S (salami, olives and sundried tomatoes) and Carni (bacon, ham, chicken and salami). Every pizza is a large, built to satisfy a hungry festival-goer solo or split between friends.",
         "Sharing is caring. Be nice, share a slice."
       ],
-      "logo": null,
-      "gallery": [],
+      "logo": "assets/vendors/images/love-pizza-logo.png",
+      "logo_alt": "Love Pizza logo — a hand-drawn pizza slice wreath around the Love Pizza wordmark",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/love-pizza-stall.jpg",
+          "alt": "The Love Pizza stall, with a wood-fired oven, menu board and two staff serving",
+          "fit": "contain"
+        },
+        {
+          "image": "assets/vendors/images/love-pizza-oven.jpg",
+          "alt": "A pizza cooking on the wood-fired oven floor beside open flames"
+        },
+        {
+          "image": "assets/vendors/images/love-pizza-box.jpg",
+          "alt": "A pizza topped with rocket and avocado in a Love Pizza box"
+        },
+        {
+          "image": "assets/vendors/images/love-pizza-banner.jpg",
+          "alt": "A Wood-Fired Pizzeria banner with the Love Pizza logo"
+        }
+      ],
       "price_notes": "R115 – R185",
       "links": [],
       "location": "Vendor Lane"
