@@ -240,12 +240,31 @@
       "name": "Oh So Peachy",
       "slug": "oh-so-peachy",
       "category": "Food & Drink",
-      "summary": "Pancakes, smoothies, raw juices, stir-fry and Thai curry — quick festival food with a peachy attitude.",
+      "summary": "Delicious food and raw juices made with love — pancakes, samosas, cold-pressed juices and heartier plates.",
       "bio": [
-        "Oh So Peachy serves pancakes (plain or filled), smoothies and raw juices, plus heartier plates like stir-fry, Thai curry and wraps."
+        "Oh So Peachy is a food trailer cafe serving pancakes (plain or filled), samosas, smoothies and raw juices, plus heartier plates like stir-fry, Thai curry and wraps.",
+        "The raw juice menu includes Green Machine (celery, cucumber, apple), Apple Home (apple, ginger, lemon), Beetroot Energy (beetroot, carrot, apple, ginger) and Golden Love (turmeric, apple, orange, lemon, ginger, cayenne pepper) — fresh ingredients, made with love, supporting local."
       ],
-      "logo": null,
-      "gallery": [],
+      "logo": "assets/vendors/images/oh-so-peachy-logo.jpg",
+      "logo_alt": "Oh So Peachy logo — a peach with a fork, wheat sheaf and spoon icon, ringed by the words Food Trailer Cafe",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/oh-so-peachy-stall.jpg",
+          "alt": "The Oh So Peachy food trailer with Raw Juice, Smoothies, Wraps and Pancakes painted on the side"
+        },
+        {
+          "image": "assets/vendors/images/oh-so-peachy-lounge.jpg",
+          "alt": "Festival-goers relaxing on cushions in the shaded lounge area beside the Oh So Peachy trailer"
+        },
+        {
+          "image": "assets/vendors/images/oh-so-peachy-pancake.jpg",
+          "alt": "A folded pancake on the grill, garnished with an edible flower"
+        },
+        {
+          "image": "assets/vendors/images/oh-so-peachy-flyer.jpg",
+          "alt": "Oh So Peachy promotional flyer showing bottled raw juices, samosas and fresh ingredients"
+        }
+      ],
       "price_notes": "R15 – R150",
       "links": [
         {
