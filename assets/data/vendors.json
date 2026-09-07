@@ -223,8 +223,7 @@
       "category": "Food & Drink",
       "summary": "Espresso-based coffee, matcha, fresh juices and boba, plus milkshakes, slushes and dirty sodas.",
       "bio": [
-        "Fresh Bean Coffee Company is a mobile coffee bar — also known for catering events, weddings and birthdays outside of festival season.",
-        "The menu runs from espresso-based coffee and hot chocolate to freshly squeezed juices, milkshakes, slushes, dirty sodas and frezos, with matcha and boba on offer alongside the coffee."
+        "Fresh Bean Coffee Company's menu runs from espresso-based coffee and hot chocolate to freshly squeezed juices, milkshakes, slushes, dirty sodas and frezos, with matcha and boba on offer alongside the coffee."
       ],
       "logo": "assets/vendors/images/fresh-bean-logo.jpg",
       "logo_alt": "Fresh Bean Coffee Co. logo — green and brown wordmark with a coffee bean and steam icon",
@@ -336,13 +335,21 @@
       "name": "Atma",
       "slug": "atma",
       "category": "Food & Drink",
-      "summary": "Vegan and vegetarian food, coffees and smoothies, with a gluten-free option.",
+      "summary": "Vegan and vegetarian food with close on 20 years on the festival circuit — Ayurvedic-spiced curries, fresh roti and the famous chickpea fudge.",
       "bio": [
-        "Atma brings vegan and vegetarian food to the market village, alongside coffees and smoothies.",
-        "A gluten-free option is available."
+        "Atma has been serving vegan and vegetarian meals at festivals and events around South Africa for close on 20 years. The stall is run and owned by husband-and-wife team Rupa and Shyama, who have both been immersed in yoga culture for most of their lives — Shyama's cooking has seen her serve in ashrams in India, Mauritius, the USA and throughout South Africa.",
+        "Their food is known for delicious Indian-style spicing without the burn, with recipes influenced by ancient Ayurvedic principles using herbs and spices that offer a range of health benefits. On the menu are healthy, wholesome vegetable curries, basmati rice and dhal, all available with freshly made roti.",
+        "For something more contemporary, there are toasted sandwiches, a vegan \"chicken style\" mayo wrap and salad wraps, plus smoothies, raw juices and sweets — including the famous chickpea fudge."
       ],
-      "logo": null,
-      "gallery": [],
+      "logo": "assets/vendors/images/atma-logo.png",
+      "logo_alt": "Atma logo — a white lotus flower on a coral pink circle, above the Atma wordmark",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/atma-trailer.jpg",
+          "alt": "The colourful Atma food trailer under the trees, with fruit and city artwork painted on the side",
+          "fit": "contain"
+        }
+      ],
       "price_notes": null,
       "links": [
         {
