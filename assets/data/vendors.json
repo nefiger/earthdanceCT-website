@@ -33,7 +33,8 @@
         },
         {
           "image": "assets/vendors/images/munchies-toasties.jpg",
-          "alt": "Munchies toasties menu board, showing Cheese & Salami, Bacon & Cheese, Bacon & Egg and Tomato & Cheese options"
+          "alt": "Munchies toasties menu board, showing Cheese & Salami, Bacon & Cheese, Bacon & Egg and Tomato & Cheese options",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/munchies-roti.jpg",
@@ -58,7 +59,8 @@
       "gallery": [
         {
           "image": "assets/vendors/images/groove-gear-stall.jpg",
-          "alt": "The Groove Gear stall, with light-up letters spelling Groove Gear and a colourful table of festival accessories"
+          "alt": "The Groove Gear stall, with light-up letters spelling Groove Gear and a colourful table of festival accessories",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/groove-gear-products.jpg",
@@ -66,11 +68,13 @@
         },
         {
           "image": "assets/vendors/images/groove-gear-fashion.jpg",
-          "alt": "A rack of UV-reactive festival fashion at the Groove Gear stall"
+          "alt": "A rack of UV-reactive festival fashion at the Groove Gear stall",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/groove-gear-glow.jpg",
-          "alt": "Glow bracelets and LED glasses laid out on the table"
+          "alt": "Glow bracelets and LED glasses laid out on the table",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/groove-gear-facepaint.jpg",
@@ -145,35 +149,43 @@
       "gallery": [
         {
           "image": "assets/vendors/images/geovinty-tshirt.jpg",
-          "alt": "A festival-goer wearing a GeoVinty sacred-geometry printed t-shirt"
+          "alt": "A festival-goer wearing a GeoVinty sacred-geometry printed t-shirt",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-leggings-red-front.jpg",
-          "alt": "Burgundy sacred-geometry leggings with laser-cut side panels, front view"
+          "alt": "Burgundy sacred-geometry leggings with laser-cut side panels, front view",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-leggings-red-side.jpg",
-          "alt": "Burgundy sacred-geometry leggings with laser-cut side panels, side view"
+          "alt": "Burgundy sacred-geometry leggings with laser-cut side panels, side view",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-leggings-green-front.jpg",
-          "alt": "Green sacred-geometry leggings with laser-cut side panels, front view"
+          "alt": "Green sacred-geometry leggings with laser-cut side panels, front view",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-leggings-green-side.jpg",
-          "alt": "Green sacred-geometry leggings with laser-cut side panels, side view"
+          "alt": "Green sacred-geometry leggings with laser-cut side panels, side view",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-halter-sage.jpg",
-          "alt": "Sage-green halter top with a laser-cut flower-of-life lattice at the chest"
+          "alt": "Sage-green halter top with a laser-cut flower-of-life lattice at the chest",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-halter-maroon.jpg",
-          "alt": "Maroon halter top with a laser-cut flower-of-life lattice at the chest"
+          "alt": "Maroon halter top with a laser-cut flower-of-life lattice at the chest",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/geovinty-batik-tank.jpg",
-          "alt": "Batik-dyed tank top with a laser-cut panel and a scalloped hem"
+          "alt": "Batik-dyed tank top with a laser-cut panel and a scalloped hem",
+          "fit": "contain"
         }
       ],
       "price_notes": null,
@@ -252,7 +264,8 @@
       "gallery": [
         {
           "image": "assets/vendors/images/oh-so-peachy-stall.jpg",
-          "alt": "The Oh So Peachy food trailer with Raw Juice, Smoothies, Wraps and Pancakes painted on the side"
+          "alt": "The Oh So Peachy food trailer with Raw Juice, Smoothies, Wraps and Pancakes painted on the side",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/oh-so-peachy-lounge.jpg",
@@ -347,23 +360,28 @@
         },
         {
           "image": "assets/vendors/images/wild-and-woven-skirt.jpg",
-          "alt": "A tiered patchwork maxi skirt in mixed prints"
+          "alt": "A tiered patchwork maxi skirt in mixed prints",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/wild-and-woven-pants.jpg",
-          "alt": "Wide-leg harem pants in a red and orange elephant print"
+          "alt": "Wide-leg harem pants in a red and orange elephant print",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/wild-and-woven-poncho.jpg",
-          "alt": "A striped hooded poncho with fringed trim"
+          "alt": "A striped hooded poncho with fringed trim",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/wild-and-woven-dress.jpg",
-          "alt": "A blue paisley-print halter jumpsuit, front and back"
+          "alt": "A blue paisley-print halter jumpsuit, front and back",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/wild-and-woven-hat.jpg",
-          "alt": "A handmade felted watermelon-slice hat"
+          "alt": "A handmade felted watermelon-slice hat",
+          "fit": "contain"
         }
       ],
       "price_notes": "R50 – R1000",
@@ -415,23 +433,28 @@
       "gallery": [
         {
           "image": "assets/vendors/images/afrikan-crown-stall.jpg",
-          "alt": "The Afrikan Crown stall at a festival, with tie-dye clothing and tapestries hanging on a line"
+          "alt": "The Afrikan Crown stall at a festival, with tie-dye clothing and tapestries hanging on a line",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/afrikan-crown-tunic.jpg",
-          "alt": "A white embroidered tunic printed with an image of Haile Selassie"
+          "alt": "A white embroidered tunic printed with an image of Haile Selassie",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/afrikan-crown-detail.jpg",
-          "alt": "An embroidered white garment beside a green, yellow and red cannabis-leaf print dress"
+          "alt": "An embroidered white garment beside a green, yellow and red cannabis-leaf print dress",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/afrikan-crown-shelf.jpg",
-          "alt": "Rasta-print beanies on a shelf above a display case of pipes and bongs"
+          "alt": "Rasta-print beanies on a shelf above a display case of pipes and bongs",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/afrikan-crown-accessories.jpg",
-          "alt": "A display case of rolling papers, grinders and colourful smoking pipes"
+          "alt": "A display case of rolling papers, grinders and colourful smoking pipes",
+          "fit": "contain"
         }
       ],
       "price_notes": "R150 – R500",

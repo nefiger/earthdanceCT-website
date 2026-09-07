@@ -2155,9 +2155,12 @@ h3.act-heading {
   gap: 16px;
   margin-top: 30px;
 }
-/* A photo's own aspect ratio rarely matches the tile — instead of cropping
-   into it (object-fit: cover), letterbox on a blurred copy of the same
-   image so the full photo always stays visible, whatever its shape. */
+/* Default: a plain crop — clean and seamless, right for most photos.
+   Some photos (tall garment shots, wide text graphics) lose something
+   important when cropped; those are curated per-image in vendors.json
+   with "fit": "contain" and get a softened blurred-letterbox treatment
+   instead, so the full photo stays visible. Judgement call, not a
+   blanket rule — most tiles should just use the plain crop. */
 .vendor-gallery-tile {
   position: relative;
   aspect-ratio: 4 / 3;
@@ -2167,26 +2170,30 @@ h3.act-heading {
   background-size: cover;
   background-position: center;
 }
-.vendor-gallery-tile::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  filter: blur(20px) brightness(0.55);
-  transform: scale(1.2);
-}
 .vendor-gallery-tile img {
-  position: relative;
-  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .vendor-gallery-tile:first-child {
   grid-column: span 2;
   grid-row: span 2;
   aspect-ratio: 1;
+}
+.vendor-gallery-tile-contain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(40px) brightness(0.85) saturate(1.05);
+  transform: scale(1.15);
+}
+.vendor-gallery-tile-contain img {
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, .45));
 }
 @media (max-width: 700px) {
   .vendor-title-row { gap: 12px; }
