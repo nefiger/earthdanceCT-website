@@ -223,7 +223,7 @@ alt=""></noscript>
       <p class="lede">{esc(vendor['summary'])}</p>
       <div class="stat-strip vendor-facts">
         <div class="stat"><b class="big">{esc(vendor['category'])}</b><span>Category</span></div>
-        <div class="stat"><b class="big">{esc(event['venue'])}</b><span>Find them at</span></div>
+        <div class="stat"><b class="big">{esc(vendor.get('location') or 'TBC')}</b><span>Find them at</span></div>
         <div class="stat"><b class="big">{esc(event['dates'])}</b><span>Weekend</span></div>
         <div class="stat"><b class="big">{esc(vendor.get('price_notes') or 'On the day')}</b><span>Price range</span></div>
       </div>

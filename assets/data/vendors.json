@@ -41,7 +41,8 @@
         }
       ],
       "price_notes": "R10 – R120",
-      "links": []
+      "links": [],
+      "location": "Vendor Lane"
     },
     {
       "name": "Groove Gear",
@@ -94,7 +95,8 @@
           "label": "TikTok",
           "url": "https://www.tiktok.com/@groovegear2024"
         }
-      ]
+      ],
+      "location": "Mellow Meadow"
     },
     {
       "name": "Mushmore",
@@ -109,7 +111,8 @@
       "logo_alt": "Mushmore logo — the wordmark MUSH MORE in gold, with a sunburst in place of the O in More",
       "gallery": [],
       "price_notes": "R35 – R150",
-      "links": []
+      "links": [],
+      "location": null
     },
     {
       "name": "Lekker Leaf Wellness",
@@ -124,7 +127,8 @@
       "logo_alt": "Lekker Leaf Wellness logo — a cannabis leaf rising from waves inside a sun, beside the wordmark Lekker Leaf and the tagline Where community grows one leaf at a time",
       "gallery": [],
       "price_notes": "Mostly under R150",
-      "links": []
+      "links": [],
+      "location": "Bar"
     },
     {
       "name": "GeoVinty Clothing",
@@ -166,7 +170,8 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/geovintyclothing/"
         }
-      ]
+      ],
+      "location": null
     },
     {
       "name": "Chai'la",
@@ -180,7 +185,8 @@
       "logo": null,
       "gallery": [],
       "price_notes": "R80 – R140",
-      "links": []
+      "links": [],
+      "location": "Mellow Meadow"
     },
     {
       "name": "Fresh Bean Coffee Company",
@@ -191,7 +197,7 @@
         "Fresh Bean Coffee Company's menu runs from espresso-based coffee and hot chocolate to freshly squeezed juices, milkshakes, slushes, dirty sodas and frezos.",
         "Matcha and boba are on offer alongside the coffee."
       ],
-      "logo": null,
+      "logo": "assets/vendors/images/fresh-bean-logo.jpg",
       "gallery": [],
       "price_notes": "R30 – R80",
       "links": [
@@ -199,7 +205,9 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/freshbeancoffeeco?igsh=NmV4NDBleDBnMThx"
         }
-      ]
+      ],
+      "location": "Glamping",
+      "logo_alt": "Fresh Bean Coffee Co. logo — green and brown wordmark with a coffee bean and steam icon"
     },
     {
       "name": "Love Pizza",
@@ -213,7 +221,8 @@
       "logo": null,
       "gallery": [],
       "price_notes": "R115 – R185",
-      "links": []
+      "links": [],
+      "location": "Vendor Lane"
     },
     {
       "name": "Oh So Peachy",
@@ -231,7 +240,8 @@
           "label": "Facebook",
           "url": "https://www.facebook.com/1HEiU2THnC/"
         }
-      ]
+      ],
+      "location": "Vendor Lane"
     },
     {
       "name": "Atma",
@@ -250,7 +260,8 @@
           "label": "Facebook",
           "url": "https://www.facebook.com/atmaveg"
         }
-      ]
+      ],
+      "location": "Vendor Lane"
     },
     {
       "name": "Rosa Divina Adornment",
@@ -268,7 +279,8 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/rosadivina_adornment?igsh=MW1mNzRrd2poa3BzOQ%3D%3D&utm_source=qr"
         }
-      ]
+      ],
+      "location": "Mellow Meadow"
     },
     {
       "name": "Chill and Charge",
@@ -281,7 +293,8 @@
       "logo": null,
       "gallery": [],
       "price_notes": "R60 – R200",
-      "links": []
+      "links": [],
+      "location": "Chill space (Sonic Horizon)"
     },
     {
       "name": "Wild & Woven",
@@ -299,7 +312,8 @@
           "label": "Facebook",
           "url": "https://www.facebook.com/share/18AnBqLqGR/?mibextid=wwXIfr"
         }
-      ]
+      ],
+      "location": "Vendor Lane"
     },
     {
       "name": "Blissful Wellness Escape",
@@ -317,7 +331,8 @@
           "label": "Facebook",
           "url": "https://www.facebook.com/profile.php?id=100090331637332"
         }
-      ]
+      ],
+      "location": "Mellow Meadow"
     },
     {
       "name": "Afrikan Crown",
@@ -330,7 +345,8 @@
       "logo": null,
       "gallery": [],
       "price_notes": "R150 – R500",
-      "links": []
+      "links": [],
+      "location": "Vendor Lane"
     },
     {
       "name": "Firehawk Ink",
@@ -348,7 +364,8 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/firehawk_ink?igsh=MXM5N2J5a2p2ZnBqcA=="
         }
-      ]
+      ],
+      "location": "Mellow Meadow"
     }
   ]
 }
