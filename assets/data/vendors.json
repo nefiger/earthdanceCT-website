@@ -345,13 +345,12 @@
       "logo_alt": "Atma logo — a white lotus flower on a coral pink circle, above the Atma wordmark",
       "gallery": [
         {
-          "image": "assets/vendors/images/atma-trailer.jpg",
-          "alt": "The colourful Atma food trailer under the trees, with fruit and city artwork painted on the side",
-          "fit": "contain"
-        },
-        {
           "image": "assets/vendors/images/atma-team.jpg",
           "alt": "Rupa and Shyama serving a fresh juice at the Atma stall"
+        },
+        {
+          "image": "assets/vendors/images/atma-trailer.jpg",
+          "alt": "The colourful Atma food trailer under the trees, with fruit and city artwork painted on the side"
         }
       ],
       "price_notes": null,
