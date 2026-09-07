@@ -2105,6 +2105,7 @@ h3.act-heading {
 .vendor-hero-noimage .stat-strip.vendor-facts { justify-content: center; }
 .vendor-hero-noimage .vendor-actions { justify-content: center; }
 .vendor-hero-noimage .vendor-breadcrumb { justify-content: center; }
+.vendor-title-row-nologo { gap: 0; }
 .stat-strip.vendor-facts {
   margin-top: 26px;
   grid-template-columns: repeat(4, minmax(0, 1fr));

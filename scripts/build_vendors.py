@@ -36,7 +36,8 @@ def head(vendor: dict) -> str:
     name = vendor["name"]
     slug = vendor["slug"]
     canonical = f"{BASE_URL}vendors/{slug}/"
-    hero_image = vendor["gallery"][0]["image"] if vendor["gallery"] else vendor["logo"]
+    fallback_image = vendor.get("logo") or "assets/brand/og-image.jpg"
+    hero_image = vendor["gallery"][0]["image"] if vendor["gallery"] else fallback_image
     image_url = BASE_URL + hero_image
     description = description_for(vendor)
     same_as = [link["url"] for link in vendor["links"]]
@@ -47,10 +48,11 @@ def head(vendor: dict) -> str:
         "name": name,
         "url": canonical,
         "image": image_url,
-        "logo": BASE_URL + vendor["logo"],
         "description": vendor["summary"],
         "sameAs": same_as,
     }
+    if vendor.get("logo"):
+        schema["logo"] = BASE_URL + vendor["logo"]
     schema_json = json.dumps(schema, ensure_ascii=False).replace("</", "<\\/")
     return f"""<head>
 <!-- Google Tag Manager -->
@@ -162,6 +164,13 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
         else ""
     )
     title_row_class = "vendor-title-row" if has_photos else "vendor-title-row vendor-title-row-noimage"
+    if not vendor.get("logo"):
+        title_row_class += " vendor-title-row-nologo"
+    logo_img = (
+        f'<img class="vendor-logo" src="{esc(vendor["logo"])}" alt="{esc(vendor["logo_alt"])}">'
+        if vendor.get("logo")
+        else ""
+    )
 
     if previous and following:
         profile_nav = f"""<div class="vendor-profile-nav">
@@ -205,7 +214,7 @@ alt=""></noscript>
         <a href="vendors.html">Vendors</a><span aria-hidden="true">/</span><span>{name}</span>
       </nav>
       <div class="{title_row_class}">
-        <img class="vendor-logo" src="{esc(vendor['logo'])}" alt="{esc(vendor['logo_alt'])}">
+        {logo_img}
         <div>
           <span class="eyebrow">{esc(vendor['category'])}</span>
           <h1>{name}</h1>

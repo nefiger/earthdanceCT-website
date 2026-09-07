@@ -125,6 +125,229 @@
       "gallery": [],
       "price_notes": "Mostly under R150",
       "links": []
+    },
+    {
+      "name": "GeoVinty Clothing",
+      "slug": "geovinty-clothing",
+      "category": "Craft & Goods",
+      "summary": "Sacred-geometry streetwear — laser-cut leggings and printed festival tees built around flower-of-life patterns.",
+      "bio": [
+        "GeoVinty Clothing brings sacred-geometry streetwear to the market village: laser-cut leggings with flower-of-life and mandala patterns cut straight into the fabric.",
+        "The range also includes printed festival tees and tops carrying the same geometric patterns."
+      ],
+      "logo": "assets/vendors/images/geovinty-logo.jpg",
+      "logo_alt": "GeoVinty Clothing logo — a flower-of-life mandala inside a weathered orange ring, with the GeoVinty Clothing wordmark",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/geovinty-tshirt.jpg",
+          "alt": "A festival-goer wearing a GeoVinty sacred-geometry printed t-shirt"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-leggings-red-front.jpg",
+          "alt": "Burgundy sacred-geometry leggings with laser-cut side panels, front view"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-leggings-red-side.jpg",
+          "alt": "Burgundy sacred-geometry leggings with laser-cut side panels, side view"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-leggings-green-front.jpg",
+          "alt": "Green sacred-geometry leggings with laser-cut side panels, front view"
+        },
+        {
+          "image": "assets/vendors/images/geovinty-leggings-green-side.jpg",
+          "alt": "Green sacred-geometry leggings with laser-cut side panels, side view"
+        }
+      ],
+      "price_notes": null,
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/geovintyclothing/"
+        }
+      ]
+    },
+    {
+      "name": "Chai'la",
+      "slug": "chaila-zero-proof-bar",
+      "category": "Food & Drink",
+      "summary": "A zero-proof bar of chai, Chinese tea, cacao and botanical extracts, with dairy-free options.",
+      "bio": [
+        "Chai'la serves a zero-proof bar built around chai tea, Chinese tea, cacao and botanical extracts.",
+        "Dairy-free options are available across the menu."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R80 – R140",
+      "links": []
+    },
+    {
+      "name": "Fresh Bean Coffee Company",
+      "slug": "fresh-bean-coffee-company",
+      "category": "Food & Drink",
+      "summary": "Espresso-based coffee, matcha, fresh juices and boba, plus milkshakes, slushes and dirty sodas.",
+      "bio": [
+        "Fresh Bean Coffee Company's menu runs from espresso-based coffee and hot chocolate to freshly squeezed juices, milkshakes, slushes, dirty sodas and frezos.",
+        "Matcha and boba are on offer alongside the coffee."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R30 – R80",
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/freshbeancoffeeco?igsh=NmV4NDBleDBnMThx"
+        }
+      ]
+    },
+    {
+      "name": "Love Pizza",
+      "slug": "love-pizza",
+      "category": "Food & Drink",
+      "summary": "Large wood-fired-style pizzas, from a classic Margherita to vegan and gluten-free options.",
+      "bio": [
+        "Love Pizza's menu runs from a classic Margherita through Hawaiian, Rosa (cherry tomato, feta and basil pesto), Daisy (chicken, feta and peppadews), Trio (bacon, feta and mushrooms), S.O.S (salami, olives and sundried tomatoes) and Carni (bacon, ham, chicken and salami), with vegetarian, vegan and gluten-free options too.",
+        "Every pizza is a large, built to satisfy a hungry festival-goer solo or split between friends."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R115 – R185",
+      "links": []
+    },
+    {
+      "name": "Oh So Peachy",
+      "slug": "oh-so-peachy",
+      "category": "Food & Drink",
+      "summary": "Pancakes, smoothies, raw juices, stir-fry and Thai curry — quick festival food with a peachy attitude.",
+      "bio": [
+        "Oh So Peachy serves pancakes (plain or filled), smoothies and raw juices, plus heartier plates like stir-fry, Thai curry and wraps."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R15 – R150",
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/1HEiU2THnC/"
+        }
+      ]
+    },
+    {
+      "name": "Atma",
+      "slug": "atma",
+      "category": "Food & Drink",
+      "summary": "Vegan and vegetarian food, coffees and smoothies, with a gluten-free option.",
+      "bio": [
+        "Atma brings vegan and vegetarian food to the market village, alongside coffees and smoothies.",
+        "A gluten-free option is available."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": null,
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/atmaveg"
+        }
+      ]
+    },
+    {
+      "name": "Rosa Divina Adornment",
+      "slug": "rosa-divina-adornment",
+      "category": "Craft & Goods",
+      "summary": "Jewellery and accessories, from small pieces to statement adornment.",
+      "bio": [
+        "Rosa Divina Adornment brings jewellery and accessories to the market village, spanning a wide range from everyday pieces to statement adornment."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R150 – R3000",
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/rosadivina_adornment?igsh=MW1mNzRrd2poa3BzOQ%3D%3D&utm_source=qr"
+        }
+      ]
+    },
+    {
+      "name": "Chill and Charge",
+      "slug": "chill-and-charge",
+      "category": "Wellness",
+      "summary": "A charging and chill-out space to power up your phone — and yourself — between sets.",
+      "bio": [
+        "Chill and Charge offers a space to recharge both your devices and yourself between sets, with charging available by the half hour."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R60 – R200",
+      "links": []
+    },
+    {
+      "name": "Wild & Woven",
+      "slug": "wild-and-woven",
+      "category": "Craft & Goods",
+      "summary": "Clothing for the festival wardrobe, mostly priced under R500.",
+      "bio": [
+        "Wild & Woven brings a clothing range to the market village, priced from R50 up to R1000 and mostly under R500."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R50 – R1000",
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/share/18AnBqLqGR/?mibextid=wwXIfr"
+        }
+      ]
+    },
+    {
+      "name": "Blissful Wellness Escape",
+      "slug": "blissful-wellness-escape",
+      "category": "Wellness",
+      "summary": "Massage treatments, hair braiding and a glitter bar — a moment of calm between dancefloors.",
+      "bio": [
+        "Blissful Wellness Escape offers massage treatments from quick express sessions to full 60–90 minute treatments, alongside hair braiding and a glitter bar."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R80 – R750",
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/profile.php?id=100090331637332"
+        }
+      ]
+    },
+    {
+      "name": "Afrikan Crown",
+      "slug": "afrikan-crown",
+      "category": "Craft & Goods",
+      "summary": "Rasta-inspired clothing and accessories.",
+      "bio": [
+        "Afrikan Crown brings Rasta-inspired clothing and accessories to the market village."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": "R150 – R500",
+      "links": []
+    },
+    {
+      "name": "Firehawk Ink",
+      "slug": "firehawk-ink",
+      "category": "Craft & Goods",
+      "summary": "Tattoos — take a piece of Earthdance home under your skin.",
+      "bio": [
+        "Firehawk Ink offers tattoos on site — a lasting way to mark the weekend."
+      ],
+      "logo": null,
+      "gallery": [],
+      "price_notes": null,
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/firehawk_ink?igsh=MXM5N2J5a2p2ZnBqcA=="
+        }
+      ]
     }
   ]
 }
