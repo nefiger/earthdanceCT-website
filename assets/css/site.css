@@ -948,6 +948,14 @@ h1, .display {
 
 .stage-cards { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .stage-cards .photo-card img { height: 220px; }
+
+.crew-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.crew-card { flex-direction: row; align-items: center; gap: 16px; padding: 18px 20px; }
+.crew-card img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center 30%; flex-shrink: 0; }
+.crew-card .photo-card-body { padding: 0; }
+.crew-card .eyebrow { font-size: 11px; }
+.crew-card h3 { margin: 2px 0 6px; font-size: 17px; }
+.crew-card p:not(.eyebrow) { font-size: 14px; margin: 0; line-height: 1.55; }
 .stage-faces {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
