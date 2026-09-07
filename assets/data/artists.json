@@ -927,6 +927,32 @@
           "url": "https://www.instagram.com/zendrik_anahata/"
         }
       ]
+    },
+    {
+      "name": "Verax",
+      "slug": "verax",
+      "summary": "Verax brings tasty psy sounds to the bush doof — sexy, funky, dark prog for the dancefloor.",
+      "bio": [
+        "Verax is a music lover and audiophile for all things psy — off-beat, full-on and everything between, with a sound that leans sexy, funky and dark prog."
+      ],
+      "image": "assets/artists/images/verax.jpg",
+      "image_alt": "Portrait of Verax",
+      "image_position": "50% 30%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow Verax",
+        "url": "https://www.facebook.com/DJVerax"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/DJVerax"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/greggsonicsa"
+        }
+      ]
     }
   ]
 }
