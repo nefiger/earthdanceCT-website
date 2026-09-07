@@ -91,6 +91,41 @@
       ]
     },
     {
+      "name": "Arcane & Pixie",
+      "slug": "arcane-pixie",
+      "summary": "Arcane & Pixie are a sibling duo raised on South Africa's psytrance culture, delivering a chemistry that only family can bring.",
+      "bio": [
+        "Arcane & Pixie bring a unique sibling connection to the dancefloor, forged through a lifetime immersed in South Africa's psytrance culture. Raised on festivals, outdoor gatherings, and the sounds that shaped a generation, both developed a deep passion for music from an early age.",
+        "Their back-to-back performances blend uplifting melodies, driving rhythms, psychedelic textures and infectious bounce into a seamless dancefloor experience. United by family, friendship and a shared love for psytrance, they deliver an authentic energy that can only come from growing up together."
+      ],
+      "image": "assets/artists/images/arcane-pixie.jpg",
+      "image_alt": "Arcane and Pixie together at the decks",
+      "image_position": "52% 42%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen to Arcane",
+        "url": "https://soundcloud.com/arcanery"
+      },
+      "links": [
+        {
+          "label": "Arcane on SoundCloud",
+          "url": "https://soundcloud.com/arcanery"
+        },
+        {
+          "label": "Arcane on Instagram",
+          "url": "https://www.instagram.com/djarcanesa/"
+        },
+        {
+          "label": "Pixie on SoundCloud",
+          "url": "https://on.soundcloud.com/jVGMNasOHRvflnoXcq"
+        },
+        {
+          "label": "Pixie on Instagram",
+          "url": "https://www.instagram.com/itspixie_za/"
+        }
+      ]
+    },
+    {
       "name": "Asterion",
       "slug": "asterion",
       "summary": "DJ Asterion. Sound engineer turned storyteller. Hypnotic grooves, soaring synths and moments that move the dancefloor.",

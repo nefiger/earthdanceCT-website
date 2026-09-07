@@ -349,7 +349,9 @@
               "name": "Craig A"
             },
             {
-              "name": "Arcane vs Pixie"
+              "name": "Arcane vs Pixie",
+              "profile": "artists/arcane-pixie/",
+              "profile_label": "Arcane & Pixie"
             },
             {
               "name": "Bruce"
