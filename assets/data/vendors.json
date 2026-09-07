@@ -33,7 +33,7 @@
         },
         {
           "image": "assets/vendors/images/munchies-toasties.jpg",
-          "alt": "Munchies toasties, sliced diagonally and stacked"
+          "alt": "Munchies toasties menu board, showing Cheese & Salami, Bacon & Cheese, Bacon & Egg and Tomato & Cheese options"
         },
         {
           "image": "assets/vendors/images/munchies-roti.jpg",
@@ -406,12 +406,34 @@
       "name": "Afrikan Crown",
       "slug": "afrikan-crown",
       "category": "Craft & Goods",
-      "summary": "Rasta-inspired clothing and accessories.",
+      "summary": "Rasta clothing and accessories — trance dresses, reggae tees and vests, and smoking accessories.",
       "bio": [
-        "Afrikan Crown brings Rasta-inspired clothing and accessories to the market village."
+        "Afrikan Crown brings Rasta-inspired clothing to the market village: flowing trance dresses, reggae-print tees and vests, tie-dye and embroidered tunics carrying icons like Bob Marley and Haile Selassie.",
+        "Alongside the clothing rail sits a full spread of Rasta items and smoking accessories — rolling papers, grinders, pipes and bongs in every colour."
       ],
       "logo": null,
-      "gallery": [],
+      "gallery": [
+        {
+          "image": "assets/vendors/images/afrikan-crown-stall.jpg",
+          "alt": "The Afrikan Crown stall at a festival, with tie-dye clothing and tapestries hanging on a line"
+        },
+        {
+          "image": "assets/vendors/images/afrikan-crown-tunic.jpg",
+          "alt": "A white embroidered tunic printed with an image of Haile Selassie"
+        },
+        {
+          "image": "assets/vendors/images/afrikan-crown-detail.jpg",
+          "alt": "An embroidered white garment beside a green, yellow and red cannabis-leaf print dress"
+        },
+        {
+          "image": "assets/vendors/images/afrikan-crown-shelf.jpg",
+          "alt": "Rasta-print beanies on a shelf above a display case of pipes and bongs"
+        },
+        {
+          "image": "assets/vendors/images/afrikan-crown-accessories.jpg",
+          "alt": "A display case of rolling papers, grinders and colourful smoking pipes"
+        }
+      ],
       "price_notes": "R150 – R500",
       "links": [],
       "location": "Vendor Lane"

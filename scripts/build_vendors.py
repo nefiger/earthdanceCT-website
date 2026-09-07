@@ -99,7 +99,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors2">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors3">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -122,7 +122,8 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
     gallery_section = ""
     if vendor["gallery"]:
         gallery_tiles = "\n".join(
-            f'        <img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async">'
+            f'        <div class="vendor-gallery-tile" style="background-image:url(\'{esc(shot["image"])}\')">'
+            f'<img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async"></div>'
             for shot in vendor["gallery"]
         )
         gallery_section = f"""  <section class="section vendor-gallery-section">
@@ -301,7 +302,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors2">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors3">
 </head>"""
 
 
