@@ -112,7 +112,7 @@
       "gallery": [],
       "price_notes": "R35 – R150",
       "links": [],
-      "location": null
+      "location": "Bar area"
     },
     {
       "name": "Lekker Leaf Wellness",
@@ -128,7 +128,7 @@
       "gallery": [],
       "price_notes": "Mostly under R150",
       "links": [],
-      "location": "Bar"
+      "location": "Bar area"
     },
     {
       "name": "GeoVinty Clothing",
@@ -206,7 +206,7 @@
           "url": "https://www.instagram.com/freshbeancoffeeco?igsh=NmV4NDBleDBnMThx"
         }
       ],
-      "location": "Glamping",
+      "location": "Glamping Avenue",
       "logo_alt": "Fresh Bean Coffee Co. logo — green and brown wordmark with a coffee bean and steam icon"
     },
     {
