@@ -185,7 +185,7 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
       </div>"""
     else:
         profile_nav = """<div class="vendor-profile-nav vendor-profile-nav-single">
-        <a href="vendors.html">
+        <a href="vendor-directory.html">
           <span>Explore vendors</span>
           <strong>← Back to vendors</strong>
         </a>
@@ -211,7 +211,7 @@ alt=""></noscript>
     {hero_bg}
     <div class="container">
       <nav class="vendor-breadcrumb" aria-label="Breadcrumb">
-        <a href="vendors.html">Vendors</a><span aria-hidden="true">/</span><span>{name}</span>
+        <a href="vendor-directory.html">Vendors</a><span aria-hidden="true">/</span><span>{name}</span>
       </nav>
       <div class="{title_row_class}">
         {logo_img}
@@ -228,7 +228,7 @@ alt=""></noscript>
         <div class="stat"><b class="big">{esc(vendor.get('price_notes') or 'On the day')}</b><span>Price range</span></div>
       </div>
       <div class="btn-row vendor-actions">
-        <a class="vendor-back-link" href="vendors.html">Back to vendors</a>
+        <a class="vendor-back-link" href="vendor-directory.html">Back to vendors</a>
       </div>
     </div>
   </section>
@@ -250,6 +250,136 @@ alt=""></noscript>
 {links_section}  <section class="section vendor-profile-nav-section">
     <div class="container">
       {profile_nav}
+    </div>
+  </section>
+</main>
+
+{footer()}
+<script src="assets/js/site.js?v=20260812-capi1"></script>
+</body>
+</html>
+"""
+
+
+def directory_head() -> str:
+    canonical = BASE_URL + "vendor-directory.html"
+    description = (
+        "Meet the traders at Earthdance Cape Town 2026 — food, drink, craft, "
+        "clothing and wellness in the market village at Kromrivier Farm."
+    )
+    return f"""<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+}})(window,document,'script','dataLayer','GTM-W467DMKQ');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3564053623773252');
+window.earthdanceMetaPageViewEventId = 'pageview-' + Date.now() + '-' +
+  Math.random().toString(36).slice(2, 12);
+fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}});
+</script>
+<!-- End Meta Pixel Code -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vendor Directory — Earthdance Cape Town 2026</title>
+<meta name="description" content="{esc(description)}">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="{esc(canonical)}">
+<link rel="icon" href="assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors2">
+</head>"""
+
+
+def directory_card(vendor: dict) -> str:
+    name = esc(vendor["name"])
+    href = f"vendors/{esc(vendor['slug'])}/"
+    if vendor["gallery"]:
+        thumb = f'<img class="vendor-directory-thumb" src="{esc(vendor["gallery"][0]["image"])}" alt="" loading="lazy" decoding="async">'
+    elif vendor.get("logo"):
+        thumb = (
+            '<span class="vendor-directory-thumb vendor-directory-thumb-logo">'
+            f'<img src="{esc(vendor["logo"])}" alt="" loading="lazy" decoding="async"></span>'
+        )
+    else:
+        initial = esc(vendor["name"][0].upper())
+        thumb = f'<span class="vendor-directory-thumb vendor-directory-thumb-blank">{initial}</span>'
+    return f"""        <a class="vendor-directory-card" href="{href}">
+          {thumb}
+          <span class="vendor-directory-card-body">
+            <strong>{name}</strong>
+            <span>{esc(vendor['summary'])}</span>
+          </span>
+        </a>"""
+
+
+def directory_page(data: dict) -> str:
+    vendors = data["vendors"]
+    categories = ["Food & Drink", "Craft & Goods", "Wellness"]
+    groups = []
+    for category in categories:
+        in_category = [v for v in vendors if v["category"] == category]
+        if in_category:
+            groups.append((category, in_category))
+    leftover = [v for v in vendors if v["category"] not in categories]
+    if leftover:
+        groups.append(("More", leftover))
+
+    sections = []
+    for category, group in groups:
+        cards = "\n".join(directory_card(v) for v in group)
+        sections.append(f"""      <div class="vendor-directory-category">
+        <h2>{esc(category)}</h2>
+        <div class="vendor-directory-grid">
+{cards}
+        </div>
+      </div>""")
+    sections_html = "\n".join(sections)
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+{directory_head()}
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W467DMKQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Meta Pixel Code (noscript) -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3564053623773252&ev=PageView&noscript=1"
+alt=""></noscript>
+<!-- End Meta Pixel Code (noscript) -->
+{header()}
+
+<main>
+  <section class="page-hero hero">
+    <div class="hero-bg" style="background-image:url('assets/vendors/images/groove-gear-stall.jpg')"></div>
+    <div class="hero-veil"></div>
+    <div class="container">
+      <span class="eyebrow">Get Involved</span>
+      <h1>Meet the <span class="gradient-text">traders</span></h1>
+      <p class="lede">Food, drink, craft, clothing and wellness — the people bringing the market village to life at Kromrivier Farm.</p>
+    </div>
+    <span class="hero-credit">Photo: Groove Gear</span>
+  </section>
+
+  <section class="section">
+    <div class="container">
+{sections_html}
     </div>
   </section>
 </main>
@@ -287,7 +417,9 @@ def main() -> None:
             page_for(vendor, data["event"], previous, following)
         )
 
-    print(f"vendors/ — {len(vendors)} profile pages (not linked from anywhere yet)")
+    (ROOT / "vendor-directory.html").write_text(directory_page(data))
+
+    print(f"vendors/ — {len(vendors)} profile pages + vendor-directory.html (not linked from anywhere yet)")
 
 
 if __name__ == "__main__":
