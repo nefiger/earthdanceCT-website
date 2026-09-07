@@ -270,7 +270,8 @@
               "name": "Psymantis"
             },
             {
-              "name": "Jester"
+              "name": "Jester",
+              "profile": "artists/jester/"
             },
             {
               "name": "Gray Matter",

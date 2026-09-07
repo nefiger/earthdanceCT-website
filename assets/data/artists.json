@@ -363,6 +363,34 @@
       ]
     },
     {
+      "name": "Jester",
+      "slug": "jester",
+      "summary": "A Nordic Alien Music Laboratories label DJ, Jester weaves story-like sets sewn together with seamless mixes fuelled by a relentless energy.",
+      "bio": [
+        "Lester Pywell was introduced to trance in early 2001, in the apple orchards of Elgin. The bug bit, and the rest was history.",
+        "He latched onto turntables in the UK around 2002, and upon his return to South Africa in 2004, Jester was born. He and friends began hosting underground events called Electric Garden, and in no time Jester found his way onto all the major nighttime dancefloors around South Africa, quickly recognised and sought after for story-like sets sewn together with seamless mixes fuelled by a relentless energy.",
+        "His journey has seen him represent the likes of Peak Records and Mechanik Records. Currently representing Nordic Alien Music Laboratories, Jester's sound has moulded and matured over the years, and he prefers not to be put in a box — keeping it psychedelic remains his one key focus."
+      ],
+      "image": "assets/artists/images/jester.jpg",
+      "image_alt": "Portrait of Jester",
+      "image_position": "50% 25%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/eAp9RVpPCtMzCSXYrC"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/eAp9RVpPCtMzCSXYrC"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/the_jester_psytrance_dj/"
+        }
+      ]
+    },
+    {
       "name": "Kayflow",
       "slug": "kayflow",
       "summary": "Kaylee Terblanche teaches yoga in its traditional sense, using simple, intentional movement and breath as our greatest source of strength.",
