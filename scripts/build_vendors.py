@@ -313,13 +313,13 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 def directory_card(vendor: dict) -> str:
     name = esc(vendor["name"])
     href = f"vendors/{esc(vendor['slug'])}/"
-    if vendor["gallery"]:
-        thumb = f'<img class="vendor-directory-thumb" src="{esc(vendor["gallery"][0]["image"])}" alt="" loading="lazy" decoding="async">'
-    elif vendor.get("logo"):
+    if vendor.get("logo"):
         thumb = (
             '<span class="vendor-directory-thumb vendor-directory-thumb-logo">'
             f'<img src="{esc(vendor["logo"])}" alt="" loading="lazy" decoding="async"></span>'
         )
+    elif vendor["gallery"]:
+        thumb = f'<img class="vendor-directory-thumb" src="{esc(vendor["gallery"][0]["image"])}" alt="" loading="lazy" decoding="async">'
     else:
         initial = esc(vendor["name"][0].upper())
         thumb = f'<span class="vendor-directory-thumb vendor-directory-thumb-blank">{initial}</span>'
