@@ -115,7 +115,12 @@
       "logo_alt": "Mushmore logo — the wordmark MUSH MORE in gold, with a sunburst in place of the O in More",
       "gallery": [],
       "price_notes": "R35 – R150",
-      "links": [],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.mushmore.co.za"
+        }
+      ],
       "location": "Bar area"
     },
     {
@@ -218,11 +223,30 @@
       "category": "Food & Drink",
       "summary": "Espresso-based coffee, matcha, fresh juices and boba, plus milkshakes, slushes and dirty sodas.",
       "bio": [
-        "Fresh Bean Coffee Company's menu runs from espresso-based coffee and hot chocolate to freshly squeezed juices, milkshakes, slushes, dirty sodas and frezos.",
-        "Matcha and boba are on offer alongside the coffee."
+        "Fresh Bean Coffee Company is a mobile coffee bar — also known for catering events, weddings and birthdays outside of festival season.",
+        "The menu runs from espresso-based coffee and hot chocolate to freshly squeezed juices, milkshakes, slushes, dirty sodas and frezos, with matcha and boba on offer alongside the coffee."
       ],
       "logo": "assets/vendors/images/fresh-bean-logo.jpg",
-      "gallery": [],
+      "logo_alt": "Fresh Bean Coffee Co. logo — green and brown wordmark with a coffee bean and steam icon",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/fresh-bean-cart.jpg",
+          "alt": "The Fresh Bean Coffee Co. mobile coffee cart, branded red with a Mobile Coffee Bar sign",
+          "fit": "contain"
+        },
+        {
+          "image": "assets/vendors/images/fresh-bean-crates.jpg",
+          "alt": "Fresh Bean crates of soap dispensers, garnishes and fresh fruit on the counter"
+        },
+        {
+          "image": "assets/vendors/images/fresh-bean-neon.jpg",
+          "alt": "The coffee cart lit up at night with a neon Coffee sign"
+        },
+        {
+          "image": "assets/vendors/images/fresh-bean-counter.jpg",
+          "alt": "The espresso machine and counter setup on the Fresh Bean cart"
+        }
+      ],
       "price_notes": "R30 – R80",
       "links": [
         {
