@@ -956,6 +956,8 @@ h1, .display {
 .crew-card .eyebrow { font-size: 11px; }
 .crew-card h3 { margin: 2px 0 6px; font-size: 17px; }
 .crew-card p:not(.eyebrow) { font-size: 14px; margin: 0; line-height: 1.55; }
+.crew-card .crew-links { margin-top: 6px; font-weight: 600; }
+.crew-card .crew-links a:not(:last-child)::after { content: " · "; color: var(--ink-dim); font-weight: 400; }
 .stage-faces {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
