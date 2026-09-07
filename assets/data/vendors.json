@@ -107,7 +107,7 @@
         "Mushmore is an adaptogen and nootropic wellness bar, serving mood-enhancing mocktails alongside functional mushroom coffees and lattes.",
         "The lineup runs through adaptogen and nootropic canned beverages and a shelf of wellness brands — Almmy sparkling teas, Numuti social tonics, Vitafuel and Teelixir — with vegan, sugar-free options throughout."
       ],
-      "logo": "assets/vendors/images/mushmore-logo.jpg",
+      "logo": "assets/vendors/images/mushmore-logo.png",
       "logo_alt": "Mushmore logo — the wordmark MUSH MORE in gold, with a sunburst in place of the O in More",
       "gallery": [],
       "price_notes": "R35 – R150",
@@ -123,7 +123,7 @@
         "Lekker Leaf Wellness brings cannabis alongside skincare and body wellness goods to the market village, most priced under R150.",
         "Their tagline says it best: where community grows one leaf at a time."
       ],
-      "logo": "assets/vendors/images/lekker-leaf-logo.jpg",
+      "logo": "assets/vendors/images/lekker-leaf-logo.png",
       "logo_alt": "Lekker Leaf Wellness logo — a cannabis leaf rising from waves inside a sun, beside the wordmark Lekker Leaf and the tagline Where community grows one leaf at a time",
       "gallery": [],
       "price_notes": "Mostly under R150",
@@ -312,17 +312,52 @@
       "name": "Wild & Woven",
       "slug": "wild-and-woven",
       "category": "Craft & Goods",
-      "summary": "Clothing for the festival wardrobe, mostly priced under R500.",
+      "summary": "For the wanderers, the wild ones, the barefoot dancers and the beautifully unconventional — 100% natural-fibre handmade clothing.",
       "bio": [
-        "Wild & Woven brings a clothing range to the market village, priced from R50 up to R1000 and mostly under R500."
+        "For the wanderers, the wild ones, the barefoot dancers and the beautifully unconventional.",
+        "Wild & Woven brings 100% natural-fibre handmade clothing, with a love for earthy textures, relaxed fits, playful prints and pieces that are made to move with you — clothes for wherever the adventure takes you."
       ],
-      "logo": null,
-      "gallery": [],
+      "logo": "assets/vendors/images/wild-and-woven-logo.png",
+      "logo_alt": "Wild & Woven logo — a circular badge with mountains, a sun and Southwestern trim around the Wild & Woven wordmark",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/wild-and-woven-stall.jpg",
+          "alt": "The Wild & Woven stall, with racks of natural-fibre clothing among the pine trees"
+        },
+        {
+          "image": "assets/vendors/images/wild-and-woven-skirt.jpg",
+          "alt": "A tiered patchwork maxi skirt in mixed prints"
+        },
+        {
+          "image": "assets/vendors/images/wild-and-woven-pants.jpg",
+          "alt": "Wide-leg harem pants in a red and orange elephant print"
+        },
+        {
+          "image": "assets/vendors/images/wild-and-woven-poncho.jpg",
+          "alt": "A striped hooded poncho with fringed trim"
+        },
+        {
+          "image": "assets/vendors/images/wild-and-woven-dress.jpg",
+          "alt": "A blue paisley-print halter jumpsuit, front and back"
+        },
+        {
+          "image": "assets/vendors/images/wild-and-woven-hat.jpg",
+          "alt": "A handmade felted watermelon-slice hat"
+        }
+      ],
       "price_notes": "R50 – R1000",
       "links": [
         {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/wildandwoven.sa?igsh=MXIyNmkzZ240b3lxbw%3D%3D&utm_source=qr"
+        },
+        {
           "label": "Facebook",
-          "url": "https://www.facebook.com/share/18AnBqLqGR/?mibextid=wwXIfr"
+          "url": "https://www.facebook.com/share/1EiiAmwCMz/?mibextid=wwXIfr"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@wildandwovensa?_r=1&_t=ZS-990VqxGRN5k"
         }
       ],
       "location": "Vendor Lane"
