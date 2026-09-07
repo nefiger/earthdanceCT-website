@@ -157,7 +157,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260903-stagelinks">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-members">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -370,7 +370,34 @@ def page_for(
         link for link in artist["links"] if link["url"] != artist["primary_link"]["url"]
     ]
     links_section = ""
-    if extra_links:
+    if artist.get("members"):
+        member_cards = []
+        for member in artist["members"]:
+            member_links = "\n".join(
+                f'              <a href="{esc(link["url"])}" target="_blank" rel="noopener">{esc(link["label"])} <span aria-hidden="true">↗</span></a>'
+                for link in member["links"]
+            )
+            member_cards.append(f"""        <div class="artist-member-card">
+          <img class="artist-member-photo" src="{esc(member['image'])}" alt="{esc(member['image_alt'])}" loading="lazy" decoding="async">
+          <div>
+            <h3>{esc(member['name'])}</h3>
+            <p>{esc(member['bio'])}</p>
+            <div class="artist-member-links">
+{member_links}
+            </div>
+          </div>
+        </div>""")
+        links_section = f"""  <section class="section section-tint artist-links-section">
+    <div class="container">
+      <span class="eyebrow">Meet the duo</span>
+      <h2>{name}, individually</h2>
+      <div class="artist-member-grid">
+{chr(10).join(member_cards)}
+      </div>
+    </div>
+  </section>
+"""
+    elif extra_links:
         links = "\n".join(
             f'          <a href="{esc(link["url"])}" target="_blank" rel="noopener">{esc(link["label"])} <span aria-hidden="true">↗</span></a>'
             for link in extra_links

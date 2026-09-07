@@ -1923,6 +1923,35 @@ h3.act-heading {
   color: var(--cyan);
   text-decoration-color: var(--cyan);
 }
+.artist-member-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 40px;
+  margin-top: 30px;
+}
+.artist-member-card { display: flex; gap: 16px; align-items: flex-start; }
+.artist-member-photo {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.artist-member-card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 650; }
+.artist-member-card p { margin: 0 0 10px; font-size: 14.5px; color: var(--ink-dim); line-height: 1.55; }
+.artist-member-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.artist-member-links a {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(111, 227, 255, .4);
+  text-underline-offset: 3px;
+}
+.artist-member-links a:hover { color: var(--cyan); text-decoration-color: var(--cyan); }
+@media (max-width: 700px) {
+  .artist-member-grid { grid-template-columns: 1fr; gap: 26px; }
+}
 .artist-profile-nav-section,
 .vendor-profile-nav-section { padding-top: 34px; padding-bottom: 18px; }
 .artist-profile-nav,

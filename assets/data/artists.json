@@ -123,6 +123,40 @@
           "label": "Pixie on Instagram",
           "url": "https://www.instagram.com/itspixie_za/"
         }
+      ],
+      "members": [
+        {
+          "name": "Arcane",
+          "image": "assets/artists/images/arcane-solo.jpg",
+          "image_alt": "Portrait of Arcane",
+          "bio": "Raised on the pulse of psytrance since childhood, Arcane specialises in off-beat and full-on psytrance — driving basslines, intelligent psychedelic leads and infectious bounce.",
+          "links": [
+            {
+              "label": "SoundCloud",
+              "url": "https://soundcloud.com/arcanery"
+            },
+            {
+              "label": "Instagram",
+              "url": "https://www.instagram.com/djarcanesa/"
+            }
+          ]
+        },
+        {
+          "name": "Pixie",
+          "image": "assets/artists/images/pixie-solo.jpg",
+          "image_alt": "Portrait of Pixie",
+          "bio": "Immersed in South Africa's trance scene from a young age, Pixie blends uplifting melodies with bouncy, driving beats drawn from years of musical exploration.",
+          "links": [
+            {
+              "label": "SoundCloud",
+              "url": "https://on.soundcloud.com/jVGMNasOHRvflnoXcq"
+            },
+            {
+              "label": "Instagram",
+              "url": "https://www.instagram.com/itspixie_za/"
+            }
+          ]
+        }
       ]
     },
     {
