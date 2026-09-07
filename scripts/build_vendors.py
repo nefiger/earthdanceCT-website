@@ -36,7 +36,8 @@ def head(vendor: dict) -> str:
     name = vendor["name"]
     slug = vendor["slug"]
     canonical = f"{BASE_URL}vendors/{slug}/"
-    image_url = BASE_URL + vendor["gallery"][0]["image"]
+    hero_image = vendor["gallery"][0]["image"] if vendor["gallery"] else vendor["logo"]
+    image_url = BASE_URL + hero_image
     description = description_for(vendor)
     same_as = [link["url"] for link in vendor["links"]]
     schema = {
@@ -116,10 +117,23 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
   </section>
 """
 
-    gallery_tiles = "\n".join(
-        f'        <img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async">'
-        for shot in vendor["gallery"]
-    )
+    gallery_section = ""
+    if vendor["gallery"]:
+        gallery_tiles = "\n".join(
+            f'        <img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async">'
+            for shot in vendor["gallery"]
+        )
+        gallery_section = f"""  <section class="section vendor-gallery-section">
+    <div class="container">
+      <span class="eyebrow">In the market</span>
+      <h2>See {name}</h2>
+      <div class="vendor-gallery">
+{gallery_tiles}
+      </div>
+    </div>
+  </section>
+
+"""
 
     links_section = ""
     if vendor["links"]:
@@ -139,6 +153,15 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
     </div>
   </section>
 """
+
+    has_photos = bool(vendor["gallery"])
+    hero_class = "page-hero hero" if has_photos else "page-hero hero vendor-hero-noimage"
+    hero_bg = (
+        f'<div class="hero-bg" style="background-image:url(\'{esc(vendor["gallery"][0]["image"])}\')"></div>\n    <div class="hero-veil"></div>'
+        if has_photos
+        else ""
+    )
+    title_row_class = "vendor-title-row" if has_photos else "vendor-title-row vendor-title-row-noimage"
 
     if previous and following:
         profile_nav = f"""<div class="vendor-profile-nav">
@@ -175,14 +198,13 @@ alt=""></noscript>
 {header()}
 
 <main>
-  <section class="page-hero hero">
-    <div class="hero-bg" style="background-image:url('{esc(vendor["gallery"][0]["image"])}')"></div>
-    <div class="hero-veil"></div>
+  <section class="{hero_class}">
+    {hero_bg}
     <div class="container">
       <nav class="vendor-breadcrumb" aria-label="Breadcrumb">
         <a href="vendors.html">Vendors</a><span aria-hidden="true">/</span><span>{name}</span>
       </nav>
-      <div class="vendor-title-row">
+      <div class="{title_row_class}">
         <img class="vendor-logo" src="{esc(vendor['logo'])}" alt="{esc(vendor['logo_alt'])}">
         <div>
           <span class="eyebrow">{esc(vendor['category'])}</span>
@@ -202,17 +224,7 @@ alt=""></noscript>
     </div>
   </section>
 
-  <section class="section vendor-gallery-section">
-    <div class="container">
-      <span class="eyebrow">In the market</span>
-      <h2>See {name}</h2>
-      <div class="vendor-gallery">
-{gallery_tiles}
-      </div>
-    </div>
-  </section>
-
-{about}  <section class="section vendor-appearance">
+{gallery_section}{about}  <section class="section vendor-appearance">
     <div class="container vendor-appearance-grid">
       <div>
         <span class="eyebrow">Meet us on the farm</span>

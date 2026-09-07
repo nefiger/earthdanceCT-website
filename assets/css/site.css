@@ -2072,13 +2072,39 @@ h3.act-heading {
 .vendor-logo {
   width: 64px;
   height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 14px;
+  object-fit: contain;
   border: 2px solid rgba(255, 255, 255, .5);
-  background: #050507;
+  background: #fff;
+  padding: 6px;
   flex-shrink: 0;
 }
 .vendor-title-row h1 { margin: 4px 0 0; }
+.page-hero.vendor-hero-noimage {
+  min-height: 0;
+  padding: 92px 0 60px;
+  background:
+    radial-gradient(48% 80% at 22% 38%, rgba(240, 67, 156, .16), transparent 64%),
+    radial-gradient(46% 72% at 79% 36%, rgba(111, 227, 255, .14), transparent 66%),
+    radial-gradient(40% 46% at 50% 100%, rgba(155, 108, 246, .16), transparent 72%),
+    var(--bg);
+}
+.vendor-title-row-noimage {
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  margin-top: 6px;
+}
+.vendor-title-row-noimage .vendor-logo {
+  width: 128px;
+  height: 128px;
+  border-radius: 22px;
+  padding: 16px;
+}
+.vendor-hero-noimage .lede { margin-left: auto; margin-right: auto; text-align: center; }
+.vendor-hero-noimage .stat-strip.vendor-facts { justify-content: center; }
+.vendor-hero-noimage .vendor-actions { justify-content: center; }
+.vendor-hero-noimage .vendor-breadcrumb { justify-content: center; }
 .stat-strip.vendor-facts {
   margin-top: 26px;
   grid-template-columns: repeat(4, minmax(0, 1fr));

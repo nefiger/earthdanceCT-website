@@ -95,6 +95,36 @@
           "url": "https://www.tiktok.com/@groovegear2024"
         }
       ]
+    },
+    {
+      "name": "Mushmore",
+      "slug": "mushmore",
+      "category": "Food & Drink",
+      "summary": "An adaptogen and nootropic wellness bar — mood-enhancing mocktails, functional mushroom coffees and social tonics.",
+      "bio": [
+        "Mushmore is an adaptogen and nootropic wellness bar, serving mood-enhancing mocktails alongside functional mushroom coffees and lattes.",
+        "The lineup runs through adaptogen and nootropic canned beverages and a shelf of wellness brands — Almmy sparkling teas, Numuti social tonics, Vitafuel and Teelixir — with vegan, sugar-free options throughout."
+      ],
+      "logo": "assets/vendors/images/mushmore-logo.jpg",
+      "logo_alt": "Mushmore logo — the wordmark MUSH MORE in gold, with a sunburst in place of the O in More",
+      "gallery": [],
+      "price_notes": "R35 – R150",
+      "links": []
+    },
+    {
+      "name": "Lekker Leaf Wellness",
+      "slug": "lekker-leaf-wellness",
+      "category": "Wellness",
+      "summary": "Cannabis and wellness body goods — \"where community grows one leaf at a time.\"",
+      "bio": [
+        "Lekker Leaf Wellness brings cannabis alongside skincare and body wellness goods to the market village, most priced under R150.",
+        "Their tagline says it best: where community grows one leaf at a time."
+      ],
+      "logo": "assets/vendors/images/lekker-leaf-logo.jpg",
+      "logo_alt": "Lekker Leaf Wellness logo — a cannabis leaf rising from waves inside a sun, beside the wordmark Lekker Leaf and the tagline Where community grows one leaf at a time",
+      "gallery": [],
+      "price_notes": "Mostly under R150",
+      "links": []
     }
   ]
 }
