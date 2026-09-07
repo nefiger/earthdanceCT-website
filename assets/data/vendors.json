@@ -1,0 +1,54 @@
+{
+  "event": {
+    "name": "Earthdance Cape Town 2026",
+    "dates": "18–20 September 2026",
+    "venue": "Kromrivier Farm",
+    "ticket_url": "https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&lc=website#/"
+  },
+  "vendors": [
+    {
+      "name": "Munchies",
+      "slug": "munchies",
+      "category": "Food & Drink",
+      "summary": "Roti wraps, toasties and hand-cut waffle fries — organic, coconut-oil-fried comfort food to fuel the dancefloor.",
+      "bio": [
+        "Munchies brings roti wraps built around flame-grilled chicken or golden chickpea falafel, piled with fresh vegetables and finished with creamy tahini or shawarma sauce.",
+        "Alongside the wraps: fully-loaded toasties in combinations like bacon and egg, tomato and cheese, or bacon and cheese, plus organic hand-cut waffle fries fried in coconut oil.",
+        "Prices run from R10 to R120, with a chickpea falafel option for vegetarians."
+      ],
+      "image": "assets/vendors/images/munchies.jpg",
+      "image_alt": "Munchies falafel wrap, sliced open to show fresh vegetables and tahini sauce",
+      "image_position": "50% 45%",
+      "price_notes": "R10 – R120",
+      "links": []
+    },
+    {
+      "name": "Groove Gear",
+      "slug": "groove-gear",
+      "category": "Wellness",
+      "summary": "A festival lifestyle lounge for LED and UV accessories, face and body gems, hair braiding, glow transformations and relaxing massage.",
+      "bio": [
+        "Groove Gear is a festival lifestyle brand created from a love for music, creativity, self-expression and the festival community, bringing the magic of festivals to life through LED and UV accessories, festival fashion, face and body gems, festival makeup, hair braiding, creative glow transformations and relaxing festival massage experiences.",
+        "The Groove Gear Lounge offers festival-goers a space to express themselves, recharge, connect and add extra sparkle, colour and energy to their Earthdance experience."
+      ],
+      "image": "assets/vendors/images/groove-gear.jpg",
+      "image_alt": "The Groove Gear stall, with light-up letters spelling Groove Gear and a colourful table of festival accessories",
+      "image_position": "62% 78%",
+      "price_notes": "R100 – R1200",
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/share/1F64zLDYAE/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/groovegear2024"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@groovegear2024"
+        }
+      ]
+    }
+  ]
+}
