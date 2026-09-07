@@ -99,7 +99,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors7">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors8">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -306,7 +306,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors7">
+<link rel="stylesheet" href="assets/css/site.css?v=20260907-vendors8">
 </head>"""
 
 
@@ -330,6 +330,52 @@ def directory_card(vendor: dict) -> str:
               <span>{esc(vendor['summary'])}</span>
             </span>
           </a>"""
+
+
+# Short description per market-village space, keyed to the "location"
+# values used in vendors.json. A location without an entry here still
+# renders (falls back to a generic line) rather than breaking the build.
+LOCATION_INFO = {
+    "Vendor Lane": "The main strip of stalls — the first place to look for food, craft and clothing.",
+    "Vendor Village": "A second cluster of stalls in the market village.",
+    "Mellow Meadow": "In and around the Mellow Meadow stage, by day workshops, ceremony and sacred fire.",
+    "Glamping Avenue": "The path past the glamping area — open to everyone, not just glampers.",
+    "Bar area": "Right by the festival bar.",
+    "Chill space (Sonic Horizon)": "The chill-out space beside the Sonic Horizon stage.",
+}
+
+
+def locations_section(vendors: list[dict]) -> str:
+    counts: dict[str, int] = {}
+    for vendor in vendors:
+        location = vendor.get("location")
+        if location:
+            counts[location] = counts.get(location, 0) + 1
+    if not counts:
+        return ""
+    cards = []
+    for location in sorted(counts, key=lambda l: (-counts[l], l)):
+        count = counts[location]
+        tag = "1 trader" if count == 1 else f"{count} traders"
+        description = LOCATION_INFO.get(location, "One of the market village spaces.")
+        cards.append(f"""        <div class="vendor-location-card">
+          <strong>{esc(location)}</strong>
+          <span class="vendor-location-count">{tag}</span>
+          <p>{esc(description)}</p>
+        </div>""")
+    cards_html = "\n".join(cards)
+    return f"""  <section class="section section-tint">
+    <div class="container">
+      <span class="eyebrow">Get your bearings</span>
+      <h2>Where to find them</h2>
+      <p class="bright" style="max-width:60ch;margin-top:10px;">Traders are spread across a few different spaces around the farm.</p>
+      <div class="vendor-location-grid">
+{cards_html}
+      </div>
+    </div>
+  </section>
+
+"""
 
 
 def directory_page(data: dict) -> str:
@@ -360,6 +406,7 @@ def directory_page(data: dict) -> str:
         </div>
       </div>""")
     sections_html = "\n".join(sections)
+    locations_html = locations_section(vendors)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -388,7 +435,7 @@ alt=""></noscript>
     <span class="hero-credit">Photo: Groove Gear</span>
   </section>
 
-  <section class="section">
+{locations_html}  <section class="section">
     <div class="container">
       <div class="vendor-directory-columns">
 {sections_html}
