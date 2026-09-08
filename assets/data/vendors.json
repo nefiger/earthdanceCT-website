@@ -230,7 +230,8 @@
         "Chai'la serves a zero-proof bar built around chai tea, Chinese tea and cacao.",
         "Dairy-free options are available across the menu."
       ],
-      "logo": null,
+      "logo": "assets/vendors/images/chaila-logo.jpg",
+      "logo_alt": "Chai'la logo — a steaming cup emblem above the banner “It's Chai'La Time”",
       "gallery": [],
       "price_notes": "R80 – R140",
       "links": [],
