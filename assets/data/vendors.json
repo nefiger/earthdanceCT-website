@@ -596,6 +596,7 @@
       ],
       "logo": "assets/vendors/images/firehawk-ink-logo.jpg",
       "logo_alt": "Firehawk Ink logo — the script wordmark above a colourful illustrated hawk head, on black",
+      "logo_plain": true,
       "gallery": [
         {
           "image": "assets/vendors/images/firehawk-ink-artwork.jpg",

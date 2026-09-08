@@ -2108,6 +2108,12 @@ h3.act-heading {
   padding: 6px;
   flex-shrink: 0;
 }
+.vendor-logo-plain {
+  object-fit: cover;
+  border: none;
+  background: none;
+  padding: 0;
+}
 .vendor-title-row h1 { margin: 4px 0 0; }
 .page-hero.vendor-hero-noimage {
   min-height: 0;

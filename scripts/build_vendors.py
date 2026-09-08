@@ -99,7 +99,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260908-vendors9">
+<link rel="stylesheet" href="assets/css/site.css?v=20260908-vendors10">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -176,8 +176,9 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
     title_row_class = "vendor-title-row" if has_photos else "vendor-title-row vendor-title-row-noimage"
     if not vendor.get("logo"):
         title_row_class += " vendor-title-row-nologo"
+    logo_class = "vendor-logo vendor-logo-plain" if vendor.get("logo_plain") else "vendor-logo"
     logo_img = (
-        f'<img class="vendor-logo" src="{esc(vendor["logo"])}" alt="{esc(vendor["logo_alt"])}">'
+        f'<img class="{logo_class}" src="{esc(vendor["logo"])}" alt="{esc(vendor["logo_alt"])}">'
         if vendor.get("logo")
         else ""
     )
@@ -311,7 +312,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260908-vendors9">
+<link rel="stylesheet" href="assets/css/site.css?v=20260908-vendors10">
 </head>"""
 
 
