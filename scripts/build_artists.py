@@ -366,9 +366,8 @@ def page_for(
   </section>
 """
 
-    extra_links = [
-        link for link in artist["links"] if link["url"] != artist["primary_link"]["url"]
-    ]
+    primary_url = artist.get("primary_link", {}).get("url")
+    extra_links = [link for link in artist["links"] if link["url"] != primary_url]
     links_section = ""
     if artist.get("members"):
         member_cards = []
@@ -417,12 +416,14 @@ def page_for(
 
     if artist.get("members"):
         primary_cta = f'<a class="btn btn-lime" href="#individual-links">Find their links <span aria-hidden="true">↓</span></a>'
-    else:
+    elif artist.get("primary_link"):
         primary_cta = (
             f'<a class="btn btn-lime" href="{esc(artist["primary_link"]["url"])}" '
             f'target="_blank" rel="noopener">{esc(artist["primary_link"]["label"])} '
             f'<span aria-hidden="true">↗</span></a>'
         )
+    else:
+        primary_cta = ""
 
     if previous and following:
         profile_nav = f"""<div class="artist-profile-nav">

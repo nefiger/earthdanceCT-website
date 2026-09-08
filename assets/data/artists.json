@@ -1094,6 +1094,19 @@
           "url": "https://www.instagram.com/djcraiga_craiganderson"
         }
       ]
+    },
+    {
+      "name": "Ward 10 & The Outpatients",
+      "slug": "ward-10-and-the-outpatients",
+      "summary": "Ward 10 & The Outpatients fuse electronic music with acoustic instruments, moving between progressive tribal psy and deep melodic techno.",
+      "bio": [
+        "Ward 10 & The Outpatients is a collaborative project fusing electronic music with acoustic instruments, played live. Their sound ranges from progressive tribal psy to deep melodic techno."
+      ],
+      "image": "assets/artists/images/ward-10-and-the-outpatients.jpg",
+      "image_alt": "Ward 10 & The Outpatients performing live with acoustic and electronic instruments",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "links": []
     }
   ]
 }
