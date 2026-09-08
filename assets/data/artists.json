@@ -988,6 +988,33 @@
           "url": "https://www.facebook.com/UbuntuDrumming/"
         }
       ]
+    },
+    {
+      "name": "The Great Veroni",
+      "slug": "the-great-veroni",
+      "summary": "The Great Veroni threads decades of Earthdance chill-out sets through Africa's history with the festival, from building Peace Camp's Spiritchill space to earning his name from Mikey Dredd and crew.",
+      "bio": [
+        "Vernon Pendlebury has been involved with Earthdance since it first arrived in Africa. He created the Spiritchill space, which grew into Peace Camp, and spent decades weaving tunes for chill-out spaces across many other events — an array of genres from psy ambient dub to eclectic world fusion.",
+        "Those chill spaces often hosted the after-parties, and the need for more beats inspired him to play tunes people could actually boogie to. He's played Origin's Beats stage, the early Main stage and Not the Miniscule for many years — where he was dubbed The Great Veroni by Regan and crew, including Mikey Dredd."
+      ],
+      "image": "assets/artists/images/the-great-veroni.jpg",
+      "image_alt": "Portrait of The Great Veroni",
+      "image_position": "50% 30%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://soundcloud.com/the-great-veroni"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/the-great-veroni"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/vernonheavenlyearth/"
+        }
+      ]
     }
   ]
 }
