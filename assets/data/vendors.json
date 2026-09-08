@@ -240,8 +240,7 @@
       "gallery": [
         {
           "image": "assets/vendors/images/fresh-bean-cart.jpg",
-          "alt": "The Fresh Bean Coffee Co. mobile coffee cart, branded red with a Mobile Coffee Bar sign",
-          "fit": "contain"
+          "alt": "The Fresh Bean Coffee Co. mobile coffee cart, branded red with a Mobile Coffee Bar sign"
         },
         {
           "image": "assets/vendors/images/fresh-bean-crates.jpg",
@@ -281,13 +280,13 @@
       "logo_alt": "Love Pizza logo — a hand-drawn pizza slice wreath around the Love Pizza wordmark",
       "gallery": [
         {
+          "image": "assets/vendors/images/love-pizza-oven.jpg",
+          "alt": "A pizza cooking on the wood-fired oven floor beside open flames"
+        },
+        {
           "image": "assets/vendors/images/love-pizza-stall.jpg",
           "alt": "The Love Pizza stall, with a wood-fired oven, menu board and two staff serving",
           "fit": "contain"
-        },
-        {
-          "image": "assets/vendors/images/love-pizza-oven.jpg",
-          "alt": "A pizza cooking on the wood-fired oven floor beside open flames"
         },
         {
           "image": "assets/vendors/images/love-pizza-box.jpg",

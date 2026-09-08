@@ -2181,7 +2181,15 @@ h3.act-heading {
   aspect-ratio: 1;
 }
 .vendor-gallery-tile-contain { background: var(--bg-3); }
-.vendor-gallery-tile-contain img { object-fit: contain; }
+.vendor-gallery-tile-contain img { object-fit: contain; position: relative; z-index: 1; }
+.vendor-gallery-tile-backdrop {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(24px) brightness(.55);
+  transform: scale(1.15);
+}
 @media (max-width: 700px) {
   .vendor-title-row { gap: 12px; }
   .vendor-logo { width: 48px; height: 48px; }
