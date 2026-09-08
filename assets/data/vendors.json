@@ -129,14 +129,24 @@
       "category": "Wellness",
       "summary": "Cannabis and wellness body goods — \"where community grows one leaf at a time.\"",
       "bio": [
-        "Lekker Leaf Wellness brings cannabis alongside skincare and body wellness goods to the market village, most priced under R150.",
+        "Lekker Leaf is a holistic health and wellness business dedicated to creating a nurturing space for change, healing, and growth. We believe in a well-rounded approach to wellness, combining the wisdom of natural remedies, traditional medicine, and modern wellness practices.",
+        "Our mission is to guide individuals toward balanced and sustainable well-being, rooted in connection to both the self and nature.",
         "Their tagline says it best: where community grows one leaf at a time."
       ],
       "logo": "assets/vendors/images/lekker-leaf-logo.png",
       "logo_alt": "Lekker Leaf Wellness logo — a cannabis leaf rising from waves inside a sun, beside the wordmark Lekker Leaf and the tagline Where community grows one leaf at a time",
       "gallery": [],
       "price_notes": "Mostly under R150",
-      "links": [],
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/lekkerleaf.wellness"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/profile.php?id=61581159712510"
+        }
+      ],
       "location": "Bar area"
     },
     {
