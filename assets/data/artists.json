@@ -1078,7 +1078,9 @@
       ],
       "image": "assets/artists/images/dj-craig-a.jpg",
       "image_alt": "Portrait of DJ Craig A",
-      "image_position": "50% 25%",
+      "image_position": "50% 50%",
+      "image_scale": "0.93",
+      "image_translate_y": "4%",
       "image_kind": "photo",
       "primary_link": {
         "label": "Follow DJ Craig A",
