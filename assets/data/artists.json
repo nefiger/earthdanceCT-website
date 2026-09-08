@@ -1015,6 +1015,33 @@
           "url": "https://www.instagram.com/vernonheavenlyearth/"
         }
       ]
+    },
+    {
+      "name": "PsyMantis",
+      "slug": "psymantis",
+      "summary": "PsyMantis brings two decades of underground experience to the decks — driving, filthy, funky Dirty Prog built to read the dancefloor and keep it moving.",
+      "bio": [
+        "With over two decades behind the decks, PsyMantis is a veteran of South Africa's underground electronic music scene. Starting out in the late '90s on vinyl, his journey moved through Jungle, Drum & Bass and Garage before discovering psytrance in the early 2000s — and never looking back.",
+        "Known for bringing the dirty, groovy edge of Dirty Prog to Cape Town dancefloors, PsyMantis has played some of South Africa's most iconic gatherings, including Vortex Open Source, Alien Safari Sprung, Phoenix Festival of Fire and Mozamboogy. His sound is driving, filthy, funky and seriously fun — read the dancefloor, find the groove, keep it moving."
+      ],
+      "image": "assets/artists/images/psymantis.jpg",
+      "image_alt": "Portrait of PsyMantis",
+      "image_position": "35% 25%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/dCVzymvmIWB2jFSQxb"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/dCVzymvmIWB2jFSQxb"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/psymantis_sa"
+        }
+      ]
     }
   ]
 }

@@ -270,7 +270,9 @@
           "name": "Saturday",
           "acts": [
             {
-              "name": "Psymantis"
+              "name": "Psymantis",
+              "profile": "artists/psymantis/",
+              "profile_label": "PsyMantis"
             },
             {
               "name": "Jester",
