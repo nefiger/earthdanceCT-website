@@ -1106,7 +1106,16 @@
       "image_alt": "Ward 10 & The Outpatients performing live with acoustic and electronic instruments",
       "image_position": "50% 45%",
       "image_kind": "photo",
-      "links": []
+      "primary_link": {
+        "label": "Follow on Facebook",
+        "url": "https://www.facebook.com/ward10psy"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/ward10psy"
+        }
+      ]
     }
   ]
 }
