@@ -1042,6 +1042,32 @@
           "url": "https://www.instagram.com/psymantis_sa"
         }
       ]
+    },
+    {
+      "name": "Psyborg",
+      "slug": "psyborg",
+      "summary": "Psyborg brings high-energy, uplifting psytrance sets built to connect people through music and keep the dancefloor alive.",
+      "bio": [
+        "Psyborg is the alias of Matthew Coert, a South African psytrance DJ with a passion for creating unforgettable musical journeys. He's been behind the decks since he was 16, and his mission is simple: bring high-energy, uplifting sets that connect people through music and keep the dancefloor alive."
+      ],
+      "image": "assets/artists/images/psyborg.jpg",
+      "image_alt": "Portrait of Psyborg",
+      "image_position": "45% 15%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/pv5JpuDDBKqatlG6h2"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/pv5JpuDDBKqatlG6h2"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/its_psyborg"
+        }
+      ]
     }
   ]
 }
