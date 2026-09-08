@@ -135,7 +135,16 @@
       ],
       "logo": "assets/vendors/images/lekker-leaf-logo.png",
       "logo_alt": "Lekker Leaf Wellness logo — a cannabis leaf rising from waves inside a sun, beside the wordmark Lekker Leaf and the tagline Where community grows one leaf at a time",
-      "gallery": [],
+      "gallery": [
+        {
+          "image": "assets/vendors/images/lekker-leaf-storefront.jpg",
+          "alt": "The Lekker Leaf shopfront, with signage reading Lekker Leaf — where community grows one leaf at a time"
+        },
+        {
+          "image": "assets/vendors/images/lekker-leaf-lounge.jpg",
+          "alt": "Inside the Lekker Leaf lounge, with a pool table, bar counter and living green wall"
+        }
+      ],
       "price_notes": "Mostly under R150",
       "links": [
         {
