@@ -1068,6 +1068,32 @@
           "url": "https://www.instagram.com/its_psyborg"
         }
       ]
+    },
+    {
+      "name": "DJ Craig A",
+      "slug": "dj-craig-a",
+      "summary": "DJ Craig A plays for the love of Goa Trance — psychedelic, prog and full-on sounds from Yellow Sunshine Explosion recordings.",
+      "bio": [
+        "DJ Craig A is a label DJ for Yellow Sunshine Explosion recordings, playing for the love of Goa Trance — psychedelic, prog and full-on."
+      ],
+      "image": "assets/artists/images/dj-craig-a.jpg",
+      "image_alt": "Portrait of DJ Craig A",
+      "image_position": "50% 25%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow DJ Craig A",
+        "url": "https://www.facebook.com/CraigA.DJ/"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/CraigA.DJ/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/djcraiga_craiganderson"
+        }
+      ]
     }
   ]
 }
