@@ -1116,6 +1116,29 @@
           "url": "https://www.facebook.com/ward10psy"
         }
       ]
+    },
+    {
+      "name": "Bush Diva",
+      "slug": "bush-diva",
+      "summary": "Soulful with a touch of jazz, Bush Diva is a singer-songwriter and pianist blending raw emotion, jazz influences and musical tastes from various eras.",
+      "bio": [
+        "Soulful with a touch of jazz, Bush Diva is a singer-songwriter and pianist blending raw emotion, jazz influences and musical tastes from various eras. Her shows are in equal parts poignant and comedic.",
+        "With her first solo album underway, Bush Diva delivers a mixture of original songs and covers by the artists who've inspired her along the way. Her tagline: you may laugh or cry or both."
+      ],
+      "image": "assets/artists/images/bush-diva.jpg",
+      "image_alt": "Bush Diva singing and playing keyboard, smiling",
+      "image_position": "60% 35%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/bushdiva2/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/bushdiva2/"
+        }
+      ]
     }
   ]
 }
