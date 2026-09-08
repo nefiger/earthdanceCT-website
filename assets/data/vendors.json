@@ -590,9 +590,10 @@
       "name": "Firehawk Ink",
       "slug": "firehawk-ink",
       "category": "Craft & Goods",
-      "summary": "Tattoos — take a piece of Earthdance home under your skin.",
+      "summary": "Hyper-realistic tattoos, UV designs and custom artwork — take a piece of Earthdance home under your skin.",
       "bio": [
-        "Firehawk Ink offers tattoos on site — a lasting way to mark the weekend."
+        "Firehawk Ink has been turning ideas into tattoos since 2013, specialising in hyper-realistic work, striking UV designs and custom artwork. The team brings passion and professional craftsmanship to every piece.",
+        "At Earthdance, browse the Firehawk Ink Flash Book for a festival-exclusive design and walk away with a permanent piece of the weekend. The Earthdance flash special is a 5cm x 5cm tattoo for R650, picked from a limited run of festival designs — first come, first served."
       ],
       "logo": "assets/vendors/images/firehawk-ink-logo.jpg",
       "logo_alt": "Firehawk Ink logo — the script wordmark above a colourful illustrated hawk head, on black",
@@ -603,7 +604,7 @@
           "alt": "Colourful illustrated hawk head artwork in Firehawk Ink's style"
         }
       ],
-      "price_notes": null,
+      "price_notes": "From R650 (5cm festival flash)",
       "links": [
         {
           "label": "Website",
