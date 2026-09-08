@@ -606,8 +606,16 @@
       "price_notes": null,
       "links": [
         {
+          "label": "Website",
+          "url": "https://firehawkink.wixsite.com/tattoo"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/firehawkink/"
+        },
+        {
           "label": "Instagram",
-          "url": "https://www.instagram.com/firehawk_ink?igsh=MXM5N2J5a2p2ZnBqcA=="
+          "url": "https://www.instagram.com/firehawk_ink/"
         }
       ],
       "location": "Mellow Meadow"
