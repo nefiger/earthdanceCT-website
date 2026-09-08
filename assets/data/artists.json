@@ -953,6 +953,41 @@
           "url": "https://www.instagram.com/greggsonicsa"
         }
       ]
+    },
+    {
+      "name": "Jamie Jupiter",
+      "slug": "jamie-jupiter",
+      "summary": "Jamie Jupiter is a Cape Town singer-songwriter and multi-instrumentalist — an eclectic sound built on catchy lyrics, warm performances and 20+ years on stage.",
+      "bio": [
+        "Jamie Jupiter's eclectic sound moves between genres with a light touch, catchy lyrics and warm performances. Born and raised in Cape Town in a musical, theatrical household, he began his 20-year career as a percussionist and harmonica player in the city's Observatory music scene, then as guitarist for glam-rock outfit The Honeymoon Suites.",
+        "Since releasing his first album A Brighter Life in 2004, he's played African instruments with the Menjaro Project on a world tour, performed in the cabaret show Angels on Horseback, and toured with Korreltjie Kantel, a SAMA-nominated Afrikaans poetry show. He also runs Ubuntu Drum Fun, his own djembe drumming facilitation company."
+      ],
+      "image": "assets/artists/images/jamie-jupiter.jpg",
+      "image_alt": "Jamie Jupiter playing guitar on stage",
+      "image_position": "62% 20%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Visit jamiejupiter.com",
+        "url": "https://jamiejupiter.com/"
+      },
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://jamiejupiter.com/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/jamjoop/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/JamieJoop/"
+        },
+        {
+          "label": "Ubuntu Drumming",
+          "url": "https://www.facebook.com/UbuntuDrumming/"
+        }
+      ]
     }
   ]
 }
