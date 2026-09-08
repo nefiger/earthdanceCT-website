@@ -577,6 +577,39 @@
         }
       ],
       "location": "Mellow Meadow"
+    },
+    {
+      "name": "Earth Stories",
+      "slug": "earth-stories",
+      "category": "Craft & Goods",
+      "summary": "Handcrafted sterling silver and gold-plated jewellery paired with consciously curated natural clothing, each piece telling its own story.",
+      "bio": [
+        "Earth Stories Cape Town is a slow-fashion, artisan brand built around handcrafted jewellery and consciously curated natural clothing. Pieces are made from sterling silver and gold-plated metal, often finished with ethically sourced elements like protea pods, brass and silver — delicate, story-infused designs meant to spark self-expression.",
+        "The clothing range runs alongside the jewellery, cut from breathable, sustainable cotton and rayon. Both are inspired by the raw beauty of Cape Town, with a thread of harmony, self-expression and mindful living running through the whole collection. Earth Stories is a regular at conscious markets and wellness gatherings across the Cape, from Spiritfest to Earthdance."
+      ],
+      "logo": null,
+      "gallery": [
+        {
+          "image": "assets/vendors/images/earth-stories-stall.jpg",
+          "alt": "The Earth Stories stall at golden hour, twin tents strung with lights, clothing racks and jewellery displays"
+        },
+        {
+          "image": "assets/vendors/images/earth-stories-maker.jpg",
+          "alt": "Earth Stories maker Keshia Lee Codron smiling behind her stall, holding a protea flower"
+        },
+        {
+          "image": "assets/vendors/images/earth-stories-jewelry.jpg",
+          "alt": "Handmade rings, earrings and necklaces laid out on the Earth Stories stall table"
+        }
+      ],
+      "price_notes": null,
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/earthstoriescapetown/"
+        }
+      ],
+      "location": null
     }
   ]
 }
