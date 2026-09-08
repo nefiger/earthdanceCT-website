@@ -315,13 +315,14 @@
       "logo_alt": "Oh So Peachy logo — a peach with a fork, wheat sheaf and spoon icon, ringed by the words Food Trailer Cafe",
       "gallery": [
         {
-          "image": "assets/vendors/images/oh-so-peachy-stall.jpg",
-          "alt": "The Oh So Peachy food trailer with Raw Juice, Smoothies, Wraps and Pancakes painted on the side",
+          "image": "assets/vendors/images/oh-so-peachy-lounge.jpg",
+          "alt": "A group of friends laughing together on a picnic blanket in front of the Oh So Peachy trailer, smoothies in hand",
           "fit": "contain"
         },
         {
-          "image": "assets/vendors/images/oh-so-peachy-lounge.jpg",
-          "alt": "A group of friends laughing together on a picnic blanket in front of the Oh So Peachy trailer, smoothies in hand"
+          "image": "assets/vendors/images/oh-so-peachy-stall.jpg",
+          "alt": "The Oh So Peachy food trailer with Raw Juice, Smoothies, Wraps and Pancakes painted on the side",
+          "fit": "contain"
         },
         {
           "image": "assets/vendors/images/oh-so-peachy-pancake.jpg",
