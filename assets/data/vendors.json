@@ -106,10 +106,10 @@
       "name": "Mushmore",
       "slug": "mushmore",
       "category": "Food & Drink",
-      "summary": "An adaptogen and nootropic wellness bar — mood-enhancing mocktails, functional mushroom coffees and social tonics.",
+      "summary": "A non-alcoholic wellness bar for whatever mood you're in — uplift and energise, replenish and revitalise, or wind down and socialise.",
       "bio": [
-        "Mushmore is an adaptogen and nootropic wellness bar, serving mood-enhancing mocktails alongside functional mushroom coffees and lattes.",
-        "The lineup runs through adaptogen and nootropic canned beverages and a shelf of wellness brands — Almmy sparkling teas, Numuti social tonics, Vitafuel and Teelixir — with vegan, sugar-free options throughout."
+        "Mushmore is a wellness bar serving non-alcoholic, adaptogen and nootropic based beverages. Whether you want to uplift and energise, replenish and revitalise, or wind down and socialise, there's a variety of mocktails, lattes, coffees and canned beverages crafted for your needs — and so mush more.",
+        "The lineup runs through wellness brands like Almmy sparkling teas, Numuti social tonics, Vitafuel and Teelixir, with vegan, sugar-free options throughout."
       ],
       "logo": "assets/vendors/images/mushmore-logo.png",
       "logo_alt": "Mushmore logo — the wordmark MUSH MORE in gold, with a sunburst in place of the O in More",
@@ -366,12 +366,31 @@
       "name": "Rosa Divina Adornment",
       "slug": "rosa-divina-adornment",
       "category": "Craft & Goods",
-      "summary": "Jewellery and accessories, from small pieces to statement adornment.",
+      "summary": "Statement jewellery and accessories — labradorite stones set in macramé wire-wrap, from small pieces to full adornment.",
       "bio": [
-        "Rosa Divina Adornment brings jewellery and accessories to the market village, spanning a wide range from everyday pieces to statement adornment."
+        "Rosa Divina Adornment brings jewellery and accessories to the market village, spanning a wide range from everyday pieces to statement adornment.",
+        "The range leans into labradorite and other stones, hand wire-wrapped in intricate macramé settings — chokers, pendants and necklaces built as wearable art."
       ],
-      "logo": null,
-      "gallery": [],
+      "logo": "assets/vendors/images/rosa-divina-logo.jpg",
+      "logo_alt": "Rosa Divina Adornment logo — a gold lotus emblem on a dark maroon background, above the wordmark",
+      "gallery": [
+        {
+          "image": "assets/vendors/images/rosa-divina-necklace3.jpg",
+          "alt": "A macramé choker with a large labradorite pendant and beaded fringe"
+        },
+        {
+          "image": "assets/vendors/images/rosa-divina-necklace1.jpg",
+          "alt": "A snake-motif macramé necklace with a labradorite teardrop pendant"
+        },
+        {
+          "image": "assets/vendors/images/rosa-divina-necklace2.jpg",
+          "alt": "A macramé necklace with an oval labradorite stone and beaded drops"
+        },
+        {
+          "image": "assets/vendors/images/rosa-divina-necklace4.jpg",
+          "alt": "A brass choker with a labradorite pendant and crescent moon charm"
+        }
+      ],
       "price_notes": "R150 – R3000",
       "links": [
         {
@@ -385,12 +404,22 @@
       "name": "Chill and Charge",
       "slug": "chill-and-charge",
       "category": "Wellness",
-      "summary": "A charging and chill-out space to power up your phone — and yourself — between sets.",
+      "summary": "An amazing chilling environment to power up your phone — and yourself — between sets.",
       "bio": [
-        "Chill and Charge offers a space to recharge both your devices and yourself between sets, with charging available by the half hour."
+        "Chill and Charge has an amazing chilling environment where, while you wait for your technology to charge, you can chill, chat, network or just be you.",
+        "Once your technology is charged, you too will be recharged, rejuvenated and ready to party on. Charging available by the half hour."
       ],
       "logo": null,
-      "gallery": [],
+      "gallery": [
+        {
+          "image": "assets/vendors/images/chill-and-charge-day.jpg",
+          "alt": "The Chill and Charge tent by day, with charging stations and signage inside"
+        },
+        {
+          "image": "assets/vendors/images/chill-and-charge-night.jpg",
+          "alt": "The Chill and Charge tent lit up at night"
+        }
+      ],
       "price_notes": "R60 – R200",
       "links": [],
       "location": "Chill space (Sonic Horizon)"
@@ -458,11 +487,13 @@
       "name": "Blissful Wellness Escape",
       "slug": "blissful-wellness-escape",
       "category": "Wellness",
-      "summary": "Massage treatments, hair braiding and a glitter bar — a moment of calm between dancefloors.",
+      "summary": "The ultimate wellness escape — massage, henna art, hair braiding and a glitter bar. Close your eyes, take a breath, restore, glow.",
       "bio": [
-        "Blissful Wellness Escape offers massage treatments from quick express sessions to full 60–90 minute treatments, alongside hair braiding and a glitter bar."
+        "Blissful Wellness Escape brings the ultimate wellness escape to the festival — because even festival warriors need a little time to pause, breathe and recharge.",
+        "On offer: blissful massage, back, neck and shoulder treatments, foot and calf revival, manicures and pedicures, beautiful henna art, hair braiding and a glitter bar. Whether you're dancing all day, exploring the festival or simply need a moment to yourself, come escape and experience Earthdance like never before."
       ],
-      "logo": null,
+      "logo": "assets/vendors/images/blissful-logo.jpg",
+      "logo_alt": "Blissful Wellness Escape logo — a watercolour spa illustration with candles, lotus and lavender, above the wordmark and the tagline Where inner peace meets outer glow",
       "gallery": [],
       "price_notes": "R80 – R750",
       "links": [
