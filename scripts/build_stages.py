@@ -193,7 +193,7 @@ def page_for(stage: dict, other: dict, by_slug: dict) -> str:
     <div class="container">
       <span class="eyebrow">Artist profiles</span>
       <h2>Who you'll hear here</h2>
-      <p class="bright">{len(faces)} of the artists on this stage have a profile so far. More of the lineup lands between now and September.</p>
+      <p class="bright">Meet the artists playing {name} — more profiles land as the lineup fills out before September.</p>
       <div class="stage-faces">
 {face_cards}
       </div>
