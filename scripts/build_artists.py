@@ -17,9 +17,6 @@ DATA = ROOT / "assets/data/artists.json"
 LINEUP_DATA = ROOT / "assets/data/lineup.json"
 PARTNERS_DATA = ROOT / "assets/data/partners.json"
 ARTISTS_DIR = ROOT / "artists"
-LINEUP_PAGE = ROOT / "lineup.html"
-LINEUP_START = "<!-- ARTIST-BROWSER:START -->"
-LINEUP_END = "<!-- ARTIST-BROWSER:END -->"
 BASE_URL = "https://www.earthdancecapetown.co.za/"
 
 
@@ -304,61 +301,6 @@ def footer() -> str:
 </footer>"""
 
 
-FEATURED_COUNT = 12
-
-
-def lineup_browser(artists: list[dict]) -> str:
-    eligible = [a for a in artists if a.get("lineup_card", True)]
-    # Most recently added first (JSON insertion order = recency), capped so
-    # the ornate medallion treatment stays a taste, not a wall of 40+ faces.
-    featured = list(reversed(eligible[-FEATURED_COUNT:]))
-
-    profiles = []
-    for artist in featured:
-        logo_class = " lineup-profile-logo" if artist["image_kind"] == "logo" else ""
-        image_scale = esc(str(artist.get("image_scale", "1")))
-        image_translate_x = esc(str(artist.get("image_translate_x", "0%")))
-        image_translate_y = esc(str(artist.get("image_translate_y", "0%")))
-        image_background = esc(str(artist.get("image_background", "#0d0a24")))
-        profiles.append(
-            f"""        <a class="lineup-profile" href="artists/{esc(artist['slug'])}/">
-          <span class="lineup-profile-medallion{logo_class}" style="--artist-image-position:{esc(artist['image_position'])};--artist-image-scale:{image_scale};--artist-image-translate-x:{image_translate_x};--artist-image-translate-y:{image_translate_y};--artist-image-background:{image_background}">
-            <span class="lineup-profile-crop"><img src="{esc(artist['image'])}" alt="" loading="lazy" decoding="async"></span>
-            <img class="lineup-profile-frame" src="assets/artists/flower-frame-small.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
-          </span>
-          <strong>{esc(artist['name'])}</strong>
-        </a>"""
-        )
-
-    profiles.append(
-        f"""        <a class="lineup-profile lineup-profile-coming" href="lineup.html#artist-list" aria-label="See the full lineup of {len(eligible)} artists">
-          <span class="lineup-profile-medallion">
-            <span class="lineup-profile-crop" aria-hidden="true"><span class="lineup-profile-spark">✦</span></span>
-            <img class="lineup-profile-frame" src="assets/artists/flower-frame-small.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
-          </span>
-          <strong>See all {len(eligible)} artists</strong>
-        </a>"""
-    )
-
-    return f"""  <section class="section lineup-browser" aria-labelledby="browse-artists-title">
-    <div class="container">
-      <div class="lineup-browser-head">
-        <div>
-          <span class="eyebrow">Artist profiles are landing</span>
-          <h2 id="browse-artists-title">Meet the artists</h2>
-          <p>A lineup is more than a list of names. Here's a taste of the music and stories behind some of the newest arrivals — see the full lineup for everyone confirmed.</p>
-        </div>
-        <nav class="lineup-jumps" aria-label="Jump to a lineup section">
-          <a href="lineup.html#artist-list"><span>See everyone announced</span><strong>Full lineup</strong></a>
-        </nav>
-      </div>
-      <div class="lineup-profile-strip" aria-label="Recently added artist profiles">
-{chr(10).join(profiles)}
-      </div>
-    </div>
-  </section>"""
-
-
 def page_for(
     artist: dict,
     event: dict,
@@ -587,22 +529,7 @@ def main() -> None:
             page_for(artist, data["event"], previous, following, by_stage.get(artist["slug"], []))
         )
 
-    lineup = LINEUP_PAGE.read_text()
-    if LINEUP_START not in lineup or LINEUP_END not in lineup:
-        raise ValueError("lineup.html is missing ARTIST-BROWSER markers")
-    before = lineup.split(LINEUP_START, 1)[0]
-    after = lineup.split(LINEUP_END, 1)[1]
-    LINEUP_PAGE.write_text(
-        before
-        + LINEUP_START
-        + "\n"
-        + lineup_browser(artists)
-        + "\n"
-        + LINEUP_END
-        + after
-    )
-
-    print(f"artists/ — {len(artists)} profile pages; lineup artist browser updated")
+    print(f"artists/ — {len(artists)} profile pages")
 
 
 if __name__ == "__main__":
