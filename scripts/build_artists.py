@@ -198,7 +198,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260909-partners">
+<link rel="stylesheet" href="assets/css/site.css?v=20260910-lineup-grid">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -305,10 +305,12 @@ def footer() -> str:
 
 
 def lineup_browser(artists: list[dict]) -> str:
+    ordered = sorted(
+        (a for a in artists if a.get("lineup_card", True)),
+        key=lambda a: a["name"].lower().removeprefix("the "),
+    )
     profiles = []
-    for artist in artists:
-        if not artist.get("lineup_card", True):
-            continue
+    for artist in ordered:
         logo_class = " lineup-profile-logo" if artist["image_kind"] == "logo" else ""
         image_scale = esc(str(artist.get("image_scale", "1")))
         image_translate_x = esc(str(artist.get("image_translate_x", "0%")))
