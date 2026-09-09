@@ -198,7 +198,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260910-lineup-grid">
+<link rel="stylesheet" href="assets/css/site.css?v=20260910-featured">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -304,13 +304,17 @@ def footer() -> str:
 </footer>"""
 
 
+FEATURED_COUNT = 12
+
+
 def lineup_browser(artists: list[dict]) -> str:
-    ordered = sorted(
-        (a for a in artists if a.get("lineup_card", True)),
-        key=lambda a: a["name"].lower().removeprefix("the "),
-    )
+    eligible = [a for a in artists if a.get("lineup_card", True)]
+    # Most recently added first (JSON insertion order = recency), capped so
+    # the ornate medallion treatment stays a taste, not a wall of 40+ faces.
+    featured = list(reversed(eligible[-FEATURED_COUNT:]))
+
     profiles = []
-    for artist in ordered:
+    for artist in featured:
         logo_class = " lineup-profile-logo" if artist["image_kind"] == "logo" else ""
         image_scale = esc(str(artist.get("image_scale", "1")))
         image_translate_x = esc(str(artist.get("image_translate_x", "0%")))
@@ -327,13 +331,13 @@ def lineup_browser(artists: list[dict]) -> str:
         )
 
     profiles.append(
-        """        <div class="lineup-profile lineup-profile-coming" aria-label="More artist profiles coming">
+        f"""        <a class="lineup-profile lineup-profile-coming" href="lineup.html#artist-list" aria-label="See the full lineup of {len(eligible)} artists">
           <span class="lineup-profile-medallion">
             <span class="lineup-profile-crop" aria-hidden="true"><span class="lineup-profile-spark">✦</span></span>
             <img class="lineup-profile-frame" src="assets/artists/flower-frame-small.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
           </span>
-          <strong>More artist stories coming</strong>
-        </div>"""
+          <strong>See all {len(eligible)} artists</strong>
+        </a>"""
     )
 
     return f"""  <section class="section lineup-browser" aria-labelledby="browse-artists-title">
@@ -342,13 +346,13 @@ def lineup_browser(artists: list[dict]) -> str:
         <div>
           <span class="eyebrow">Artist profiles are landing</span>
           <h2 id="browse-artists-title">Meet the artists</h2>
-          <p>A lineup is more than a list of names. Explore the music and stories behind some of the artists joining us at Kromrivier Farm.</p>
+          <p>A lineup is more than a list of names. Here's a taste of the music and stories behind some of the newest arrivals — see the full lineup for everyone confirmed.</p>
         </div>
         <nav class="lineup-jumps" aria-label="Jump to a lineup section">
-          <a href="lineup.html#announced-artists"><span>See everyone announced</span><strong>Full lineup</strong></a>
+          <a href="lineup.html#artist-list"><span>See everyone announced</span><strong>Full lineup</strong></a>
         </nav>
       </div>
-      <div class="lineup-profile-strip" aria-label="Published artist profiles">
+      <div class="lineup-profile-strip" aria-label="Recently added artist profiles">
 {chr(10).join(profiles)}
       </div>
     </div>

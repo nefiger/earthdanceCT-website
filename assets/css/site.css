@@ -1463,11 +1463,9 @@ h1, .display {
 }
 .lineup-profile-coming {
   color: var(--ink-dim);
-  cursor: default;
 }
-.lineup-profile-coming:hover { color: var(--ink-dim); }
-.lineup-profile-coming:hover .lineup-profile-medallion { transform: none; }
-.lineup-profile-coming .lineup-profile-medallion { opacity: .62; }
+.lineup-profile-coming:hover { color: var(--cyan); }
+.lineup-profile-coming .lineup-profile-medallion { opacity: .78; }
 .lineup-profile-coming .lineup-profile-crop {
   display: grid;
   place-items: center;
