@@ -1139,6 +1139,34 @@
           "url": "https://www.instagram.com/bushdiva2/"
         }
       ]
+    },
+    {
+      "name": "Psy-Anomic",
+      "slug": "psy-anomic",
+      "summary": "Psy-Anomic brings explosive sunrise sets — relentless rolling basslines, twisted grooves and unapologetic psychedelic chaos as night collides with sunrise.",
+      "bio": [
+        "Born from the chaos between darkness and daylight, Psy-Anomic is most at home when the night has reached its limits and the horizon begins to glow. Renowned for explosive sunrise sets, he has unleashed his particular brand of psychedelic madness on dancefloors at Easter Vortex, Origin and Little Forest Festival, among many others.",
+        "Psy-Anomic doesn't do predictable. Expect relentless rolling basslines, twisted grooves, sudden left turns and surprises buried deep within the journey — sets that are highly energetic, mischievous and unapologetically psychedelic, constantly building, shifting and pushing the dancefloor somewhere it didn't expect to go.",
+        "This is where nighttime chaos collides with sunrise euphoria. As the shadows disappear and the first rays break across the dancefloor, Psy-Anomic turns the final madness of the night into one last beautiful explosion. No rules. No straight lines. Just rolling basslines, sunrise and pure psychedelic chaos."
+      ],
+      "image": "assets/artists/images/psy-anomic.jpg",
+      "image_alt": "Portrait of Psy-Anomic",
+      "image_position": "50% 30%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/Uc6fypXI5b19m0dOjD"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/Uc6fypXI5b19m0dOjD"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/psy_anomic"
+        }
+      ]
     }
   ]
 }

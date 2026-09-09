@@ -287,7 +287,9 @@
               "name": "Phylth"
             },
             {
-              "name": "Psyanomic"
+              "name": "Psyanomic",
+              "profile": "artists/psy-anomic/",
+              "profile_label": "Psy-Anomic"
             },
             {
               "name": "Mikey Dredd",
