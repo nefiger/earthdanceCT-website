@@ -238,7 +238,6 @@ def header() -> str:
       <div class="nav-group">
         <button class="nav-group-btn" type="button">Get Involved</button>
         <div class="nav-drop">
-          <a href="vendor-directory.html">Vendors</a>
           <a href="volunteers.html">Volunteers</a>
           <a href="collaborators.html">Collaborators</a>
         </div>
@@ -246,6 +245,7 @@ def header() -> str:
       <div class="nav-group">
         <button class="nav-group-btn" type="button">Plan</button>
         <div class="nav-drop">
+          <a href="vendor-directory.html">Vendors</a>
           <a href="glamping-camping.html">Glamping &amp; Camping</a>
           <a href="practical-info.html">Practical Info</a>
           <a href="practical-info.html#gates">Gates &amp; Entry</a>
@@ -285,7 +285,6 @@ def footer() -> str:
       <div>
         <h4>Get Involved</h4>
         <ul>
-          <li><a href="vendor-directory.html">Vendors</a></li>
           <li><a href="volunteers.html">Volunteers</a></li>
           <li><a href="collaborators.html">Collaborators</a></li>
           <li><a href="https://linktr.ee/EarthdanceCT" target="_blank" rel="noopener">Linktree</a></li>
@@ -294,6 +293,7 @@ def footer() -> str:
       <div>
         <h4>Plan</h4>
         <ul>
+          <li><a href="vendor-directory.html">Vendors</a></li>
           <li><a href="glamping-camping.html">Glamping &amp; Camping</a></li>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>

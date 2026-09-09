@@ -434,7 +434,7 @@ alt=""></noscript>
     <div class="hero-bg" style="background-image:url('assets/vendors/images/groove-gear-stall.jpg')"></div>
     <div class="hero-veil"></div>
     <div class="container">
-      <span class="eyebrow">Get Involved</span>
+      <span class="eyebrow">Plan Your Visit</span>
       <h1>Meet the <span class="gradient-text">traders</span></h1>
       <p class="lede">Food, drink, craft, clothing and wellness — the people bringing the market village to life at Kromrivier Farm.</p>
     </div>
