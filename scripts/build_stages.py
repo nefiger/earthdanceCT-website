@@ -13,7 +13,7 @@ import html
 import json
 from pathlib import Path
 
-from build_artists import esc, footer, header
+from build_artists import esc, footer, header, stage_partner_credit
 
 
 def plain(text: str) -> str:
@@ -154,7 +154,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260903-cta">
+<link rel="stylesheet" href="assets/css/site.css?v=20260909-partners">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -244,6 +244,7 @@ alt=""></noscript>
       <div class="card-grid vivid">
 {cards}
       </div>
+{stage_partner_credit(stage["id"])}
     </div>
   </section>
 

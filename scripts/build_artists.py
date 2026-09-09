@@ -15,11 +15,52 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "assets/data/artists.json"
 LINEUP_DATA = ROOT / "assets/data/lineup.json"
+PARTNERS_DATA = ROOT / "assets/data/partners.json"
 ARTISTS_DIR = ROOT / "artists"
 LINEUP_PAGE = ROOT / "lineup.html"
 LINEUP_START = "<!-- ARTIST-BROWSER:START -->"
 LINEUP_END = "<!-- ARTIST-BROWSER:END -->"
 BASE_URL = "https://www.earthdancecapetown.co.za/"
+
+
+def live_partners() -> list[dict]:
+    return [p for p in json.loads(PARTNERS_DATA.read_text())["partners"] if p.get("live")]
+
+
+def footer_partners() -> str:
+    """Small credit strip in the footer for live production partners. Returns ""
+    when there are none yet, so the footer degrades cleanly."""
+    partners = live_partners()
+    if not partners:
+        return ""
+    logos = "\n".join(
+        f'      <a href="{esc(p["url"])}" target="_blank" rel="noopener">'
+        f'<img src="{esc(p["logo_wordmark"])}" alt="{esc(p["name"])}"></a>'
+        for p in partners
+    )
+    return f"""    <div class="footer-partners">
+      <span class="footer-partners-label">Production Partners</span>
+      <div class="footer-partners-logos">
+{logos}
+      </div>
+    </div>
+"""
+
+
+def stage_partner_credit(stage_id: str) -> str:
+    """A small sound/production credit under a stage's story, for partners tied
+    to that specific stage."""
+    matches = [p for p in live_partners() if p.get("stage") == stage_id]
+    if not matches:
+        return ""
+    blocks = []
+    for p in matches:
+        blocks.append(
+            f'      <div class="stage-partner-credit">'
+            f'<img src="{esc(p["logo_wordmark"])}" alt="{esc(p["name"])}">'
+            f'<p>{esc(p["stage_credit"])}</p></div>'
+        )
+    return "\n".join(blocks)
 
 
 def esc(value: str) -> str:
@@ -157,7 +198,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260907-members">
+<link rel="stylesheet" href="assets/css/site.css?v=20260909-partners">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -220,7 +261,7 @@ def header() -> str:
 
 
 def footer() -> str:
-    return """<footer class="site-footer">
+    return f"""<footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
@@ -261,7 +302,7 @@ def footer() -> str:
         </ul>
       </div>
     </div>
-    <div class="footer-fine">
+{footer_partners()}    <div class="footer-fine">
       <span>© 2026 Soulstream Festivals Pty. Ltd.</span>
       <span><a href="mailto:info@earthdancecapetown.co.za">info@earthdancecapetown.co.za</a> · <a href="https://linktr.ee/EarthdanceCT" target="_blank" rel="noopener">linktr.ee/EarthdanceCT</a></span>
       <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a></span>

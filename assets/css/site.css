@@ -2438,6 +2438,29 @@ details.faq .a p { margin: 0 0 10px; }
 @media (max-width: 720px) { .photo-strip { grid-template-columns: 1fr 1fr; } .photo-strip img { height: 160px; } }
 .credit-line { font-size: 13px; color: var(--ink-faint); margin-top: 10px; }
 
+/* ---------- production partners ---------- */
+.partner-credit {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+.partner-credit img { height: 52px; width: auto; }
+.partner-credit p { margin: 0; color: var(--ink-dim); font-size: 15px; max-width: 56ch; }
+.partner-credit a { color: var(--ink); font-weight: 650; }
+.stage-partner-credit {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  color: var(--ink-dim);
+  font-size: 14.5px;
+}
+.stage-partner-credit img { height: 20px; width: auto; flex-shrink: 0; }
+
 /* ---------- gallery ---------- */
 .masonry { column-count: 4; column-gap: 14px; margin-top: 26px; }
 @media (max-width: 1100px) { .masonry { column-count: 3; } }
@@ -2532,6 +2555,26 @@ details.faq .a p { margin: 0 0 10px; }
 .site-footer a:hover { color: var(--cyan); }
 .footer-brand img { width: 54px; margin-bottom: 14px; }
 .footer-brand p { color: var(--ink-dim); font-size: 14.5px; max-width: 34ch; margin: 0; }
+.footer-partners {
+  border-top: 1px solid var(--line);
+  margin-top: 36px;
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 32px;
+  position: relative;
+  z-index: 1;
+}
+.footer-partners-label {
+  font-size: 12.5px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 650; white-space: nowrap;
+}
+.footer-partners-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 30px; }
+.footer-partners-logos a { display: inline-flex; align-items: center; opacity: .82; transition: opacity .2s; }
+.footer-partners-logos a:hover { opacity: 1; }
+.footer-partners-logos img { height: 18px; width: auto; display: block; }
+.footer-partners-text { color: var(--ink-dim); font-size: 13.5px; }
 .footer-fine {
   border-top: 1px solid var(--line);
   margin-top: 44px;

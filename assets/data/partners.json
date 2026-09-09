@@ -1,0 +1,39 @@
+{
+  "partners": [
+    {
+      "name": "8-bit Productions",
+      "slug": "8-bit-productions",
+      "live": true,
+      "role": "Main Stage Sound",
+      "tagline": "Sound you can feel, clarity you can hear — wherever you are on the dancefloor.",
+      "blurb": [
+        "Our Main Stage sound for 2026 is supplied and engineered by 8-bit Productions, running on a d&b audiotechnik system built to stay clean and controlled from the front of the crowd to the edges of the floor.",
+        "Twelve subs in a straight line, tuned to behave like a curve, keep the bass deep and even across the ground. Every speaker gets its own channel, and the whole system is tuned again at sound check and refined through the night as temperature and humidity shift — not louder, just cleaner, deeper, and consistent wherever you're standing."
+      ],
+      "logo_wordmark": "assets/partners/images/8bit-wordmark-white.svg",
+      "logo_full": "assets/partners/images/8bit-logo-white.svg",
+      "logo_icon": "assets/partners/images/8bit-icon-white.svg",
+      "url": "https://8bitproductions.co.za/",
+      "instagram": "https://www.instagram.com/8bit_production",
+      "credit_line": "Main Stage sound by 8-bit Productions",
+      "stage": "sonic-horizon",
+      "stage_credit": "Sound on this stage is supplied and engineered by 8-bit Productions, running on a d&b audiotechnik system."
+    },
+    {
+      "name": "Barloworld Power",
+      "slug": "barloworld-power",
+      "live": false,
+      "role": "Power Partner",
+      "tagline": null,
+      "blurb": null,
+      "logo_wordmark": null,
+      "logo_full": null,
+      "logo_icon": null,
+      "url": null,
+      "instagram": null,
+      "credit_line": "Powered by Barloworld Power",
+      "stage": null,
+      "stage_credit": null
+    }
+  ]
+}
