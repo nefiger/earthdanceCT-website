@@ -21,19 +21,21 @@ ROOT = Path(__file__).resolve().parent.parent
 # redirect stub kept for old links.
 EXCLUDE = {"404.html", "journey.html", "homecoming-6f1b92.html"}
 
-# Anything unlisted defaults to 0.6. Artist profile pages use 0.7 below.
+# Anything unlisted defaults to 0.6. Artist and vendor profile pages use 0.7
+# below (see priority()).
 PRIORITY = {
     "index.html": "1.0",
     "lineup.html": "0.9",
     "glamping-camping.html": "0.9",
+    "vendor-directory.html": "0.8",
     "about.html": "0.8",
     "gatherings.html": "0.8",
     "practical-info.html": "0.8",
     "faq.html": "0.7",
-    "vendors.html": "0.7",
     "volunteers.html": "0.7",
     "love-in-a-bowl.html": "0.7",
     "prayer-for-peace.html": "0.7",
+    "vendors.html": "0.5",
     "privacy.html": "0.3",
     "terms.html": "0.3",
 }
@@ -66,7 +68,7 @@ def loc(path: Path) -> str:
     name = relative_name(path)
     if name == "index.html":
         return BASE
-    if name.startswith(("artists/", "stages/")) and name.endswith("/index.html"):
+    if name.startswith(("artists/", "stages/", "vendors/")) and name.endswith("/index.html"):
         return BASE + name.removesuffix("index.html")
     return BASE + name
 
@@ -75,14 +77,14 @@ def priority(path: Path) -> str:
     name = relative_name(path)
     if name.startswith("stages/"):
         return "0.8"
-    if name.startswith("artists/"):
+    if name.startswith(("artists/", "vendors/")):
         return "0.7"
     return PRIORITY.get(name, "0.6")
 
 
 def changefreq(path: Path) -> str:
     name = relative_name(path)
-    if name.startswith(("artists/", "stages/")):
+    if name.startswith(("artists/", "stages/", "vendors/")):
         return "monthly"
     return CHANGEFREQ.get(name, "monthly")
 
@@ -90,6 +92,7 @@ def changefreq(path: Path) -> str:
 def main() -> None:
     pages = [p for p in ROOT.glob("*.html") if p.name not in EXCLUDE]
     pages += sorted((ROOT / "artists").glob("*/index.html"))
+    pages += sorted((ROOT / "vendors").glob("*/index.html"))
     pages += sorted((ROOT / "stages").glob("*/index.html"))
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',

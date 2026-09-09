@@ -446,6 +446,10 @@ alt=""></noscript>
       <div class="vendor-directory-columns">
 {sections_html}
       </div>
+      <div class="ticket-nudge">
+        <p>Trading at Earthdance yourself? Applications for our 2026 market village are closed, but you can see what we look for and how it works.</p>
+        <a class="btn btn-ghost" href="vendors.html">Vendor info →</a>
+      </div>
     </div>
   </section>
 </main>
@@ -485,7 +489,7 @@ def main() -> None:
 
     (ROOT / "vendor-directory.html").write_text(directory_page(data))
 
-    print(f"vendors/ — {len(vendors)} profile pages + vendor-directory.html (not linked from anywhere yet)")
+    print(f"vendors/ — {len(vendors)} profile pages + vendor-directory.html")
 
 
 if __name__ == "__main__":
