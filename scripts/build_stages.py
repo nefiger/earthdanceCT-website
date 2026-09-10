@@ -32,6 +32,16 @@ TICKETS = (
 
 
 def act_markup(act: dict) -> str:
+    if act.get("profile") and act.get("b2b_profile") and " b2b " in act["name"]:
+        first, second = act["name"].split(" b2b ", 1)
+        label_a = esc(f'View {act.get("profile_label", first)} artist profile')
+        label_b = esc(f'View {act.get("b2b_profile_label", second)} artist profile')
+        return (
+            f'              <li><a href="{act["profile"]}" aria-label="{label_a}">'
+            f'{html.escape(first, quote=False)}</a> b2b '
+            f'<a href="{act["b2b_profile"]}" aria-label="{label_b}">'
+            f'{html.escape(second, quote=False)}</a></li>'
+        )
     name = html.escape(act["name"], quote=False)
     if act.get("country"):
         name += f'&nbsp;<span class="act-country">{html.escape(act["country"], quote=False)}</span>'
@@ -68,10 +78,14 @@ def faces_for(stage: dict, by_slug: dict) -> list[dict]:
     seen, out = set(), []
     for block in stage["blocks"]:
         for act in block["acts"]:
-            slug = (act.get("profile") or "").strip("/").removeprefix("artists/")
-            if slug and slug not in seen and slug in by_slug:
-                seen.add(slug)
-                out.append(by_slug[slug])
+            slugs = [
+                (act.get("profile") or "").strip("/").removeprefix("artists/"),
+                (act.get("b2b_profile") or "").strip("/").removeprefix("artists/"),
+            ]
+            for slug in slugs:
+                if slug and slug not in seen and slug in by_slug:
+                    seen.add(slug)
+                    out.append(by_slug[slug])
     return out
 
 

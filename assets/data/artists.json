@@ -1167,6 +1167,33 @@
           "url": "https://www.instagram.com/psy_anomic"
         }
       ]
+    },
+    {
+      "name": "Drifter",
+      "slug": "drifter",
+      "summary": "Drifter brings 15 years of driving, high-energy psychedelic trance to the decks — built to move you, and to be moved.",
+      "bio": [
+        "It's been a 15-year journey DJing psychedelic trance music for Drifter, real name Brad Briscoe. His selection stays driving, high-energy and unapologetically psychedelic — exactly as it should be.",
+        "Expect to move, and be moved."
+      ],
+      "image": "assets/artists/images/drifter.jpg",
+      "image_alt": "Portrait of Drifter",
+      "image_position": "30% 20%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://m.soundcloud.com/djdrifter_sa/drifter-modem-festival-croatia-2019"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://m.soundcloud.com/djdrifter_sa/drifter-modem-festival-croatia-2019"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/brad.briscoe"
+        }
+      ]
     }
   ]
 }

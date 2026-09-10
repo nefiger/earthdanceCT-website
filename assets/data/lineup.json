@@ -262,7 +262,9 @@
             {
               "name": "A.Geoffrey b2b Drifter",
               "profile": "artists/a-geoffrey/",
-              "profile_label": "A-GEOFFREY"
+              "profile_label": "A-GEOFFREY",
+              "b2b_profile": "artists/drifter/",
+              "b2b_profile_label": "DRIFTER"
             }
           ]
         },
