@@ -278,6 +278,7 @@ def directory_head() -> str:
         "Meet the traders at Earthdance Cape Town 2026 — food, drink, craft, "
         "clothing and wellness in the market village at Kromrivier Farm."
     )
+    image_url = BASE_URL + "assets/vendors/images/groove-gear-stall.jpg"
     return f"""<head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
@@ -307,6 +308,16 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <title>Vendor Directory — Earthdance Cape Town 2026</title>
 <meta name="description" content="{esc(description)}">
 <meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Vendor Directory — Earthdance Cape Town 2026">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:image" content="{esc(image_url)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{esc(canonical)}">
+<meta property="og:site_name" content="Earthdance Cape Town">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vendor Directory — Earthdance Cape Town 2026">
+<meta name="twitter:description" content="{esc(description)}">
+<meta name="twitter:image" content="{esc(image_url)}">
 <link rel="canonical" href="{esc(canonical)}">
 <link rel="icon" href="assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
