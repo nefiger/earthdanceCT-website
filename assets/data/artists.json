@@ -1194,6 +1194,33 @@
           "url": "https://www.instagram.com/brad.briscoe"
         }
       ]
+    },
+    {
+      "name": "Sledge",
+      "slug": "sledge",
+      "summary": "Sledge brings brooding, bloodthirsty, minimal techno to the decks — thunderous basslines, provocative vocals and off-beat glitches.",
+      "bio": [
+        "Brooding, bloodthirsty and minimal — Sledge (Jeff Morrell) plays techno built on thunderous basslines, provocative vocals and off-beat glitches. As he puts it, the music is where the beat isn't.",
+        "The sound comes from an unlikely mix: classical piano training colliding with a love of heavy metal. Sledge records for Techgnosis Records."
+      ],
+      "image": "assets/artists/images/sledge.jpg",
+      "image_alt": "Portrait of Sledge",
+      "image_position": "55% 40%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on SoundCloud",
+        "url": "https://on.soundcloud.com/vGsjWY0bdg2Ah45x7F"
+      },
+      "links": [
+        {
+          "label": "SoundCloud",
+          "url": "https://on.soundcloud.com/vGsjWY0bdg2Ah45x7F"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/jeff_sledge_gravedigger"
+        }
+      ]
     }
   ]
 }

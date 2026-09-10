@@ -126,7 +126,9 @@
               "profile": "artists/aurallaura/"
             },
             {
-              "name": "Big E b2b Sledge"
+              "name": "Big E b2b Sledge",
+              "profile": "artists/sledge/",
+              "profile_label": "Sledge"
             },
             {
               "name": "Ty Teknition",

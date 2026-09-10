@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.earthdancecapetown.co.za/artists/a-geoffrey/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -176,7 +176,7 @@
   </url>
   <url>
     <loc>https://www.earthdancecapetown.co.za/artists/psy-anomic/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -207,6 +207,12 @@
   <url>
     <loc>https://www.earthdancecapetown.co.za/artists/skam/</loc>
     <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.earthdancecapetown.co.za/artists/sledge/</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -308,7 +314,7 @@
   </url>
   <url>
     <loc>https://www.earthdancecapetown.co.za/lineup.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -344,7 +350,7 @@
   </url>
   <url>
     <loc>https://www.earthdancecapetown.co.za/stages/sonic-horizon/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -362,7 +368,7 @@
   </url>
   <url>
     <loc>https://www.earthdancecapetown.co.za/vendor-directory.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
