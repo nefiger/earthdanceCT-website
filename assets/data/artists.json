@@ -1221,6 +1221,29 @@
           "url": "https://www.instagram.com/jeff_sledge_gravedigger"
         }
       ]
+    },
+    {
+      "name": "Big E",
+      "slug": "big-e",
+      "summary": "Big E brings emotion, storytelling and musical depth to the decks — DJ sets built on connection, not trends.",
+      "bio": [
+        "Big E's approach to DJing is rooted in a distinct sonic identity, built after years of exploring electronic music across a wide range of genres.",
+        "His sets favour emotion, storytelling and musical depth over trends — every selection intentional, blending groove, rhythm and atmosphere into one continuous journey. For Big E, great DJing isn't just about playing music: it's about reading the room, connecting with people, and guiding them through something memorable."
+      ],
+      "image": "assets/artists/images/big-e.jpg",
+      "image_alt": "Portrait of Big E",
+      "image_position": "62% 39%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/ernestondala"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ernestondala"
+        }
+      ]
     }
   ]
 }

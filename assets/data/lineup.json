@@ -127,8 +127,10 @@
             },
             {
               "name": "Big E b2b Sledge",
-              "profile": "artists/sledge/",
-              "profile_label": "Sledge"
+              "profile": "artists/big-e/",
+              "profile_label": "Big E",
+              "b2b_profile": "artists/sledge/",
+              "b2b_profile_label": "Sledge"
             },
             {
               "name": "Ty Teknition",
