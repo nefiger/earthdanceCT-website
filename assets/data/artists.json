@@ -1244,6 +1244,19 @@
           "url": "https://www.instagram.com/ernestondala"
         }
       ]
+    },
+    {
+      "name": "Mr Shakuhachi",
+      "slug": "mr-shakuhachi",
+      "summary": "Mr Shakuhachi is a multi-ethnic instrumentalist and DJ, fusing tribalistic sounds with electronic music to create a space of emotion and dance.",
+      "bio": [
+        "Mr Shakuhachi is a multi-ethnic instrumentalist and DJ. His sets fuse tribalistic sounds with electronic music, creating a space of emotion and dance."
+      ],
+      "image": "assets/artists/images/mr-shakuhachi.jpg",
+      "image_alt": "Portrait of Mr Shakuhachi",
+      "image_position": "60% 25%",
+      "image_kind": "photo",
+      "links": []
     }
   ]
 }
