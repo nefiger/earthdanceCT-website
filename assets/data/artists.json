@@ -1345,6 +1345,33 @@
       "image_position": "48% 30%",
       "image_kind": "photo",
       "links": []
+    },
+    {
+      "name": "Phylth",
+      "slug": "phylth",
+      "summary": "Phylth is the night-time psytrance project of Jos van Veen from Cape Town — high-energy, groovy tunes built to turn the dancefloor into a psychedelic playground.",
+      "bio": [
+        "Phylth is the night-time psytrance project of Jos van Veen, a producer and DJ from Cape Town, South Africa. Since starting to produce psytrance in 2022, he's built a repertoire of tracks played at festivals across South Africa and internationally.",
+        "His music aims to create a psychedelic playground on the dancefloor — high-energy, groovy tunes built for the night."
+      ],
+      "image": "assets/artists/images/phylth.jpg",
+      "image_alt": "Portrait of Phylth",
+      "image_position": "45% 32%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Spotify",
+        "url": "https://open.spotify.com/artist/4P1DZbFb2ToD5w10LuvB6R"
+      },
+      "links": [
+        {
+          "label": "Spotify",
+          "url": "https://open.spotify.com/artist/4P1DZbFb2ToD5w10LuvB6R"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/phylth_statealchemymusic"
+        }
+      ]
     }
   ]
 }
