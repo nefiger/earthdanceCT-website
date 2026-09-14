@@ -1285,6 +1285,30 @@
           "url": "https://linktr.ee/djane_flowerpower"
         }
       ]
+    },
+    {
+      "name": "To-Wa",
+      "slug": "to-wa",
+      "summary": "To-Wa brings over 15 years of Dutch hardcore to the decks — industrial hardcore, UK hardcore and rave-fuelled dancefloor momentum from the founder of Sealand Recordings.",
+      "bio": [
+        "Tom Wattel — better known as To-Wa — is a Dutch hardcore producer and DJ from Sealand in the Netherlands, with over 15 years inside the international hardcore underground. His sound blends industrial hardcore, UK hardcore, early rave influences and hip-hop-inspired grooves — sets built on raw energy, deep musicality and relentless dancefloor momentum.",
+        "He's played some of hardcore's most respected stages — Masters of Hardcore, Harmony of Hardcore, Dominator Festival, Paradigm Festival, Club OST Berlin and the legendary Fuckparade Berlin — plus tours through Japan, the US and Canada's Montreal Underground. As a producer, his releases run across labels including Mokum Records, Cool & Lethal Records and Triple G Records.",
+        "In 2022, To-Wa founded Sealand Recordings, a label built around authentic underground hardcore that now carries both established names and emerging producers. Alongside his DJ career, he's also been developing a hardware-based live show blending original productions, improvisation and immersive audiovisuals."
+      ],
+      "image": "assets/artists/images/to-wa.jpg",
+      "image_alt": "Portrait of To-Wa",
+      "image_position": "50% 25%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/djto_wa/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/djto_wa/"
+        }
+      ]
     }
   ]
 }

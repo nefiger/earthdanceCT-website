@@ -55,7 +55,8 @@
           "name": "Saturday",
           "acts": [
             {
-              "name": "To-Wa"
+              "name": "To-Wa",
+              "profile": "artists/to-wa/"
             },
             {
               "name": "Xervious"
