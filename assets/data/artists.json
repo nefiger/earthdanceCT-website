@@ -1309,6 +1309,29 @@
           "url": "https://www.instagram.com/djto_wa/"
         }
       ]
+    },
+    {
+      "name": "Bruce",
+      "slug": "bruce",
+      "summary": "DJ Bruce is a stalwart of South Africa's psytrance and Goa trance scene since the mid-1990s — deep, intelligent selection built to read the dancefloor, not follow a script.",
+      "bio": [
+        "Bruce Abrahamse — DJ Bruce — is a stalwart of the South African psytrance and Goa trance scene, shaping dancefloors since the mid-1990s. He's closely tied to Blacklite Records and festival organisers like Organik, and known for deep, intelligent track selection that reads a dancefloor's energy rather than sticking to a rigid set.",
+        "His archival sets are still in circulation today, including a classic Goa Mixtape from 1997 — a preserved slice of the genre's golden era, still up on Mixcloud."
+      ],
+      "image": "assets/artists/images/bruce.jpg",
+      "image_alt": "Portrait of DJ Bruce",
+      "image_position": "48% 30%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Listen on Mixcloud",
+        "url": "https://www.mixcloud.com/bruceabrahamse/"
+      },
+      "links": [
+        {
+          "label": "Mixcloud",
+          "url": "https://www.mixcloud.com/bruceabrahamse/"
+        }
+      ]
     }
   ]
 }

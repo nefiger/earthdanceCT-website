@@ -376,7 +376,8 @@
               "profile_label": "Arcane & Pixie"
             },
             {
-              "name": "Bruce"
+              "name": "Bruce",
+              "profile": "artists/bruce/"
             },
             {
               "name": "Uncle Frank",
