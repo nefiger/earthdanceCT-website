@@ -1332,6 +1332,19 @@
           "url": "https://www.mixcloud.com/bruceabrahamse/"
         }
       ]
+    },
+    {
+      "name": "Tristan Mountain",
+      "slug": "tristan-mountain",
+      "summary": "For the love of chunky bassline intelligence and playfulness, let the spirit move you in all 7 directions, and let go.",
+      "bio": [
+        "For the love of chunky bassline intelligence and playfulness, let the spirit move you in all 7 directions, and let go."
+      ],
+      "image": "assets/artists/images/tristan-mountain.jpg",
+      "image_alt": "Portrait of Tristan Mountain",
+      "image_position": "48% 30%",
+      "image_kind": "photo",
+      "links": []
     }
   ]
 }
