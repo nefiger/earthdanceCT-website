@@ -1257,6 +1257,34 @@
       "image_position": "60% 25%",
       "image_kind": "photo",
       "links": []
+    },
+    {
+      "name": "Flower Power",
+      "slug": "flower-power",
+      "summary": "Flower Power brings ethereal, nature-inspired psytrance to the decks — plus two alter egos: Forest Fairy for darker underground sets, and DJ Lili Rose for techno, house and downtempo.",
+      "bio": [
+        "Lili Rose Elsom — known behind the decks as Flower Power — found her passion for DJing in 2016 and has since become one of the top female DJs on the South African psytrance scene. Her sets move through psytrance at 140–148 BPM, drawing on nature and the spiritual realms to build ethereal, immersive soundscapes.",
+        "She's also the founder of Universal Frequencies, the brand behind her own psytrance gatherings, and known for clean mixing and seamless transitions that keep a set's energy flowing from first track to last.",
+        "Flower Power isn't her only alias: as Forest Fairy she plays a darker, more underground style of psytrance (148–160 BPM), and as DJ Lili Rose she crosses into techno, house, minimal and downtempo — proof her love for electronic music runs wide."
+      ],
+      "image": "assets/artists/images/flower-power.jpg",
+      "image_alt": "Portrait of Flower Power",
+      "image_position": "50% 45%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/Flower_power_za"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/Flower_power_za"
+        },
+        {
+          "label": "Linktree",
+          "url": "https://linktr.ee/djane_flowerpower"
+        }
+      ]
     }
   ]
 }
