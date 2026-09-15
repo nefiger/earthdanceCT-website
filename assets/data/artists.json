@@ -1372,6 +1372,30 @@
           "url": "https://www.instagram.com/phylth_statealchemymusic"
         }
       ]
+    },
+    {
+      "name": "Swimming Dragon Tai Chi",
+      "slug": "swimming-dragon-tai-chi",
+      "compact_name": true,
+      "summary": "Swimming Dragon Tai Chi brings Hans Menck's Daoist martial art and longevity method to Mellow Meadow's mornings — energising, coiling movement, good to join or just watch.",
+      "bio": [
+        "Swimming Dragon Tai Chi and Chi Gung is a Daoist martial art and longevity method, led by Hans Menck. The twisting, coiling and spiral movements of the water dragon leave you energised and invigorated for the day — and it's just as good to watch as to join in.",
+        "Hans studied with masters of the art in China and is one of South Africa's most widely experienced martial artists, teaching through his CyberDojo Martial Arts Academy."
+      ],
+      "image": "assets/artists/images/swimming-dragon-tai-chi.jpg",
+      "image_alt": "Hans Menck demonstrating a Swimming Dragon Tai Chi stance",
+      "image_position": "49% 50%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Visit CyberDojo",
+        "url": "http://www.cyberdojo.co.za/"
+      },
+      "links": [
+        {
+          "label": "CyberDojo Martial Arts Academy",
+          "url": "http://www.cyberdojo.co.za/"
+        }
+      ]
     }
   ]
 }
