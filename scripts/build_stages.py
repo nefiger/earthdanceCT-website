@@ -207,7 +207,7 @@ def page_for(stage: dict, other: dict, by_slug: dict) -> str:
     <div class="container">
       <span class="eyebrow">Artist profiles</span>
       <h2>Who you'll hear here</h2>
-      <p class="bright">Meet the artists playing {name} — more profiles land as the lineup fills out before September.</p>
+      <p class="bright">Meet the artists playing {name}.</p>
       <div class="stage-faces">
 {face_cards}
       </div>
@@ -266,7 +266,7 @@ alt=""></noscript>
     <div class="container">
       <span class="eyebrow">Playing here</span>
       <h2>Everyone on {name}</h2>
-      <p class="bright">The full running order for this stage, in playing order. Set times follow once the running order is locked.</p>
+      <p class="bright">The full running order for this stage, in playing order.</p>
 {days}
     </div>
   </section>

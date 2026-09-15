@@ -103,7 +103,7 @@ def main() -> None:
     out.append('      <span class="eyebrow">Everyone announced</span>')
     out.append(f'      <h2>The full list <span class="act-count">{len(acts)} acts</span></h2>')
     out.append(
-        '      <p class="bright">Every act confirmed so far, across both stages. '
+        '      <p class="bright">Every act confirmed for Earthdance Cape Town 2026, across both stages. '
         "Playing order lives on each stage's own page.</p>"
     )
     out.append('      <ul class="act-index">')

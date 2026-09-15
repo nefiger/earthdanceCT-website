@@ -481,7 +481,7 @@ alt=""></noscript>
       <div>
         <span class="eyebrow">Meet us on the farm</span>
         <h2>{name} at Earthdance Cape Town</h2>
-        <p>{stage_sentence} Set times and performance details will be added once the full running order is locked.</p>
+        <p>{stage_sentence}</p>
       </div>
       <div class="artist-ticket-callout">
         <p>See {name} at Kromrivier Farm, 18–20 September.</p>
