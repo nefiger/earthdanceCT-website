@@ -23,7 +23,8 @@
               "note": "chilled music"
             },
             {
-              "name": "Spliff Politix"
+              "name": "The Great Veroni",
+              "profile": "artists/the-great-veroni/"
             },
             {
               "name": "Jamie Jupiter",
@@ -134,8 +135,9 @@
               "b2b_profile_label": "Sledge"
             },
             {
-              "name": "Ty Teknition",
-              "profile": "artists/ty-teknition/"
+              "name": "Nyx",
+              "profile": "artists/nyx/",
+              "profile_label": "NYX."
             }
           ]
         },
@@ -148,13 +150,12 @@
               "note": "the global moment"
             },
             {
-              "name": "Nyx",
-              "profile": "artists/nyx/",
-              "profile_label": "NYX."
-            },
-            {
               "name": "SOL",
               "profile": "artists/sol/"
+            },
+            {
+              "name": "Ty Teknition",
+              "profile": "artists/ty-teknition/"
             },
             {
               "name": "Tristan Mountain",
@@ -252,10 +253,11 @@
               "name": "Opening ceremony"
             },
             {
-              "name": "Ras"
+              "name": "Entheotek"
             },
             {
-              "name": "Spacemonk"
+              "name": "Mikey Dredd",
+              "profile": "artists/mikey-dredd/"
             },
             {
               "name": "Rave Mustaine",
@@ -296,6 +298,9 @@
               "profile": "artists/phylth/"
             },
             {
+              "name": "Spacemonk"
+            },
+            {
               "name": "Psyanomic",
               "profile": "artists/psy-anomic/",
               "profile_label": "Psy-Anomic"
@@ -325,12 +330,12 @@
               "profile": "artists/psyborg/"
             },
             {
-              "name": "DJ Skitzo",
-              "profile": "artists/dj-skitzo/"
-            },
-            {
               "name": "Verax",
               "profile": "artists/verax/"
+            },
+            {
+              "name": "DJ Skitzo",
+              "profile": "artists/dj-skitzo/"
             },
             {
               "name": "Flower Power",
