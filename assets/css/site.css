@@ -2367,6 +2367,12 @@ details.faq .a p { margin: 0 0 10px; }
 }
 .partner-credit img { height: 52px; width: auto; }
 .partner-credit p { margin: 0; color: var(--ink-dim); font-size: 15px; max-width: 56ch; }
+.partner-entry + .partner-entry {
+  margin-top: 40px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+.partner-entry .partner-credit { margin-top: 26px; padding-top: 0; border-top: none; }
 .partner-credit a { color: var(--ink); font-weight: 650; }
 .stage-partner-credit {
   display: flex;
