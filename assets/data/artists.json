@@ -1396,6 +1396,21 @@
           "url": "http://www.cyberdojo.co.za/"
         }
       ]
+    },
+    {
+      "name": "Ohm Visual",
+      "slug": "ohm-visual",
+      "summary": "Ohm Visual is a Cape Town-based VJ duo working across live visuals, projection mapping and AV — bringing the main stage projection mapping to Earthdance Cape Town 2026.",
+      "bio": [
+        "Mitchell Osborn & Kieran Farrelly, aka Ohm Visual, are a Cape Town-based VJ duo working with live visuals, projection mapping and AV.",
+        "They've been involved with festivals, clubs and outdoor events, creating visuals that fit the music and atmosphere of each space. Their work includes projection mapping, VJing, rigging and lasers.",
+        "Ohm Visual is all about good music, good visuals and making the space look a little more interesting."
+      ],
+      "image": "assets/artists/images/ohm-visual.jpg",
+      "image_alt": "Mitchell Osborn and Kieran Farrelly of Ohm Visual at their VJ setup",
+      "image_position": "50% 38%",
+      "image_kind": "photo",
+      "links": []
     }
   ]
 }
