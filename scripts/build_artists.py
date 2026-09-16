@@ -30,11 +30,7 @@ def footer_partners() -> str:
     partners = live_partners()
     if not partners:
         return ""
-    logos = "\n".join(
-        f'      <a href="{esc(p["url"])}" target="_blank" rel="noopener">'
-        f'<img src="{esc(p["logo_wordmark"])}" alt="{esc(p["name"])}"></a>'
-        for p in partners
-    )
+    logos = "\n".join(_footer_logo(p) for p in partners)
     return f"""    <div class="footer-partners">
       <span class="footer-partners-label">Production Partners</span>
       <div class="footer-partners-logos">
@@ -42,6 +38,15 @@ def footer_partners() -> str:
       </div>
     </div>
 """
+
+
+def _footer_logo(p: dict) -> str:
+    """A partner's footer logo, linked when we have a URL for them, plain
+    otherwise (e.g. a partner whose site link hasn't been confirmed yet)."""
+    img = f'<img src="{esc(p["logo_wordmark"])}" alt="{esc(p["name"])}">'
+    if p.get("url"):
+        return f'      <a href="{esc(p["url"])}" target="_blank" rel="noopener">{img}</a>'
+    return f'      <span class="footer-partner-plain">{img}</span>'
 
 
 def stage_partner_credit(stage_id: str) -> str:
