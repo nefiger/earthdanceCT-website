@@ -1411,6 +1411,20 @@
       "image_position": "50% 38%",
       "image_kind": "photo",
       "links": []
+    },
+    {
+      "name": "Karen Justine",
+      "slug": "karen-justine",
+      "summary": "Karen Justine is a Cape Town-based Intuitive Facilitator, whose Retreats, Festival Offerings, Sunrise/Sunset Movement Circles, One-on-One Sessions, Corporate Team Building, & Community Programmes, have taken her from Cape Town to London, Mauritius & beyond, bringing an embodied, holistic practice to audiences across the Globe.",
+      "bio": [
+        "Karen Justine is an intuitive facilitator working at the intersection of somatic movement, breathwork and sound. For over a decade, she has guided individuals, festival communities, corporate teams and underserved communities through embodied experiences of healing, self-discovery and transformation.",
+        "Inspired by her own healing journey through breath and movement during a period of physical adversity, Karen brings both compassion and lived experience to every space she holds. Her approach is open, inclusive and deeply holistic grounded in one simple belief: music is medicine."
+      ],
+      "image": "assets/artists/images/karen-justine-portrait.jpg",
+      "image_alt": "Portrait of Karen Justine",
+      "image_position": "56% 26%",
+      "image_kind": "photo",
+      "links": []
     }
   ]
 }
