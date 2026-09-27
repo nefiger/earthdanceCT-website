@@ -1425,6 +1425,33 @@
       "image_position": "56% 26%",
       "image_kind": "photo",
       "links": []
+    },
+    {
+      "name": "Space Monk",
+      "slug": "space-monk",
+      "summary": "Space Monk is a DJ and producer who believes every set should tell a story, blending melodic techno, techno, psytrance and deep atmospheric grooves.",
+      "bio": [
+        "Every journey begins with a single beat. Niku Pendlebury, known behind the decks as Space Monk, builds immersive soundscapes that evolve with every transition, drawing dancers deeper into the experience.",
+        "He grew up going to Earthdance and sees it as the place where the family comes together. This year he's on the build crew as well as the lineup, helping make the site feel like home for everyone."
+      ],
+      "image": "assets/artists/images/space-monk.jpg",
+      "image_alt": "Portrait of Space Monk",
+      "image_position": "50% 50%",
+      "image_kind": "photo",
+      "primary_link": {
+        "label": "Follow on Instagram",
+        "url": "https://www.instagram.com/dj_spacemonk/"
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/dj_spacemonk/"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/share/195ssDMCkQ/"
+        }
+      ]
     }
   ]
 }
