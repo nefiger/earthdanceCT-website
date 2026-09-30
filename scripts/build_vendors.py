@@ -6,8 +6,13 @@ Usage: python3 scripts/build_vendors.py
 Each vendor is written to vendors/<slug>/index.html: a photo-hero page (like
 stage pages) with a full gallery below, not a single circular portrait like
 an artist profile — vendors bring many stall/product photos, not one
-headshot. Pages are not yet linked from vendors.html or any nav — they exist
-so content can be built and reviewed ahead of a public vendor directory.
+headshot.
+
+A vendor page is permanent; what changes year to year lives in the vendor's
+"editions" list (newest first): where they traded, their price range, and
+the photos/video they sent back from that gathering. Each edition renders
+as its own "At Earthdance <year>" block, so a returning trader keeps one
+page and gains a block per year.
 """
 
 import json
@@ -20,16 +25,34 @@ DATA = ROOT / "assets/data/vendors.json"
 VENDORS_DIR = ROOT / "vendors"
 BASE_URL = "https://www.earthdancecapetown.co.za/"
 
+# Dates and venue per edition year, for the "At Earthdance <year>" blocks.
+EDITIONS = {
+    2026: {"dates": "18–20 September 2026", "venue": "Kromrivier Farm"},
+}
+
+
+def latest_edition(vendor: dict) -> dict:
+    return vendor["editions"][0]
+
+
+def hero_image_for(vendor: dict) -> str | None:
+    if vendor.get("hero"):
+        return vendor["hero"]["image"]
+    if vendor["gallery"]:
+        return vendor["gallery"][0]["image"]
+    for edition in vendor["editions"]:
+        if edition["gallery"]:
+            return edition["gallery"][0]["image"]
+    return None
+
 
 def description_for(vendor: dict) -> str:
-    suffix = (
-        f" Find {vendor['name']} at Earthdance Cape Town 2026, "
-        "18–20 September at Kromrivier Farm."
-    )
+    year = latest_edition(vendor)["year"]
+    suffix = f" {vendor['name']} traded at Earthdance Cape Town {year}."
     description = vendor["summary"].strip() + suffix
     if len(description) <= 160:
         return description
-    return f"Meet {vendor['name']}, at Earthdance Cape Town 2026, 18–20 September at Kromrivier Farm."
+    return f"Meet {vendor['name']}, a trader at Earthdance Cape Town {year} at Kromrivier Farm."
 
 
 def head(vendor: dict) -> str:
@@ -37,7 +60,7 @@ def head(vendor: dict) -> str:
     slug = vendor["slug"]
     canonical = f"{BASE_URL}vendors/{slug}/"
     fallback_image = vendor.get("logo") or "assets/brand/og-image.jpg"
-    hero_image = vendor["gallery"][0]["image"] if vendor["gallery"] else fallback_image
+    hero_image = hero_image_for(vendor) or fallback_image
     image_url = BASE_URL + hero_image
     description = description_for(vendor)
     same_as = [link["url"] for link in vendor["links"]]
@@ -99,7 +122,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
+<link rel="stylesheet" href="assets/css/site.css?v=20260930-editions">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -112,16 +135,14 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
     if bio:
         about = f"""  <section class="section vendor-about">
     <div class="container vendor-reading-column">
-      <span class="eyebrow">What they're bringing</span>
+      <span class="eyebrow">What they do</span>
       <h2>About {name}</h2>
 {bio.rstrip()}
     </div>
   </section>
 """
 
-    gallery_section = ""
-    if vendor["gallery"]:
-        def tile(shot: dict) -> str:
+    def tile(shot: dict) -> str:
             contain = shot.get("fit") == "contain"
             tile_class = "vendor-gallery-tile vendor-gallery-tile-contain" if contain else "vendor-gallery-tile"
             backdrop = (
@@ -134,6 +155,8 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
                 f'<img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async"></div>'
             )
 
+    gallery_section = ""
+    if vendor["gallery"]:
         gallery_tiles = "\n".join(tile(shot) for shot in vendor["gallery"])
         gallery_section = f"""  <section class="section vendor-gallery-section">
     <div class="container">
@@ -166,10 +189,56 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
   </section>
 """
 
-    has_photos = bool(vendor["gallery"])
+    edition_blocks = []
+    for edition in vendor["editions"]:
+        year = edition["year"]
+        info = EDITIONS[year]
+        video_html = ""
+        if edition.get("video"):
+            video = edition["video"]
+            video_html = f"""
+      <video class="vendor-edition-video" controls muted playsinline preload="none" poster="{esc(video['poster'])}" aria-label="{esc(video['label'])}">
+        <source src="{esc(video['src'])}" type="video/mp4">
+      </video>"""
+        photos_html = ""
+        if edition["gallery"]:
+            tiles = "\n".join(tile(shot) for shot in edition["gallery"])
+            photos_html = f"""
+      <div class="vendor-gallery">
+{tiles}
+      </div>"""
+        intro = (
+            f"{name} traded at {esc(info['venue'])}, {esc(info['dates'])}."
+        )
+        if edition["gallery"]:
+            intro += " These are their own photos from the weekend."
+        edition_blocks.append(f"""  <section class="section vendor-appearance vendor-edition">
+    <div class="container">
+      <span class="eyebrow">Earthdance {year}</span>
+      <h2>{name} at Earthdance {year}</h2>
+      <p class="vendor-edition-intro">{intro}</p>{video_html}{photos_html}
+    </div>
+  </section>
+
+""")
+    editions_section = "".join(edition_blocks)
+    edition = latest_edition(vendor)
+    hero_image = hero_image_for(vendor)
+    hero_position = (vendor.get("hero") or {}).get("position")
+    hero_style = f"background-image:url('{esc(hero_image)}')" if hero_image else ""
+    if hero_position:
+        hero_style += f";background-position:{esc(hero_position)}"
+
+    price_stat = (
+        f'        <div class="stat"><b class="big">{esc(edition["price_notes"])}</b><span>Price range</span></div>'
+        if edition.get("price_notes")
+        else ""
+    )
+
+    has_photos = bool(hero_image)
     hero_class = "page-hero hero" if has_photos else "page-hero hero vendor-hero-noimage"
     hero_bg = (
-        f'<div class="hero-bg" style="background-image:url(\'{esc(vendor["gallery"][0]["image"])}\')"></div>\n    <div class="hero-veil"></div>'
+        f'<div class="hero-bg" style="{hero_style}"></div>\n    <div class="hero-veil"></div>'
         if has_photos
         else ""
     )
@@ -234,9 +303,9 @@ alt=""></noscript>
       <p class="lede">{esc(vendor['summary'])}</p>
       <div class="stat-strip vendor-facts">
         <div class="stat"><b class="big">{esc(vendor['category'])}</b><span>Category</span></div>
-        <div class="stat"><b class="big">{esc(vendor.get('location') or 'TBC')}</b><span>Find them at</span></div>
-        <div class="stat"><b class="big">{esc(event['dates'])}</b><span>Weekend</span></div>
-        <div class="stat"><b class="big">{esc(vendor.get('price_notes') or 'On the day')}</b><span>Price range</span></div>
+        <div class="stat"><b class="big">Earthdance {edition['year']}</b><span>Traded at</span></div>
+        <div class="stat"><b class="big">{esc(edition.get('location') or 'Market village')}</b><span>Where they were</span></div>
+{price_stat}
       </div>
       <div class="btn-row vendor-actions">
         <a class="vendor-back-link" href="vendor-directory.html">Back to vendors</a>
@@ -244,21 +313,7 @@ alt=""></noscript>
     </div>
   </section>
 
-{gallery_section}{about}  <section class="section vendor-appearance">
-    <div class="container vendor-appearance-grid">
-      <div>
-        <span class="eyebrow">Meet us on the farm</span>
-        <h2>{name} at Earthdance Cape Town</h2>
-        <p>Find {name} in the vendor village at Kromrivier Farm, 18–20 September 2026.</p>
-      </div>
-      <div class="vendor-ticket-callout">
-        <p>See what's on offer at Kromrivier Farm, 18–20 September.</p>
-        <a class="btn btn-pink" href="{esc(event['ticket_url'])}" target="_blank" rel="noopener">Buy tickets</a>
-      </div>
-    </div>
-  </section>
-
-{links_section}  <section class="section vendor-profile-nav-section">
+{editions_section}{gallery_section}{about}{links_section}  <section class="section vendor-profile-nav-section">
     <div class="container">
       {profile_nav}
     </div>
@@ -275,8 +330,8 @@ alt=""></noscript>
 def directory_head() -> str:
     canonical = BASE_URL + "vendor-directory.html"
     description = (
-        "Meet the traders at Earthdance Cape Town 2026 — food, drink, craft, "
-        "clothing and wellness in the market village at Kromrivier Farm."
+        "Meet the traders of Earthdance Cape Town 2026 — the food, drink, craft, "
+        "clothing and wellness stalls of the market village at Kromrivier Farm."
     )
     image_url = BASE_URL + "assets/vendors/images/groove-gear-stall.jpg"
     return f"""<head>
@@ -323,7 +378,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
+<link rel="stylesheet" href="assets/css/site.css?v=20260930-editions">
 </head>"""
 
 
@@ -353,9 +408,9 @@ def directory_card(vendor: dict) -> str:
 # values used in vendors.json. A location without an entry here still
 # renders (falls back to a generic line) rather than breaking the build.
 LOCATION_INFO = {
-    "Vendor Lane": "The main strip of stalls — the first place to look for food, craft and clothing.",
+    "Vendor Lane": "The main strip of stalls — food, craft and clothing side by side.",
     "Vendor Village": "A second cluster of stalls in the market village.",
-    "Mellow Meadow": "In and around the Mellow Meadow stage, by day workshops, ceremony and sacred fire.",
+    "Mellow Meadow": "In and around the Mellow Meadow stage, alongside the workshops, ceremony and sacred fire.",
     "Glamping Avenue": "The path past the glamping area — open to everyone, not just glampers.",
     "Bar area": "Right by the festival bar.",
     "Chill space (Sonic Horizon)": "The chill-out space beside the Sonic Horizon stage.",
@@ -365,7 +420,7 @@ LOCATION_INFO = {
 def locations_section(vendors: list[dict]) -> str:
     counts: dict[str, int] = {}
     for vendor in vendors:
-        location = vendor.get("location")
+        location = latest_edition(vendor).get("location")
         if location:
             counts[location] = counts.get(location, 0) + 1
     if not counts:
@@ -383,9 +438,9 @@ def locations_section(vendors: list[dict]) -> str:
     cards_html = "\n".join(cards)
     return f"""  <section class="section section-tint">
     <div class="container">
-      <span class="eyebrow">Get your bearings</span>
-      <h2>Where to find them</h2>
-      <p class="bright" style="max-width:60ch;margin-top:10px;">Traders are spread across a few different spaces around the farm.</p>
+      <span class="eyebrow">Earthdance 2026</span>
+      <h2>Where they traded</h2>
+      <p class="bright" style="max-width:60ch;margin-top:10px;">Traders were spread across a few different spaces around the farm.</p>
       <div class="vendor-location-grid">
 {cards_html}
       </div>
@@ -397,6 +452,9 @@ def locations_section(vendors: list[dict]) -> str:
 
 def directory_page(data: dict) -> str:
     vendors = data["vendors"]
+    # One edition so far. When a second year lands, group the directory by
+    # edition year here (newest first) rather than listing everyone once.
+    year = max(edition["year"] for v in vendors for edition in v["editions"])
     categories = ["Food & Drink", "Craft & Goods", "Wellness"]
     groups = []
     for category in categories:
@@ -417,7 +475,7 @@ def directory_page(data: dict) -> str:
     for category, group in groups:
         cards = "\n".join(directory_card(v) for v in group)
         sections.append(f"""      <div class="vendor-directory-category">
-        <h2>{esc(category)}</h2>
+        <h3>{esc(category)}</h3>
         <div class="vendor-directory-list">
 {cards}
         </div>
@@ -445,20 +503,22 @@ alt=""></noscript>
     <div class="hero-bg" style="background-image:url('assets/vendors/images/groove-gear-stall.jpg')"></div>
     <div class="hero-veil"></div>
     <div class="container">
-      <span class="eyebrow">Plan Your Visit</span>
+      <span class="eyebrow">The Market Village</span>
       <h1>Meet the <span class="gradient-text">traders</span></h1>
-      <p class="lede">Food, drink, craft, clothing and wellness — the people bringing the market village to life at Kromrivier Farm.</p>
+      <p class="lede">Food, drink, craft, clothing and wellness — the people who brought the market village to life at Kromrivier Farm.</p>
     </div>
     <span class="hero-credit">Photo: Groove Gear</span>
   </section>
 
 {locations_html}  <section class="section">
     <div class="container">
+      <span class="eyebrow">Earthdance {year}</span>
+      <h2 class="vendor-directory-year">Who traded in {year}</h2>
       <div class="vendor-directory-columns">
 {sections_html}
       </div>
       <div class="ticket-nudge">
-        <p>Trading at Earthdance yourself? Applications for our 2026 market village are closed, but you can see what we look for and how it works.</p>
+        <p>Thinking of trading at a future Earthdance? See what we look for and how the market village works.</p>
         <a class="btn btn-ghost" href="vendors.html">Vendor info →</a>
       </div>
     </div>

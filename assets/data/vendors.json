@@ -41,18 +41,24 @@
           "alt": "A stack of fresh roti"
         }
       ],
-      "price_notes": "R10 – R120",
       "links": [],
-      "location": "Vendor Lane"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Lane",
+          "price_notes": "R10 – R120",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Groove Gear",
       "slug": "groove-gear",
       "category": "Wellness",
-      "summary": "A festival lifestyle lounge for LED and UV accessories, face and body gems, hair braiding, glow transformations and relaxing massage.",
+      "summary": "A festival lifestyle experience built around self-expression, creativity and connection — festival fashion, accessories, hair, body art and a place to relax.",
       "bio": [
-        "Groove Gear is a festival lifestyle brand created from a love for music, creativity, self-expression and the festival community, bringing the magic of festivals to life through LED and UV accessories, festival fashion, face and body gems, festival makeup, hair braiding, creative glow transformations and relaxing festival massage experiences.",
-        "The Groove Gear Lounge offers festival-goers a space to express themselves, recharge, connect and add extra sparkle, colour and energy to their Earthdance experience."
+        "Groove Gear is a festival lifestyle experience focused on self-expression, creativity and connection. We bring festival fashion, accessories and interactive experiences together, including festival hair, braids, hair tinsel, gems, UV tattoos, temporary body art, face painting, festival accessories, clothing and relaxation experiences.",
+        "Our goal is to give people a space to play, express themselves and create a memorable festival moment."
       ],
       "logo": "assets/vendors/images/groove-gear-logo.jpg",
       "logo_alt": "Groove Gear logo — a festival mask wearing headphones inside a rainbow circle, with a Festival Accessories wordmark",
@@ -85,7 +91,6 @@
           "alt": "Two festival-goers with glitter makeup and braids done at the Groove Gear lounge"
         }
       ],
-      "price_notes": "R100 – R1200",
       "links": [
         {
           "label": "Facebook",
@@ -100,7 +105,63 @@
           "url": "https://www.tiktok.com/@groovegear2024"
         }
       ],
-      "location": "Chill space (Sonic Horizon)"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Chill space (Sonic Horizon)",
+          "price_notes": "R100 – R1200",
+          "gallery": [
+            {
+              "image": "assets/vendors/images/groove-gear-2026-lounge-tent.jpg",
+              "alt": "The Groove Gear Festival Lounge tent on the grass at Kromrivier, with its hair, make-up, face gems, massages and UV tattoos sign"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-accessories.jpg",
+              "alt": "Rainbow fans, braid extensions and a table of festival accessories inside the Groove Gear stall"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-tattoo-table.jpg",
+              "alt": "The body art station, with face paints, brushes and sheets of UV temporary tattoos on a mushroom-print tablecloth"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-tinsel-wall.jpg",
+              "alt": "A wall of hair tinsel in every colour above the body art table"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-stall-front.jpg",
+              "alt": "The front of the Groove Gear stall, with a crocheted white outfit on a mannequin",
+              "fit": "contain"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-accessories-table.jpg",
+              "alt": "Glow bracelets, face gems, fans and star-shaped glasses laid out on the accessories table"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-lounge-chair.jpg",
+              "alt": "A pink-covered lounge chair beside the face paint table inside the Groove Gear lounge",
+              "fit": "contain"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-braids.jpg",
+              "alt": "A festival-goer seen from behind with freshly done silver and black festival braids",
+              "fit": "contain"
+            },
+            {
+              "image": "assets/vendors/images/groove-gear-2026-massage-bed.jpg",
+              "alt": "The massage bed inside the Groove Gear lounge, on a soft pink rug"
+            }
+          ],
+          "video": {
+            "src": "assets/vendors/video/groove-gear-2026.mp4",
+            "poster": "assets/vendors/images/groove-gear-2026-video-poster.jpg",
+            "label": "A look from the Groove Gear stall out across the field at Kromrivier"
+          }
+        }
+      ],
+      "hero": {
+        "image": "assets/vendors/images/groove-gear-2026-accessories.jpg",
+        "position": "50% 35%"
+      }
     },
     {
       "name": "Mushmore",
@@ -131,14 +192,20 @@
           "alt": "Harmonic Mycology Clarity activated capsules for focus and memory"
         }
       ],
-      "price_notes": "R35 – R150",
       "links": [
         {
           "label": "Website",
           "url": "https://www.mushmore.co.za"
         }
       ],
-      "location": "Bar area"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Bar area",
+          "price_notes": "R35 – R150",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Lekker Leaf Wellness",
@@ -162,7 +229,6 @@
           "alt": "Inside the Lekker Leaf lounge, with a pool table, bar counter and living green wall"
         }
       ],
-      "price_notes": "Mostly under R150",
       "links": [
         {
           "label": "Instagram",
@@ -173,7 +239,14 @@
           "url": "https://www.facebook.com/profile.php?id=61581159712510"
         }
       ],
-      "location": "Bar area"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Bar area",
+          "price_notes": "Mostly under R150",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "GeoVinty Clothing",
@@ -229,14 +302,20 @@
           "fit": "contain"
         }
       ],
-      "price_notes": "R250 – R900",
       "links": [
         {
           "label": "Instagram",
           "url": "https://www.instagram.com/geovintyclothing/"
         }
       ],
-      "location": "Vendor Village"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Village",
+          "price_notes": "R250 – R900",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Chai'la",
@@ -250,9 +329,15 @@
       "logo": "assets/vendors/images/chaila-logo.jpg",
       "logo_alt": "Chai'la logo — a steaming cup emblem above the banner “It's Chai'La Time”",
       "gallery": [],
-      "price_notes": "R80 – R140",
       "links": [],
-      "location": "Mellow Meadow"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Mellow Meadow",
+          "price_notes": "R80 – R140",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Fresh Bean Coffee Company",
@@ -282,15 +367,20 @@
           "alt": "The espresso machine and counter setup on the Fresh Bean cart"
         }
       ],
-      "price_notes": "R30 – R80",
       "links": [
         {
           "label": "Instagram",
           "url": "https://www.instagram.com/freshbeancoffeeco?igsh=NmV4NDBleDBnMThx"
         }
       ],
-      "location": "Glamping Avenue",
-      "logo_alt": "Fresh Bean Coffee Co. logo — green and brown wordmark with a coffee bean and steam icon"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Glamping Avenue",
+          "price_notes": "R30 – R80",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Love Pizza",
@@ -324,9 +414,15 @@
           "alt": "A Wood-Fired Pizzeria banner with the Love Pizza logo"
         }
       ],
-      "price_notes": "R115 – R185",
       "links": [],
-      "location": "Vendor Lane"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Lane",
+          "price_notes": "R115 – R185",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Oh So Peachy",
@@ -358,14 +454,20 @@
           "alt": "Oh So Peachy promotional flyer showing bottled raw juices, samosas and fresh ingredients"
         }
       ],
-      "price_notes": "R15 – R150",
       "links": [
         {
           "label": "Facebook",
           "url": "https://www.facebook.com/1HEiU2THnC/"
         }
       ],
-      "location": "Vendor Lane"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Lane",
+          "price_notes": "R15 – R150",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Atma",
@@ -389,7 +491,6 @@
           "alt": "The colourful Atma food trailer under the trees, with fruit and city artwork painted on the side"
         }
       ],
-      "price_notes": null,
       "links": [
         {
           "label": "Facebook",
@@ -400,7 +501,14 @@
           "url": "https://www.instagram.com/atma.cafe"
         }
       ],
-      "location": "Vendor Lane"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Lane",
+          "price_notes": null,
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Rosa Divina Adornment",
@@ -432,14 +540,20 @@
           "alt": "A brass choker with a labradorite pendant and crescent moon charm"
         }
       ],
-      "price_notes": "R150 – R3000",
       "links": [
         {
           "label": "Instagram",
           "url": "https://www.instagram.com/rosadivina_adornment?igsh=MW1mNzRrd2poa3BzOQ%3D%3D&utm_source=qr"
         }
       ],
-      "location": "Vendor Village"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Village",
+          "price_notes": "R150 – R3000",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Chill and Charge",
@@ -461,9 +575,15 @@
           "alt": "The Chill and Charge tent lit up at night"
         }
       ],
-      "price_notes": "R60 – R200",
       "links": [],
-      "location": "Chill space (Sonic Horizon)"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Chill space (Sonic Horizon)",
+          "price_notes": "R60 – R200",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Wild & Woven",
@@ -507,7 +627,6 @@
           "fit": "contain"
         }
       ],
-      "price_notes": "R50 – R1000",
       "links": [
         {
           "label": "Instagram",
@@ -522,7 +641,14 @@
           "url": "https://www.tiktok.com/@wildandwovensa?_r=1&_t=ZS-990VqxGRN5k"
         }
       ],
-      "location": "Vendor Lane"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Lane",
+          "price_notes": "R50 – R1000",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Blissful Wellness Escape",
@@ -536,14 +662,20 @@
       "logo": "assets/vendors/images/blissful-logo.jpg",
       "logo_alt": "Blissful Wellness Escape logo — a watercolour spa illustration with candles, lotus and lavender, above the wordmark and the tagline Where inner peace meets outer glow",
       "gallery": [],
-      "price_notes": "R80 – R750",
       "links": [
         {
           "label": "Facebook",
           "url": "https://www.facebook.com/profile.php?id=100090331637332"
         }
       ],
-      "location": "Mellow Meadow"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Mellow Meadow",
+          "price_notes": "R80 – R750",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Afrikan Crown",
@@ -582,9 +714,15 @@
           "fit": "contain"
         }
       ],
-      "price_notes": "R150 – R500",
       "links": [],
-      "location": "Vendor Lane"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Lane",
+          "price_notes": "R150 – R500",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Firehawk Ink",
@@ -605,7 +743,6 @@
           "alt": "Colourful illustrated hawk head artwork in Firehawk Ink's style"
         }
       ],
-      "price_notes": "From R650 (5cm festival flash)",
       "links": [
         {
           "label": "Website",
@@ -620,7 +757,14 @@
           "url": "https://www.instagram.com/firehawk_ink/"
         }
       ],
-      "location": "Mellow Meadow"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Mellow Meadow",
+          "price_notes": "From R650 (5cm festival flash)",
+          "gallery": []
+        }
+      ]
     },
     {
       "name": "Earth Stories",
@@ -646,14 +790,20 @@
           "alt": "Handmade rings, earrings and necklaces laid out on the Earth Stories stall table"
         }
       ],
-      "price_notes": null,
       "links": [
         {
           "label": "Instagram",
           "url": "https://www.instagram.com/earthstoriescapetown/"
         }
       ],
-      "location": "Vendor Village"
+      "editions": [
+        {
+          "year": 2026,
+          "location": "Vendor Village",
+          "price_notes": null,
+          "gallery": []
+        }
+      ]
     }
   ]
 }
