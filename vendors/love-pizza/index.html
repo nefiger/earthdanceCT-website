@@ -45,7 +45,7 @@ fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260930-editions">
+<link rel="stylesheet" href="assets/css/site.css?v=20260930-vendorhead">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.earthdancecapetown.co.za/vendors/love-pizza/#vendor", "name": "Love Pizza", "url": "https://www.earthdancecapetown.co.za/vendors/love-pizza/", "image": "https://www.earthdancecapetown.co.za/assets/vendors/images/love-pizza-oven.jpg", "description": "A family-run wood-fired pizza institution at Cape Town festivals since 2009 — part of the Earthdance family for over a decade.", "sameAs": [], "logo": "https://www.earthdancecapetown.co.za/assets/vendors/images/love-pizza-logo.png"}</script>
 </head>
 <body class="vendor-page">
@@ -108,50 +108,21 @@ alt=""></noscript>
 </header>
 
 <main>
-  <section class="page-hero hero">
-    <div class="hero-bg" style="background-image:url('assets/vendors/images/love-pizza-oven.jpg')"></div>
-    <div class="hero-veil"></div>
+  <section class="vendor-hero vendor-head">
+    <div class="vendor-hero-wash" aria-hidden="true"></div>
     <div class="container">
       <nav class="vendor-breadcrumb" aria-label="Breadcrumb">
         <a href="vendor-directory.html">Vendors</a><span aria-hidden="true">/</span><span>Love Pizza</span>
       </nav>
-      <div class="vendor-title-row">
-        <img class="vendor-logo" src="assets/vendors/images/love-pizza-logo.png" alt="Love Pizza logo — a hand-drawn pizza slice wreath around the Love Pizza wordmark">
-        <div>
+      <div class="vendor-head-grid">
+        <div class="vendor-head-intro">
+          <img class="vendor-logo" src="assets/vendors/images/love-pizza-logo.png" alt="Love Pizza logo — a hand-drawn pizza slice wreath around the Love Pizza wordmark">
           <span class="eyebrow">Food &amp; Drink</span>
           <h1>Love Pizza</h1>
+          <p class="vendor-head-summary">A family-run wood-fired pizza institution at Cape Town festivals since 2009 — part of the Earthdance family for over a decade.</p>
+          <a class="vendor-back-link" href="vendor-directory.html">← All vendors</a>
         </div>
-      </div>
-      <p class="lede">A family-run wood-fired pizza institution at Cape Town festivals since 2009 — part of the Earthdance family for over a decade.</p>
-      <div class="stat-strip vendor-facts">
-        <div class="stat"><b class="big">Food &amp; Drink</b><span>Category</span></div>
-        <div class="stat"><b class="big">Earthdance 2026</b><span>Traded at</span></div>
-        <div class="stat"><b class="big">Vendor Lane</b><span>Where they were</span></div>
-        <div class="stat"><b class="big">R115 – R185</b><span>Price range</span></div>
-      </div>
-      <div class="btn-row vendor-actions">
-        <a class="vendor-back-link" href="vendor-directory.html">Back to vendors</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section vendor-appearance vendor-edition">
-    <div class="container">
-      <span class="eyebrow">Earthdance 2026</span>
-      <h2>Love Pizza at Earthdance 2026</h2>
-      <p class="vendor-edition-intro">Love Pizza traded at Kromrivier Farm, 18–20 September 2026.</p>
-    </div>
-  </section>
-
-  <section class="section vendor-gallery-section">
-    <div class="container">
-      <span class="eyebrow">In the market</span>
-      <h2>A closer look at Love Pizza</h2>
-      <div class="vendor-gallery">
-        <div class="vendor-gallery-tile"><img src="assets/vendors/images/love-pizza-oven.jpg" alt="A pizza cooking on the wood-fired oven floor beside open flames" loading="lazy" decoding="async"></div>
-        <div class="vendor-gallery-tile vendor-gallery-tile-contain"><div class="vendor-gallery-tile-backdrop" style="background-image:url('assets/vendors/images/love-pizza-stall.jpg')"></div><img src="assets/vendors/images/love-pizza-stall.jpg" alt="The Love Pizza stall, with a wood-fired oven, menu board and two staff serving" loading="lazy" decoding="async"></div>
-        <div class="vendor-gallery-tile"><img src="assets/vendors/images/love-pizza-box.jpg" alt="A pizza topped with rocket and avocado in a Love Pizza box" loading="lazy" decoding="async"></div>
-        <div class="vendor-gallery-tile"><img src="assets/vendors/images/love-pizza-banner.jpg" alt="A Wood-Fired Pizzeria banner with the Love Pizza logo" loading="lazy" decoding="async"></div>
+        <div class="vendor-head-photo vendor-head-photo-wide"><img src="assets/vendors/images/love-pizza-oven.jpg" alt="A pizza cooking on the wood-fired oven floor beside open flames"></div>
       </div>
     </div>
   </section>
@@ -166,6 +137,36 @@ alt=""></noscript>
         <p>Sharing is caring. Be nice, share a slice.</p>
     </div>
   </section>
+
+  <section class="section vendor-year">
+    <div class="container">
+      <div class="vendor-year-head">
+        <div>
+          <span class="eyebrow">Earthdance 2026</span>
+          <h2>Love Pizza at Earthdance 2026</h2>
+          <p>Love Pizza traded in the market village at Kromrivier Farm.</p>
+        </div>
+        <dl class="vendor-year-facts">
+          <div><dt>When</dt><dd>18–20 September 2026</dd></div>
+          <div><dt>Where</dt><dd>Vendor Lane</dd></div>
+          <div><dt>Price range</dt><dd>R115 – R185</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section vendor-gallery-section">
+    <div class="container">
+      <span class="eyebrow">In the market</span>
+      <h2>A closer look at Love Pizza</h2>
+      <div class="vendor-shots" data-vendor-shots>
+        <figure class="vendor-shot"><img src="assets/vendors/images/love-pizza-stall.jpg" alt="The Love Pizza stall, with a wood-fired oven, menu board and two staff serving" width="1100" height="495" loading="lazy" decoding="async"></figure>
+        <figure class="vendor-shot"><img src="assets/vendors/images/love-pizza-box.jpg" alt="A pizza topped with rocket and avocado in a Love Pizza box" width="950" height="1024" loading="lazy" decoding="async"></figure>
+        <figure class="vendor-shot"><img src="assets/vendors/images/love-pizza-banner.jpg" alt="A Wood-Fired Pizzeria banner with the Love Pizza logo" width="1024" height="981" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
   <section class="section vendor-profile-nav-section">
     <div class="container">
       <div class="vendor-profile-nav">
@@ -239,5 +240,6 @@ alt=""></noscript>
   </div>
 </footer>
 <script src="assets/js/site.js?v=20260812-capi1"></script>
+<script src="assets/js/vendor-shots.js?v=20260930"></script>
 </body>
 </html>

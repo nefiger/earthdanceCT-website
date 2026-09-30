@@ -122,9 +122,54 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260930-editions">
+<link rel="stylesheet" href="assets/css/site.css?v=20260930-vendorhead">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
+
+
+def image_size(path: str) -> tuple[int, int] | None:
+    """Pixel size of a site image, so tiles reserve their space before loading."""
+    try:
+        from PIL import Image, ImageOps
+
+        with Image.open(ROOT / path) as image:
+            return ImageOps.exif_transpose(image).size
+    except Exception:
+        return None
+
+
+def size_attrs(path: str) -> str:
+    size = image_size(path)
+    return f' width="{size[0]}" height="{size[1]}"' if size else ""
+
+
+def shots_html(shots: list[dict], video: dict | None = None) -> str:
+    """A column gallery: every photo at its own shape, captioned, no cropping."""
+    figures = []
+    for shot in shots:
+        caption = (
+            f"<figcaption>{esc(shot['caption'])}</figcaption>" if shot.get("caption") else ""
+        )
+        size = image_size(shot["image"])
+        # Very narrow phone-video stills would tower over the column; those
+        # alone are trimmed to a 3:4 frame.
+        shot_class = "vendor-shot vendor-shot-trim" if size and size[1] / size[0] > 1.5 else "vendor-shot"
+        figures.append(
+            f'        <figure class="{shot_class}"><img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}"'
+            f'{size_attrs(shot["image"])} loading="lazy" decoding="async">{caption}</figure>'
+        )
+    if video:
+        shape = "vendor-shot-video-portrait" if video.get("portrait") else "vendor-shot-video-landscape"
+        caption = (
+            f"<figcaption>{esc(video['caption'])}</figcaption>" if video.get("caption") else ""
+        )
+        figures.insert(
+            min(1, len(figures)),
+            f'        <figure class="vendor-shot vendor-shot-video {shape}">'
+            f'<video controls muted playsinline preload="none" poster="{esc(video["poster"])}" aria-label="{esc(video["label"])}">'
+            f'<source src="{esc(video["src"])}" type="video/mp4"></video>{caption}</figure>',
+        )
+    return "\n".join(figures)
 
 
 def page_for(vendor: dict, event: dict, previous: dict | None, following: dict | None) -> str:
@@ -140,30 +185,65 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
 {bio.rstrip()}
     </div>
   </section>
+
 """
 
-    def tile(shot: dict) -> str:
-            contain = shot.get("fit") == "contain"
-            tile_class = "vendor-gallery-tile vendor-gallery-tile-contain" if contain else "vendor-gallery-tile"
-            backdrop = (
-                f'<div class="vendor-gallery-tile-backdrop" style="background-image:url(\'{esc(shot["image"])}\')"></div>'
-                if contain
-                else ""
-            )
-            return (
-                f'        <div class="{tile_class}">{backdrop}'
-                f'<img src="{esc(shot["image"])}" alt="{esc(shot["alt"])}" loading="lazy" decoding="async"></div>'
-            )
+    hero_image = hero_image_for(vendor)
+    # The photo framed in the header is not repeated in the galleries below.
+    def without_hero(shots: list[dict]) -> list[dict]:
+        return [shot for shot in shots if shot["image"] != hero_image]
 
+    edition_blocks = []
+    for edition in vendor["editions"]:
+        year = edition["year"]
+        info = EDITIONS[year]
+        shots = without_hero(edition["gallery"])
+        video = edition.get("video")
+        facts = [("When", info["dates"]), ("Where", edition.get("location")), ("Price range", edition.get("price_notes"))]
+        facts_html = "\n".join(
+            f'          <div><dt>{label}</dt><dd>{esc(value)}</dd></div>'
+            for label, value in facts
+            if value
+        )
+        intro = f"{name} traded in the market village at {esc(info['venue'])}."
+        media = ""
+        if shots or video:
+            intro += " These are their own photos from the weekend."
+            media = f"""
+      <div class="vendor-shots" data-vendor-shots>
+{shots_html(shots, video)}
+      </div>"""
+        edition_blocks.append(f"""  <section class="section vendor-year">
+    <div class="container">
+      <div class="vendor-year-head">
+        <div>
+          <span class="eyebrow">Earthdance {year}</span>
+          <h2>{name} at Earthdance {year}</h2>
+          <p>{intro}</p>
+        </div>
+        <dl class="vendor-year-facts">
+{facts_html}
+        </dl>
+      </div>{media}
+    </div>
+  </section>
+
+""")
+    editions_section = "".join(edition_blocks)
+
+    # The vendor's own earlier product shots only stand in until they have
+    # photos from an actual gathering; after that the edition block is the
+    # page's one gallery, so the two sets never compete.
+    has_event_media = any(e["gallery"] or e.get("video") for e in vendor["editions"])
     gallery_section = ""
-    if vendor["gallery"]:
-        gallery_tiles = "\n".join(tile(shot) for shot in vendor["gallery"])
+    earlier_shots = without_hero(vendor["gallery"])
+    if earlier_shots and not has_event_media:
         gallery_section = f"""  <section class="section vendor-gallery-section">
     <div class="container">
       <span class="eyebrow">In the market</span>
       <h2>A closer look at {name}</h2>
-      <div class="vendor-gallery">
-{gallery_tiles}
+      <div class="vendor-shots" data-vendor-shots>
+{shots_html(earlier_shots)}
       </div>
     </div>
   </section>
@@ -189,68 +269,30 @@ def page_for(vendor: dict, event: dict, previous: dict | None, following: dict |
   </section>
 """
 
-    edition_blocks = []
-    for edition in vendor["editions"]:
-        year = edition["year"]
-        info = EDITIONS[year]
-        video_html = ""
-        if edition.get("video"):
-            video = edition["video"]
-            video_html = f"""
-      <video class="vendor-edition-video" controls muted playsinline preload="none" poster="{esc(video['poster'])}" aria-label="{esc(video['label'])}">
-        <source src="{esc(video['src'])}" type="video/mp4">
-      </video>"""
-        photos_html = ""
-        if edition["gallery"]:
-            tiles = "\n".join(tile(shot) for shot in edition["gallery"])
-            photos_html = f"""
-      <div class="vendor-gallery">
-{tiles}
-      </div>"""
-        intro = (
-            f"{name} traded at {esc(info['venue'])}, {esc(info['dates'])}."
-        )
-        if edition["gallery"]:
-            intro += " These are their own photos from the weekend."
-        edition_blocks.append(f"""  <section class="section vendor-appearance vendor-edition">
-    <div class="container">
-      <span class="eyebrow">Earthdance {year}</span>
-      <h2>{name} at Earthdance {year}</h2>
-      <p class="vendor-edition-intro">{intro}</p>{video_html}{photos_html}
-    </div>
-  </section>
-
-""")
-    editions_section = "".join(edition_blocks)
-    edition = latest_edition(vendor)
-    hero_image = hero_image_for(vendor)
-    hero_position = (vendor.get("hero") or {}).get("position")
-    hero_style = f"background-image:url('{esc(hero_image)}')" if hero_image else ""
-    if hero_position:
-        hero_style += f";background-position:{esc(hero_position)}"
-
-    price_stat = (
-        f'        <div class="stat"><b class="big">{esc(edition["price_notes"])}</b><span>Price range</span></div>'
-        if edition.get("price_notes")
-        else ""
-    )
-
-    has_photos = bool(hero_image)
-    hero_class = "page-hero hero" if has_photos else "page-hero hero vendor-hero-noimage"
-    hero_bg = (
-        f'<div class="hero-bg" style="{hero_style}"></div>\n    <div class="hero-veil"></div>'
-        if has_photos
-        else ""
-    )
-    title_row_class = "vendor-title-row" if has_photos else "vendor-title-row vendor-title-row-noimage"
-    if not vendor.get("logo"):
-        title_row_class += " vendor-title-row-nologo"
     logo_class = "vendor-logo vendor-logo-plain" if vendor.get("logo_plain") else "vendor-logo"
     logo_img = (
         f'<img class="{logo_class}" src="{esc(vendor["logo"])}" alt="{esc(vendor["logo_alt"])}">'
         if vendor.get("logo")
         else ""
     )
+    name_class = ' class="vendor-name-long"' if len(vendor["name"]) > 16 else ""
+
+    photo = ""
+    grid_class = "vendor-head-grid vendor-head-grid-nophoto"
+    if hero_image:
+        hero = vendor.get("hero") or {}
+        hero_alt = hero.get("alt")
+        if not hero_alt:
+            known = [s for e in vendor["editions"] for s in e["gallery"]] + vendor["gallery"]
+            hero_alt = next((s["alt"] for s in known if s["image"] == hero_image), vendor["name"])
+        size = image_size(hero_image)
+        shape = "vendor-head-photo-tall" if size and size[1] > size[0] else "vendor-head-photo-wide"
+        position = f' style="object-position:{esc(hero["position"])}"' if hero.get("position") else ""
+        photo = (
+            f'<div class="vendor-head-photo {shape}">'
+            f'<img src="{esc(hero_image)}" alt="{esc(hero_alt)}"{position}></div>'
+        )
+        grid_class = "vendor-head-grid"
 
     if previous and following:
         profile_nav = f"""<div class="vendor-profile-nav">
@@ -287,33 +329,26 @@ alt=""></noscript>
 {header()}
 
 <main>
-  <section class="{hero_class}">
-    {hero_bg}
+  <section class="vendor-hero vendor-head">
+    <div class="vendor-hero-wash" aria-hidden="true"></div>
     <div class="container">
       <nav class="vendor-breadcrumb" aria-label="Breadcrumb">
         <a href="vendor-directory.html">Vendors</a><span aria-hidden="true">/</span><span>{name}</span>
       </nav>
-      <div class="{title_row_class}">
-        {logo_img}
-        <div>
+      <div class="{grid_class}">
+        <div class="vendor-head-intro">
+          {logo_img}
           <span class="eyebrow">{esc(vendor['category'])}</span>
-          <h1>{name}</h1>
+          <h1{name_class}>{name}</h1>
+          <p class="vendor-head-summary">{esc(vendor['summary'])}</p>
+          <a class="vendor-back-link" href="vendor-directory.html">← All vendors</a>
         </div>
-      </div>
-      <p class="lede">{esc(vendor['summary'])}</p>
-      <div class="stat-strip vendor-facts">
-        <div class="stat"><b class="big">{esc(vendor['category'])}</b><span>Category</span></div>
-        <div class="stat"><b class="big">Earthdance {edition['year']}</b><span>Traded at</span></div>
-        <div class="stat"><b class="big">{esc(edition.get('location') or 'Market village')}</b><span>Where they were</span></div>
-{price_stat}
-      </div>
-      <div class="btn-row vendor-actions">
-        <a class="vendor-back-link" href="vendor-directory.html">Back to vendors</a>
+        {photo}
       </div>
     </div>
   </section>
 
-{editions_section}{gallery_section}{about}{links_section}  <section class="section vendor-profile-nav-section">
+{about}{editions_section}{gallery_section}{links_section}  <section class="section vendor-profile-nav-section">
     <div class="container">
       {profile_nav}
     </div>
@@ -322,6 +357,7 @@ alt=""></noscript>
 
 {footer()}
 <script src="assets/js/site.js?v=20260812-capi1"></script>
+<script src="assets/js/vendor-shots.js?v=20260930"></script>
 </body>
 </html>
 """
@@ -378,7 +414,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260930-editions">
+<link rel="stylesheet" href="assets/css/site.css?v=20260930-vendorhead">
 </head>"""
 
 

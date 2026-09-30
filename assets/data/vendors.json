@@ -112,55 +112,52 @@
           "price_notes": "R100 – R1200",
           "gallery": [
             {
-              "image": "assets/vendors/images/groove-gear-2026-lounge-tent.jpg",
-              "alt": "The Groove Gear Festival Lounge tent on the grass at Kromrivier, with its hair, make-up, face gems, massages and UV tattoos sign"
-            },
-            {
               "image": "assets/vendors/images/groove-gear-2026-accessories.jpg",
-              "alt": "Rainbow fans, braid extensions and a table of festival accessories inside the Groove Gear stall"
+              "alt": "Rainbow fans, braid extensions and a table of festival accessories inside the Groove Gear stall",
+              "caption": "Fans, braid extensions and festival accessories"
             },
             {
               "image": "assets/vendors/images/groove-gear-2026-tattoo-table.jpg",
-              "alt": "The body art station, with face paints, brushes and sheets of UV temporary tattoos on a mushroom-print tablecloth"
+              "alt": "The body art station, with face paints, brushes and sheets of UV temporary tattoos on a mushroom-print tablecloth",
+              "caption": "The body art station: face paint and UV tattoos"
             },
             {
               "image": "assets/vendors/images/groove-gear-2026-tinsel-wall.jpg",
-              "alt": "A wall of hair tinsel in every colour above the body art table"
-            },
-            {
-              "image": "assets/vendors/images/groove-gear-2026-stall-front.jpg",
-              "alt": "The front of the Groove Gear stall, with a crocheted white outfit on a mannequin",
-              "fit": "contain"
+              "alt": "A wall of hair tinsel in every colour above the body art table",
+              "caption": "Hair tinsel in every colour"
             },
             {
               "image": "assets/vendors/images/groove-gear-2026-accessories-table.jpg",
-              "alt": "Glow bracelets, face gems, fans and star-shaped glasses laid out on the accessories table"
+              "alt": "Glow bracelets, face gems, fans and star-shaped glasses laid out on the accessories table",
+              "caption": "Glow bracelets, face gems and glasses"
             },
             {
               "image": "assets/vendors/images/groove-gear-2026-lounge-chair.jpg",
               "alt": "A pink-covered lounge chair beside the face paint table inside the Groove Gear lounge",
-              "fit": "contain"
+              "caption": "A seat in the lounge"
             },
             {
               "image": "assets/vendors/images/groove-gear-2026-braids.jpg",
               "alt": "A festival-goer seen from behind with freshly done silver and black festival braids",
-              "fit": "contain"
+              "caption": "Festival braids, freshly done"
             },
             {
               "image": "assets/vendors/images/groove-gear-2026-massage-bed.jpg",
-              "alt": "The massage bed inside the Groove Gear lounge, on a soft pink rug"
+              "alt": "The massage bed inside the Groove Gear lounge, on a soft pink rug",
+              "caption": "The massage bed"
             }
           ],
           "video": {
             "src": "assets/vendors/video/groove-gear-2026.mp4",
             "poster": "assets/vendors/images/groove-gear-2026-video-poster.jpg",
-            "label": "A look from the Groove Gear stall out across the field at Kromrivier"
+            "label": "A look from the Groove Gear stall out across the field at Kromrivier",
+            "caption": "Looking out from the stall across the field"
           }
         }
       ],
       "hero": {
-        "image": "assets/vendors/images/groove-gear-2026-accessories.jpg",
-        "position": "50% 35%"
+        "image": "assets/vendors/images/groove-gear-2026-lounge-tent.jpg",
+        "alt": "The Groove Gear Festival Lounge tent on the grass at Kromrivier"
       }
     },
     {
@@ -581,9 +578,61 @@
           "year": 2026,
           "location": "Chill space (Sonic Horizon)",
           "price_notes": "R60 – R200",
-          "gallery": []
+          "gallery": [
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-canopy.jpg",
+              "alt": "Tie-dye shade sails strung through the trees above the chill space",
+              "caption": "Shade sails over the chill space"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-feet-up.jpg",
+              "alt": "Boots up on a camp chair, looking out from Chill and Charge across the field",
+              "caption": "Feet up, looking out across the field"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-cattle.jpg",
+              "alt": "Two red cattle grazing right outside the tent door at Kromrivier",
+              "caption": "Visitors at the tent door"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-dancefloor.jpg",
+              "alt": "The Sonic Horizon dancefloor in full swing under its geometric canopy",
+              "caption": "The Sonic Horizon dancefloor"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-sunset.jpg",
+              "alt": "Low sun flaring through the tie-dye shade sails at the end of the day",
+              "caption": "Late sun through the shade sails"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-vendor-lane.jpg",
+              "alt": "The row of vendor stalls along the track, with the mountains behind",
+              "caption": "The vendor stalls below the mountains"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-sunrise.jpg",
+              "alt": "The sun low over the campsite and the open field",
+              "caption": "Low sun over the campsite"
+            },
+            {
+              "image": "assets/vendors/images/chill-and-charge-2026-backdrop.jpg",
+              "alt": "The Chill and Charge host kneeling in front of a psychedelic Om backdrop, holding a plush frog",
+              "caption": "In front of the Om backdrop"
+            }
+          ],
+          "video": {
+            "src": "assets/vendors/video/chill-and-charge-2026.mp4",
+            "poster": "assets/vendors/images/chill-and-charge-2026-video-poster.jpg",
+            "label": "LED flow performers on the dancefloor at night",
+            "portrait": true,
+            "caption": "LED flow performers on the dancefloor after dark"
+          }
         }
-      ]
+      ],
+      "hero": {
+        "image": "assets/vendors/images/chill-and-charge-2026-tent.jpg",
+        "alt": "The Chill and Charge tent under the trees, hung with inflatable dolphins, lanterns and bunting"
+      }
     },
     {
       "name": "Wild & Woven",

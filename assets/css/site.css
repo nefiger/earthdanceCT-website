@@ -2070,16 +2070,111 @@ h3.act-heading {
 .vendor-facts .stat .big { font-size: clamp(16px, 1.6vw, 19px); }
 .vendor-actions { margin-top: 22px; }
 .vendor-gallery-section { padding-top: 44px; }
-.vendor-edition-intro { max-width: 62ch; font-size: 17.5px; }
-.vendor-edition-video {
+/* Vendor page header: name and summary on a calm wash, one framed photo
+   beside them. Text never sits on top of a photograph. */
+.vendor-head { padding-bottom: 0; }
+.vendor-head-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .92fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+  padding: 34px 0 56px;
+}
+.vendor-head-grid-nophoto { grid-template-columns: minmax(0, 760px); }
+.vendor-head-intro .vendor-logo { display: block; margin-bottom: 22px; }
+.vendor-head-intro h1 {
+  margin: 12px 0 20px;
+  font-size: clamp(40px, 5.6vw, 72px);
+  line-height: 1;
+  text-wrap: balance;
+}
+.vendor-head-intro h1.vendor-name-long { font-size: clamp(34px, 4.2vw, 52px); }
+.vendor-head-summary {
+  max-width: 40ch;
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: clamp(18px, 2vw, 21.5px);
+  line-height: 1.55;
+}
+.vendor-head-photo {
+  justify-self: end;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 60px rgba(4, 3, 16, .38);
+}
+.vendor-head-photo-tall { max-width: 440px; aspect-ratio: 4 / 5; }
+.vendor-head-photo-wide { aspect-ratio: 4 / 3; }
+.vendor-head-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* One block per year traded: heading and a quiet facts list, then that
+   year's photos. */
+.vendor-year-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
+  align-items: end;
+  gap: clamp(28px, 5vw, 72px);
+}
+.vendor-year-head h2 { max-width: 20ch; }
+.vendor-year-head p { max-width: 52ch; margin: 14px 0 0; font-size: 17.5px; }
+.vendor-year-facts { margin: 0; }
+.vendor-year-facts > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 0;
+  border-top: 1px solid var(--line);
+}
+.vendor-year-facts > div:last-child { border-bottom: 1px solid var(--line); }
+.vendor-year-facts dt {
+  color: var(--ink-faint);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.vendor-year-facts dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 15.5px;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Photos keep their own shape (no cropping, no letterboxing) and flow in
+   columns; the caption under each one says what you are looking at. */
+.vendor-shots { column-count: 3; column-gap: 20px; margin-top: 44px; }
+.vendor-shot { margin: 0 0 24px; break-inside: avoid; }
+.vendor-shot img,
+.vendor-shot video {
   display: block;
   width: 100%;
-  max-width: 860px;
-  margin-top: 30px;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background: var(--bg-3);
+  height: auto;
+  border-radius: 14px;
+  background: var(--bg-2);
+}
+.vendor-shot img { cursor: zoom-in; }
+.vendor-shot-trim img { aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 30%; }
+.vendor-shot-video-landscape video { aspect-ratio: 16 / 9; }
+.vendor-shot-video-portrait video { aspect-ratio: 9 / 16; }
+.vendor-shot figcaption {
+  margin-top: 9px;
+  color: var(--ink-dim);
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+@media (max-width: 900px) {
+  .vendor-head-grid { grid-template-columns: 1fr; padding: 26px 0 40px; }
+  .vendor-head-photo { justify-self: start; }
+  .vendor-head-photo-tall { max-width: 380px; }
+  .vendor-year-head { grid-template-columns: 1fr; align-items: start; }
+  .vendor-shots { column-count: 2; column-gap: 14px; margin-top: 32px; }
+  .vendor-shot { margin-bottom: 18px; }
+}
+@media (max-width: 480px) {
+  .vendor-shots { column-count: 1; }
 }
 .vendor-gallery {
   display: grid;
