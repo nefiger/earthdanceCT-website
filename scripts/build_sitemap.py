@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Not indexable: error page, private campaign pages, and the journey.html
 # redirect stub kept for old links.
-EXCLUDE = {"404.html", "journey.html", "homecoming-6f1b92.html"}
+EXCLUDE = {"404.html", "journey.html", "homecoming-6f1b92.html", "subscribed.html"}
 
 # Anything unlisted defaults to 0.6. Artist and vendor profile pages use 0.7
 # below (see priority()).

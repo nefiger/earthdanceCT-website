@@ -20,15 +20,18 @@ PAGES = [
     "gatherings.html", "glamping-camping.html", "history.html", "index.html",
     "love-in-a-bowl.html", "lineup.html", "practical-info.html",
     "prayer-for-peace.html", "privacy.html", "sustainability.html", "terms.html",
-    "vendor-directory.html", "vendors.html", "volunteers.html",
+    "vendor-directory.html", "vendors.html", "subscribed.html", "volunteers.html",
 ]
 
 GRID_END_TO_FINE = re.compile(
     r'(</ul>\n      </div>\n    </div>\n)(.*?)(    <div class="footer-fine">)', re.DOTALL
 )
 HOME_FORM = re.compile(r'(<!-- home-signup:start -->).*?(<!-- home-signup:end -->)', re.DOTALL)
+# Pages that must not carry the signup strip (the visitor has just signed up).
+NO_SIGNUP = {'subscribed.html'}
 FOOTER_OPEN = '<footer class="site-footer">\n  <div class="container">\n'
-SIGNUP_BLOCK = re.compile(re.escape(SIGNUP_START) + r'.*?' + re.escape(SIGNUP_END) + r'\n', re.DOTALL)
+SIGNUP_BLOCK = re.compile(r'[ ]*' + re.escape(SIGNUP_START) + r'.*?' + re.escape(SIGNUP_END) + r'\n', re.DOTALL)
+GRID_OPEN = re.compile(r'^[ ]*<div class="footer-grid">', re.MULTILINE)
 
 
 def sync() -> None:
@@ -50,7 +53,9 @@ def sync() -> None:
         # </div> tags and duplicate partner strips; this makes every run idempotent.
         text = GRID_END_TO_FINE.sub(lambda m: m.group(1) + partners_html + m.group(3), text, count=1)
         text = SIGNUP_BLOCK.sub('', text)
-        text = text.replace(FOOTER_OPEN, FOOTER_OPEN + '    ' + signup_html, 1)
+        text = GRID_OPEN.sub('    <div class="footer-grid">', text, count=1)
+        if name not in NO_SIGNUP:
+            text = text.replace(FOOTER_OPEN, FOOTER_OPEN + '    ' + signup_html, 1)
         text = head + text
         if name == 'index.html':
             text = HOME_FORM.sub(lambda m: m.group(1) + '\n        ' + signup_form('home') + '\n        ' + m.group(2), text)

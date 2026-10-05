@@ -42,7 +42,8 @@ Endpoint: `POST /subscribe` (JSON: `email`, `first_name`, `consent`, `source`,
 
 Contact attributes (create these first or Brevo rejects the call): `SOURCE`
 (text), `CONSENT_DATE` (date), `CONSENT_TEXT_VERSION` (text). `FIRSTNAME` is
-built in. The double opt-in template must contain `{{ params.DOUBLEOPTIN }}`
-as the confirmation link. Change `CONSENT_VERSION` in the Worker whenever the
+built in. The double opt-in template must be tagged `optin` and contain the
+confirmation link as `{{ doubleoptin }}` (start from Brevo's "Default Template
+Double opt-in confirmation" in Campaigns > Templates). Change `CONSENT_VERSION` in the Worker whenever the
 consent wording in `scripts/build_artists.py` (`footer_signup`) changes, then
 re-run `scripts/sync_footer.py` and the page builders.
