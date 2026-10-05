@@ -25,23 +25,20 @@ def live_partners() -> list[dict]:
 
 
 def footer_partners() -> str:
-    """Small credit strip in the footer for live partners, grouped by their
-    `group` (default "Production Partners"). Returns "" when there are none yet,
-    so the footer degrades cleanly."""
+    """Small credit strip in the footer for live partners, all under one
+    "Partners" label (no split by type). Returns "" when there are none yet, so
+    the footer degrades cleanly."""
     partners = live_partners()
     if not partners:
         return ""
-    groups: dict[str, list[dict]] = {}
-    for p in partners:
-        groups.setdefault(p.get("group", "Production Partners"), []).append(p)
-    parts = []
-    for label, members in groups.items():
-        logos = "\n".join(_footer_logo(p) for p in members)
-        parts.append(f"""      <span class="footer-partners-label">{esc(label)}</span>
+    logos = "\n".join(_footer_logo(p) for p in partners)
+    return f"""    <div class="footer-partners">
+      <span class="footer-partners-label">Partners</span>
       <div class="footer-partners-logos">
 {logos}
-      </div>""")
-    return "    <div class=\"footer-partners\">\n" + "\n".join(parts) + "\n    </div>\n"
+      </div>
+    </div>
+"""
 
 
 def _footer_logo(p: dict) -> str:
