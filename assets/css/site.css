@@ -2481,8 +2481,10 @@ details.faq .a p { margin: 0 0 10px; }
   border-top: 1px solid rgba(255, 255, 255, .12);
   font-size: 14px;
 }
-.partner-heading { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
-.partner-heading img { height: 38px; width: auto; flex-shrink: 0; }
+.partner-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-bottom: 16px; }
+/* The link must not shrink in the flex row, or the fixed-height logo inside it is squashed. */
+.partner-heading a { flex: none; display: inline-flex; }
+.partner-heading img { height: 38px; width: auto; max-width: none; flex-shrink: 0; }
 .partner-heading h3 { margin: 0; font-size: 24px; font-weight: 750; letter-spacing: -0.01em; }
 .partner-entry .partner-credit { margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .12); }
 .partner-credit a { color: var(--ink); font-weight: 650; }
@@ -2753,4 +2755,4 @@ details.faq .a p { margin: 0 0 10px; }
 .video-feature figcaption { margin-top: 12px; font-size: 14px; color: var(--ink-faint); }
 
 /* BetaState's wordmark has fine detail: a touch taller than the other footer logos. */
-.footer-partners-logos img[alt="BetaState"] { height: 22px; }
+.footer-partners-logos img[alt="BetaState"] { height: 22px; width: auto; max-width: none; }
