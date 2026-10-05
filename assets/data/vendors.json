@@ -310,9 +310,39 @@
           "year": 2026,
           "location": "Vendor Village",
           "price_notes": "R250 – R900",
-          "gallery": []
+          "gallery": [
+            {
+              "image": "assets/vendors/images/geovinty-clothing-2026-chalkboard.jpg",
+              "alt": "A chalkboard reading We cut lines on clothes beside mannequins in laser-cut leggings",
+              "caption": "We cut lines on clothes"
+            },
+            {
+              "image": "assets/vendors/images/geovinty-clothing-2026-rails.jpg",
+              "alt": "The stall from the front, with rails of upcycled clothing and mannequins under a canvas gazebo",
+              "caption": "Rails of bleach-art clothing"
+            },
+            {
+              "image": "assets/vendors/images/geovinty-clothing-2026-tee.jpg",
+              "alt": "A man smiling in a green bleach-art t-shirt printed with sacred geometry",
+              "caption": "Sacred geometry, bleached into green"
+            },
+            {
+              "image": "assets/vendors/images/geovinty-clothing-2026-leggings.jpg",
+              "alt": "A woman in a burgundy top and laser-cut leggings in front of the GeoVinty rails",
+              "caption": "Laser-cut leggings, worn"
+            },
+            {
+              "image": "assets/vendors/images/geovinty-clothing-2026-at-the-stall.jpg",
+              "alt": "Two GeoVinty vendors smiling at the stall counter, the logo on the table",
+              "caption": "At the stall"
+            }
+          ]
         }
-      ]
+      ],
+      "hero": {
+        "image": "assets/vendors/images/geovinty-clothing-2026-stall.jpg",
+        "alt": "The GeoVinty tent on the grass, with clothing rails either side and the vendor with arms raised"
+      }
     },
     {
       "name": "Chai'la",
@@ -722,9 +752,44 @@
           "year": 2026,
           "location": "Mellow Meadow",
           "price_notes": "R80 – R750",
-          "gallery": []
+          "gallery": [
+            {
+              "image": "assets/vendors/images/blissful-wellness-escape-2026-tent-inside.jpg",
+              "alt": "Two massage beds inside the draped tent with a chalkboard sign and a pink mat between them",
+              "caption": "Two beds, softly draped"
+            },
+            {
+              "image": "assets/vendors/images/blissful-wellness-escape-2026-foot-massage.jpg",
+              "alt": "A foot and calf massage in progress inside the tent",
+              "caption": "Foot and calf revival"
+            },
+            {
+              "image": "assets/vendors/images/blissful-wellness-escape-2026-henna.jpg",
+              "alt": "Henna art on a hand, held above the henna and glitter bar price card",
+              "caption": "Henna art"
+            },
+            {
+              "image": "assets/vendors/images/blissful-wellness-escape-2026-massage-sign.jpg",
+              "alt": "A pink-lit massage table with a chalkboard sign reading Enjoy Your Massage",
+              "caption": "Enjoy your massage"
+            },
+            {
+              "image": "assets/vendors/images/blissful-wellness-escape-2026-lotus.jpg",
+              "alt": "A pink lotus candle and a name card on folded purple towels",
+              "caption": "A lotus by the massage bed"
+            },
+            {
+              "image": "assets/vendors/images/blissful-wellness-escape-2026-team.jpg",
+              "alt": "Three Blissful Wellness Escape team members smiling in front of the stall",
+              "caption": "The Blissful team"
+            }
+          ]
         }
-      ]
+      ],
+      "hero": {
+        "image": "assets/vendors/images/blissful-wellness-escape-2026-stall.jpg",
+        "alt": "The Blissful Wellness Escape gazebo draped in pink and sage, with price cards and flyers on the front table"
+      }
     },
     {
       "name": "Afrikan Crown",
@@ -811,9 +876,41 @@
           "year": 2026,
           "location": "Mellow Meadow",
           "price_notes": "From R650 (5cm festival flash)",
-          "gallery": []
+          "gallery": [
+            {
+              "image": "assets/vendors/images/firehawk-ink-2026-stall.jpg",
+              "alt": "The Firehawk Ink stall under a navy gazebo on green matting, with the team at work",
+              "caption": "The Firehawk Ink stall"
+            },
+            {
+              "image": "assets/vendors/images/firehawk-ink-2026-uv.jpg",
+              "alt": "A UV tattoo of a pink hawk glowing under blacklight on a forearm",
+              "caption": "A UV piece under blacklight"
+            },
+            {
+              "image": "assets/vendors/images/firehawk-ink-2026-linework.jpg",
+              "alt": "A small linework character tattoo on an upper arm",
+              "caption": "A small festival flash"
+            },
+            {
+              "image": "assets/vendors/images/firehawk-ink-2026-monster.jpg",
+              "alt": "A tattooed arm with a small linework monster with three eyes among older pieces",
+              "caption": "A linework monster among older pieces"
+            }
+          ],
+          "video": {
+            "src": "assets/vendors/video/firehawk-ink-2026.mp4",
+            "poster": "assets/vendors/images/firehawk-ink-2026-video-poster.jpg",
+            "label": "Walking up to the Firehawk Ink stall from the field",
+            "portrait": true,
+            "caption": "Walking up to the stall from the field"
+          }
         }
-      ]
+      ],
+      "hero": {
+        "image": "assets/vendors/images/firehawk-ink-2026-flash-book.jpg",
+        "alt": "A Firehawk Ink artist in a red hoodie at the stall, with the flash book and sketch pages open on the table"
+      }
     },
     {
       "name": "Earth Stories",

@@ -46,8 +46,8 @@ fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MusicEvent", "@id": "https://www.earthdancecapetown.co.za/stages/mellow-meadow/#stage", "name": "Mellow Meadow — Earthdance Cape Town 2026", "startDate": "2026-09-18", "endDate": "2026-09-20", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "url": "https://www.earthdancecapetown.co.za/stages/mellow-meadow/", "image": "https://www.earthdancecapetown.co.za/assets/photos/web/archive/earthdance-2018-dancefloor.jpg", "description": "Workshops, ceremony and the sacred fire by day. A techno takeover and a drum & bass takeover after dark.", "location": {"@type": "Place", "name": "Mellow Meadow, Kromrivier Farm", "address": {"@type": "PostalAddress", "addressRegion": "Western Cape", "addressCountry": "ZA"}}, "offers": {"@type": "Offer", "url": "https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&lc=website#/", "availability": "https://schema.org/InStock"}}</script>
+<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MusicEvent", "@id": "https://www.earthdancecapetown.co.za/stages/mellow-meadow/#stage", "name": "Mellow Meadow — Earthdance Cape Town 2026", "startDate": "2026-09-18", "endDate": "2026-09-20", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "url": "https://www.earthdancecapetown.co.za/stages/mellow-meadow/", "image": "https://www.earthdancecapetown.co.za/assets/photos/web/archive/earthdance-2018-dancefloor.jpg", "description": "Workshops, ceremony and the sacred fire by day. A techno takeover and a drum & bass takeover after dark.", "location": {"@type": "Place", "name": "Mellow Meadow, Kromrivier Farm", "address": {"@type": "PostalAddress", "addressRegion": "Western Cape", "addressCountry": "ZA"}}}</script>
 </head>
 <body class="stage-page">
 <!-- Google Tag Manager (noscript) -->
@@ -103,7 +103,7 @@ alt=""></noscript>
         </div>
       </div>
       <a href="gallery.html">Gallery</a>
-      <a class="btn btn-pink nav-cta" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+      <a class="btn btn-pink nav-cta" href="#join-list">Join the 2027 list</a>
     </nav>
   </div>
 </header>
@@ -130,7 +130,7 @@ alt=""></noscript>
     <div class="container">
       <span class="eyebrow">Artist profiles</span>
       <h2>Who you'll hear here</h2>
-      <p class="bright">Meet the artists playing Mellow Meadow.</p>
+      <p class="bright">Meet the artists who played Mellow Meadow.</p>
       <div class="stage-faces">
         <a class="lineup-profile" href="artists/the-great-veroni/">
           <span class="lineup-profile-medallion" style="--artist-image-position:50% 30%;--artist-image-scale:1;--artist-image-translate-x:0%;--artist-image-translate-y:0%;--artist-image-background:#0d0a24">
@@ -323,8 +323,8 @@ alt=""></noscript>
         </a>
       </div>
       <div class="ticket-nudge">
-        <p>One ticket covers both stages, all three days, and everything between them.</p>
-        <a class="btn btn-pink" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Book your Earthdance weekend</a>
+        <p>Want to be there next time? Join the waiting list and hear first about 2027.</p>
+        <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
       </div>
     </div>
   </section>
@@ -402,8 +402,8 @@ alt=""></noscript>
   <section class="section">
     <div class="container">
       <div class="ticket-nudge">
-        <p>That whole running order plays out over three days at Kromrivier Farm, 18&ndash;20 September.</p>
-        <a class="btn btn-pink" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Get your Earthdance 2026 ticket</a>
+        <p>That whole running order played out over three days at Kromrivier Farm, 18&ndash;20 September 2026.</p>
+        <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
       </div>
       <div class="artist-profile-nav">
         <a href="stages/sonic-horizon/">
@@ -421,6 +421,26 @@ alt=""></noscript>
 
 <footer class="site-footer">
   <div class="container">
+    <!-- signup:start -->
+    <div class="footer-signup" id="join-list">
+      <div class="footer-signup-copy">
+        <h3>Join the 2027 waiting list</h3>
+        <p>Be first in line when tickets open, and hear about Earthdance gatherings along the way.</p>
+      </div>
+      <form class="signup-form" data-signup novalidate>
+        <div class="signup-row">
+          <label class="sr-only" for="footer-signup-name">First name (optional)</label>
+          <input id="footer-signup-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="First name (optional)">
+          <label class="sr-only" for="footer-signup-email">Email address</label>
+          <input id="footer-signup-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="Email address">
+          <button class="btn btn-pink" type="submit">Join the list</button>
+        </div>
+        <div class="signup-trap" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <label class="signup-consent"><input name="consent" type="checkbox" required> <span>Yes, email me about Earthdance 2027 tickets and gatherings. I can unsubscribe at any time. <a href="privacy.html">Privacy Policy</a></span></label>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <!-- signup:end -->
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/brand/logo-180.png" alt="">
@@ -457,7 +477,6 @@ alt=""></noscript>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="sustainability.html">Sustainability &amp; Waste</a></li>
-          <li><a href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a></li>
         </ul>
       </div>
     </div>

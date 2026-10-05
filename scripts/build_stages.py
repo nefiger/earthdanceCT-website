@@ -25,10 +25,6 @@ DATA = ROOT / "assets/data/lineup.json"
 ARTISTS = ROOT / "assets/data/artists.json"
 STAGES_DIR = ROOT / "stages"
 BASE_URL = "https://www.earthdancecapetown.co.za/"
-TICKETS = (
-    "https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/"
-    "?ref=link-campaign&amp;lc=website#/"
-)
 
 
 def act_markup(act: dict) -> str:
@@ -115,11 +111,6 @@ def head(stage: dict) -> str:
                 "addressCountry": "ZA",
             },
         },
-        "offers": {
-            "@type": "Offer",
-            "url": TICKETS.replace("&amp;", "&"),
-            "availability": "https://schema.org/InStock",
-        },
     }
     schema_json = json.dumps(schema, ensure_ascii=False).replace("</", "<\\/")
     return f"""<head>
@@ -168,7 +159,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
+<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -207,13 +198,13 @@ def page_for(stage: dict, other: dict, by_slug: dict) -> str:
     <div class="container">
       <span class="eyebrow">Artist profiles</span>
       <h2>Who you'll hear here</h2>
-      <p class="bright">Meet the artists playing {name}.</p>
+      <p class="bright">Meet the artists who played {name}.</p>
       <div class="stage-faces">
 {face_cards}
       </div>
       <div class="ticket-nudge">
-        <p>One ticket covers both stages, all three days, and everything between them.</p>
-        <a class="btn btn-pink" href="{TICKETS}" target="_blank" rel="noopener">Book your Earthdance weekend</a>
+        <p>Want to be there next time? Join the waiting list and hear first about 2027.</p>
+        <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
       </div>
     </div>
   </section>
@@ -274,8 +265,8 @@ alt=""></noscript>
   <section class="section">
     <div class="container">
       <div class="ticket-nudge">
-        <p>That whole running order plays out over three days at Kromrivier Farm, 18&ndash;20 September.</p>
-        <a class="btn btn-pink" href="{TICKETS}" target="_blank" rel="noopener">Get your Earthdance 2026 ticket</a>
+        <p>That whole running order played out over three days at Kromrivier Farm, 18&ndash;20 September 2026.</p>
+        <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
       </div>
       <div class="artist-profile-nav">
         <a href="{esc(other["page"])}">

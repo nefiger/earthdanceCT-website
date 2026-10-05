@@ -27,9 +27,9 @@ fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gallery — Earthdance Cape Town 2026</title>
-<meta name="description" content="Photos from Earthdance Cape Town 2025 by Alison Swan Photography, BEELEAF Photography, Tamia Visagie and Jaco Brewer, plus a look back through earlier years.">
+<meta name="description" content="Photos from Earthdance Cape Town 2026 by Kayflow, Mike Aldridge and Christo, plus 2025 and a look back through earlier years.">
 <meta property="og:title" content="Gallery — Earthdance Cape Town 2026">
-<meta property="og:description" content="Photos from Earthdance Cape Town 2025 by Alison Swan Photography, BEELEAF Photography, Tamia Visagie and Jaco Brewer.">
+<meta property="og:description" content="Photos from Earthdance Cape Town 2026 by Kayflow, Mike Aldridge and Christo.">
 <meta property="og:image" content="https://www.earthdancecapetown.co.za/assets/brand/og-image.jpg">
 <meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="1080">
@@ -39,14 +39,14 @@ fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 <meta property="og:site_name" content="Earthdance Cape Town">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gallery — Earthdance Cape Town 2026">
-<meta name="twitter:description" content="Photos from Earthdance Cape Town 2025 by Alison Swan Photography, BEELEAF Photography, Tamia Visagie and Jaco Brewer.">
+<meta name="twitter:description" content="Photos from Earthdance Cape Town 2026 by Kayflow, Mike Aldridge and Christo.">
 <meta name="twitter:image" content="https://www.earthdancecapetown.co.za/assets/brand/og-image.jpg">
 <link rel="canonical" href="https://www.earthdancecapetown.co.za/gallery.html">
 <link rel="icon" href="assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
+<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -102,7 +102,7 @@ alt=""></noscript>
         </div>
       </div>
       <a href="gallery.html" class="active">Gallery</a>
-      <a class="btn btn-pink nav-cta" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+      <a class="btn btn-pink nav-cta" href="#join-list">Join the 2027 list</a>
     </nav>
   </div>
 </header>
@@ -113,11 +113,19 @@ alt=""></noscript>
     <div class="container">
       <span class="eyebrow">Earthdance Cape Town</span>
       <h1>The <span class="gradient-text">gallery</span></h1>
-      <p class="lede">The people, the place, the dancefloors and the mornings after. A selection from 2025, and a wider look back through the years.</p>
+      <p class="lede">The people, the place, the dancefloors and the mornings after. A selection from 2026, then 2025, and a wider look back through the years.</p>
     </div>
   </section>
 
   <section class="section">
+    <div class="container">
+      <span class="eyebrow">2026</span>
+      <div id="gallery-grid-2026" class="masonry"></div>
+      <p class="credit-line" style="margin-top:22px">Click any photo to view it large. Photographs © their photographers, shared with thanks.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
     <div class="container">
       <span class="eyebrow">2025</span>
       <div id="gallery-grid" class="masonry"></div>
@@ -136,11 +144,11 @@ alt=""></noscript>
   <section class="section section-tint">
     <div class="container">
       <div class="cta-band">
-        <span class="eyebrow">Kromrivier Farm · 18–20 September</span>
-        <h2>Come and be in the <span class="gradient-text">2026 photos</span></h2>
-        <p>General camping is included with every festival ticket.</p>
+        <span class="eyebrow">2027</span>
+        <h2>Be in the <span class="gradient-text">next photos</span></h2>
+        <p>Join the waiting list and we will tell you first when tickets open.</p>
         <div class="btn-row">
-          <a class="btn btn-pink" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+          <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
           <a class="btn btn-ghost" href="lineup.html">See the Lineup</a>
         </div>
       </div>
@@ -150,7 +158,27 @@ alt=""></noscript>
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
+    <!-- signup:start -->
+    <div class="footer-signup" id="join-list">
+      <div class="footer-signup-copy">
+        <h3>Join the 2027 waiting list</h3>
+        <p>Be first in line when tickets open, and hear about Earthdance gatherings along the way.</p>
+      </div>
+      <form class="signup-form" data-signup novalidate>
+        <div class="signup-row">
+          <label class="sr-only" for="footer-signup-name">First name (optional)</label>
+          <input id="footer-signup-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="First name (optional)">
+          <label class="sr-only" for="footer-signup-email">Email address</label>
+          <input id="footer-signup-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="Email address">
+          <button class="btn btn-pink" type="submit">Join the list</button>
+        </div>
+        <div class="signup-trap" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <label class="signup-consent"><input name="consent" type="checkbox" required> <span>Yes, email me about Earthdance 2027 tickets and gatherings. I can unsubscribe at any time. <a href="privacy.html">Privacy Policy</a></span></label>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <!-- signup:end -->
+                                        <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/brand/logo-180.png" alt="">
         <p>Earthdance Cape Town is part of a worldwide movement for peace, connection and collective celebration.</p>
@@ -186,13 +214,9 @@ alt=""></noscript>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="sustainability.html">Sustainability &amp; Waste</a></li>
-          <li><a href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a></li>
         </ul>
       </div>
     </div>
-        </div>
-        </div>
-        </div>
     <div class="footer-partners">
       <span class="footer-partners-label">Production Partners</span>
       <div class="footer-partners-logos">
@@ -207,9 +231,10 @@ alt=""></noscript>
     </div>
   </div>
 </footer>
-<script src="assets/js/site.js?v=20260812-capi1"></script>
+<script src="assets/js/site.js?v=20261005-signupmsg"></script>
+<script src="assets/js/photos-2026-data.js?v=20261003"></script>
 <script src="assets/js/photos-data.js?v=20260818"></script>
 <script src="assets/js/past-photos-data.js?v=20260818"></script>
-<script src="assets/js/gallery.js?v=20260818"></script>
+<script src="assets/js/gallery.js?v=20261003"></script>
 </body>
 </html>

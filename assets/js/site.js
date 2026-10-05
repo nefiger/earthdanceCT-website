@@ -133,3 +133,84 @@
     sendServerEvent('InitiateCheckout', eventId);
   }, true);
 })();
+
+// Waiting-list signup: posts to the Brevo signup Worker, which sends a
+// double opt-in confirmation email. The Brevo key never reaches the browser.
+(function () {
+  var endpoint = 'https://earthdance-brevo-signup.nefiger.workers.dev/subscribe';
+  var forms = document.querySelectorAll('form[data-signup]');
+  if (!forms.length) return;
+
+  var FALLBACK = "We couldn't add you just now. Please try again shortly, or email info@earthdancecapetown.co.za and we'll add you by hand.";
+  var pageSource = (location.pathname.replace(/^\/+|\.html$/g, '').replace(/\/+$/g, '') || 'home');
+
+  forms.forEach(function (form) {
+    var status = form.querySelector('.signup-status');
+    var button = form.querySelector('button[type="submit"]');
+    var shownAt = Date.now();
+
+    function say(message, kind) {
+      status.textContent = message;
+      status.className = 'signup-status' + (kind ? ' is-' + kind : '');
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var email = form.elements.email.value.trim();
+      if (!email || !form.elements.email.checkValidity()) {
+        say('Please enter a valid email address.', 'error');
+        form.elements.email.focus();
+        return;
+      }
+      if (!form.elements.consent.checked) {
+        say('Please tick the box so we know you want to hear from us.', 'error');
+        return;
+      }
+      button.disabled = true;
+      say('Joining…');
+      window.fetch(endpoint, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          first_name: form.elements.first_name.value,
+          consent: true,
+          website: form.elements.website.value,
+          source: 'site:' + pageSource,
+          elapsed_ms: Date.now() - shownAt
+        })
+      }).then(function (response) {
+        return response.json().catch(function () { return {}; }).then(function (data) {
+          if (response.ok && data.ok) {
+            form.classList.add('is-done');
+            say('Almost there. Check your inbox for a confirmation email and click the link to join the list.', 'ok');
+          } else {
+            say(response.status >= 500 ? FALLBACK : (data.error || FALLBACK), 'error');
+            button.disabled = false;
+          }
+        });
+      }).catch(function () {
+        say(FALLBACK, 'error');
+        button.disabled = false;
+      });
+    });
+  });
+})();
+
+// Homepage hero: play the muted ambient loop only where it is welcome. Skipped
+// on small screens, when the visitor prefers reduced motion, or on data saver;
+// the photo hero underneath stays as the fallback.
+(function () {
+  var video = document.querySelector('.hero-video');
+  if (!video) return;
+  var conn = navigator.connection || {};
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var wide = window.matchMedia && window.matchMedia('(min-width: 900px)').matches;
+  if (reduced || !wide || conn.saveData) return;
+  video.addEventListener('playing', function () {
+    video.closest('.hero').classList.add('has-video');
+  });
+  video.src = video.getAttribute('data-src');
+  var started = video.play();
+  if (started && started.catch) started.catch(function () {});
+})();

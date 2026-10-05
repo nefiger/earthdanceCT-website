@@ -1,6 +1,7 @@
 // Gallery: renders photo sets into masonry grids with a shared lightbox.
 //
-// Two sets exist. The curated 2025 set (PHOTOS, assets/js/photos-data.js) keeps
+// Three sets exist. The curated 2026 set (PHOTOS_2026, assets/js/photos-2026-data.js)
+// and the curated 2025 set (PHOTOS, assets/js/photos-data.js) keeps
 // photographer credit subtle — hover caption plus a lightbox line — per the
 // photo agreements. The past-events set (PAST_PHOTOS) has no credit metadata
 // and goes up uncredited by decision, so it renders without a caption.
@@ -42,6 +43,12 @@
     grid.appendChild(frag);
   }
 
+  mount('gallery-grid-2026', typeof PHOTOS_2026 === 'undefined' ? null : PHOTOS_2026, {
+    thumbDir: 'assets/photos/2026/thumbs/',
+    webDir: 'assets/photos/2026/web/',
+    alt: 'Earthdance Cape Town 2026',
+    credited: true
+  });
   mount('gallery-grid', typeof PHOTOS === 'undefined' ? null : PHOTOS, {
     thumbDir: 'assets/photos/thumbs/',
     webDir: 'assets/photos/web/',

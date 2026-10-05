@@ -45,7 +45,7 @@ fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260930-vendorhead">
+<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.earthdancecapetown.co.za/vendors/fresh-bean-coffee-company/#vendor", "name": "Fresh Bean Coffee Company", "url": "https://www.earthdancecapetown.co.za/vendors/fresh-bean-coffee-company/", "image": "https://www.earthdancecapetown.co.za/assets/vendors/images/fresh-bean-cart.jpg", "description": "Espresso-based coffee, matcha, fresh juices and boba, plus milkshakes, slushes and dirty sodas.", "sameAs": ["https://www.instagram.com/freshbeancoffeeco?igsh=NmV4NDBleDBnMThx"], "logo": "https://www.earthdancecapetown.co.za/assets/vendors/images/fresh-bean-logo.jpg"}</script>
 </head>
 <body class="vendor-page">
@@ -102,7 +102,7 @@ alt=""></noscript>
         </div>
       </div>
       <a href="gallery.html">Gallery</a>
-      <a class="btn btn-pink nav-cta" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+      <a class="btn btn-pink nav-cta" href="#join-list">Join the 2027 list</a>
     </nav>
   </div>
 </header>
@@ -193,6 +193,26 @@ alt=""></noscript>
 
 <footer class="site-footer">
   <div class="container">
+    <!-- signup:start -->
+    <div class="footer-signup" id="join-list">
+      <div class="footer-signup-copy">
+        <h3>Join the 2027 waiting list</h3>
+        <p>Be first in line when tickets open, and hear about Earthdance gatherings along the way.</p>
+      </div>
+      <form class="signup-form" data-signup novalidate>
+        <div class="signup-row">
+          <label class="sr-only" for="footer-signup-name">First name (optional)</label>
+          <input id="footer-signup-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="First name (optional)">
+          <label class="sr-only" for="footer-signup-email">Email address</label>
+          <input id="footer-signup-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="Email address">
+          <button class="btn btn-pink" type="submit">Join the list</button>
+        </div>
+        <div class="signup-trap" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <label class="signup-consent"><input name="consent" type="checkbox" required> <span>Yes, email me about Earthdance 2027 tickets and gatherings. I can unsubscribe at any time. <a href="privacy.html">Privacy Policy</a></span></label>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <!-- signup:end -->
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/brand/logo-180.png" alt="">
@@ -229,7 +249,6 @@ alt=""></noscript>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="sustainability.html">Sustainability &amp; Waste</a></li>
-          <li><a href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a></li>
         </ul>
       </div>
     </div>
@@ -247,7 +266,7 @@ alt=""></noscript>
     </div>
   </div>
 </footer>
-<script src="assets/js/site.js?v=20260812-capi1"></script>
+<script src="assets/js/site.js?v=20261005-signupmsg"></script>
 <script src="assets/js/vendor-shots.js?v=20260930"></script>
 </body>
 </html>

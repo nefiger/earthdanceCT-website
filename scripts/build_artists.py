@@ -145,11 +145,6 @@ def head(artist: dict) -> str:
                     },
                 },
                 "performer": {"@id": canonical + "#artist"},
-                "offers": {
-                    "@type": "Offer",
-                    "url": "https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/#/tickets",
-                    "availability": "https://schema.org/InStock",
-                },
             },
         ],
     }
@@ -200,7 +195,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
+<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -250,16 +245,54 @@ def header() -> str:
         </div>
       </div>
       <a href="gallery.html">Gallery</a>
-      <a class="btn btn-pink nav-cta" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+      <a class="btn btn-pink nav-cta" href="#join-list">Join the 2027 list</a>
     </nav>
   </div>
 </header>"""
 
 
+SIGNUP_START = "<!-- signup:start -->"
+SIGNUP_END = "<!-- signup:end -->"
+
+
+def signup_form(prefix: str) -> str:
+    """The waiting-list form. prefix keeps input ids unique when a page has
+    more than one (homepage panel + footer)."""
+    return f"""<form class="signup-form" data-signup novalidate>
+        <div class="signup-row">
+          <label class="sr-only" for="{prefix}-signup-name">First name (optional)</label>
+          <input id="{prefix}-signup-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="First name (optional)">
+          <label class="sr-only" for="{prefix}-signup-email">Email address</label>
+          <input id="{prefix}-signup-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="Email address">
+          <button class="btn btn-pink" type="submit">Join the list</button>
+        </div>
+        <div class="signup-trap" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <label class="signup-consent"><input name="consent" type="checkbox" required> <span>Yes, email me about Earthdance 2027 tickets and gatherings. I can unsubscribe at any time. <a href="privacy.html">Privacy Policy</a></span></label>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>"""
+
+
+def footer_signup(anchor: bool = True) -> str:
+    """Waiting-list signup strip at the top of every footer. Posts to the
+    Brevo signup Worker (cloudflare/brevo-signup-worker.mjs) via site.js.
+    anchor=False drops the #join-list id (the homepage has its own panel)."""
+    anchor_attr = ' id="join-list"' if anchor else ""
+    return f"""{SIGNUP_START}
+    <div class="footer-signup"{anchor_attr}>
+      <div class="footer-signup-copy">
+        <h3>Join the 2027 waiting list</h3>
+        <p>Be first in line when tickets open, and hear about Earthdance gatherings along the way.</p>
+      </div>
+      {signup_form("footer")}
+    </div>
+    {SIGNUP_END}
+"""
+
+
 def footer() -> str:
     return f"""<footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
+    {footer_signup()}    <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/brand/logo-180.png" alt="">
         <p>Earthdance Cape Town is part of a worldwide movement for peace, connection and collective celebration.</p>
@@ -295,7 +328,6 @@ def footer() -> str:
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="sustainability.html">Sustainability &amp; Waste</a></li>
-          <li><a href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a></li>
         </ul>
       </div>
     </div>
@@ -336,14 +368,14 @@ def page_for(
         if len(stages) == 1 else ""
     )
     if len(stages) == 1:
-        stage_sentence = f'{name} plays {stage_links(stages)} at Earthdance Cape Town 2026.'
+        stage_sentence = f'{name} played {stage_links(stages)} at Earthdance Cape Town 2026.'
     elif len(stages) > 1:
         prose = " and ".join(
             f'<a href="{esc(st["page"])}">{esc(st["name"])}</a>' for st in stages
         )
-        stage_sentence = f'{name} plays both stages at Earthdance Cape Town 2026: {prose}.'
+        stage_sentence = f'{name} played both stages at Earthdance Cape Town 2026: {prose}.'
     else:
-        stage_sentence = f'{name} joins the Earthdance Cape Town 2026 lineup.'
+        stage_sentence = f'{name} was part of the Earthdance Cape Town 2026 lineup.'
     about = ""
     if bio:
         about = f"""  <section class="section artist-about">
@@ -484,13 +516,13 @@ alt=""></noscript>
 {about}  <section class="section artist-appearance">
     <div class="container artist-appearance-grid">
       <div>
-        <span class="eyebrow">Meet us on the farm</span>
+        <span class="eyebrow">On the farm</span>
         <h2>{name} at Earthdance Cape Town</h2>
         <p>{stage_sentence}</p>
       </div>
       <div class="artist-ticket-callout">
-        <p>See {name} at Kromrivier Farm, 18–20 September.</p>
-        <a class="btn btn-pink" href="{esc(event['ticket_url'])}" target="_blank" rel="noopener">Buy tickets to see {name}</a>
+        <p>{name} played Kromrivier Farm, 18–20 September 2026.</p>
+        <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
       </div>
     </div>
   </section>
@@ -503,7 +535,7 @@ alt=""></noscript>
 </main>
 
 {footer()}
-<script src="assets/js/site.js?v=20260812-capi1"></script>
+<script src="assets/js/site.js?v=20261005-signupmsg"></script>
 </body>
 </html>
 """

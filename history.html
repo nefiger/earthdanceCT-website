@@ -46,7 +46,7 @@ fbq('track', 'PageView', {}, {eventID: window.earthdanceMetaPageViewEventId});
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260912-cards">
+<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
 </head>
 <body class="history-page">
 <!-- Google Tag Manager (noscript) -->
@@ -102,7 +102,7 @@ alt=""></noscript>
         </div>
       </div>
       <a href="gallery.html">Gallery</a>
-      <a class="btn btn-pink nav-cta" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+      <a class="btn btn-pink nav-cta" href="#join-list">Join the 2027 list</a>
     </nav>
   </div>
 </header>
@@ -227,7 +227,7 @@ alt=""></noscript>
         <h2>Twenty-nine years in, and still <span class="gradient-text">dancing for peace</span></h2>
         <p>The next link-up is this September, and the farm is two hours from Cape Town.</p>
         <div class="btn-row">
-          <a class="btn btn-pink" href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a>
+          <a class="btn btn-pink" href="#join-list">Join the 2027 waiting list</a>
           <a class="btn btn-ghost" href="prayer-for-peace.html">About the Prayer for Peace</a>
         </div>
       </div>
@@ -237,7 +237,27 @@ alt=""></noscript>
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
+    <!-- signup:start -->
+    <div class="footer-signup" id="join-list">
+      <div class="footer-signup-copy">
+        <h3>Join the 2027 waiting list</h3>
+        <p>Be first in line when tickets open, and hear about Earthdance gatherings along the way.</p>
+      </div>
+      <form class="signup-form" data-signup novalidate>
+        <div class="signup-row">
+          <label class="sr-only" for="footer-signup-name">First name (optional)</label>
+          <input id="footer-signup-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="First name (optional)">
+          <label class="sr-only" for="footer-signup-email">Email address</label>
+          <input id="footer-signup-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="Email address">
+          <button class="btn btn-pink" type="submit">Join the list</button>
+        </div>
+        <div class="signup-trap" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <label class="signup-consent"><input name="consent" type="checkbox" required> <span>Yes, email me about Earthdance 2027 tickets and gatherings. I can unsubscribe at any time. <a href="privacy.html">Privacy Policy</a></span></label>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <!-- signup:end -->
+                                        <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/brand/logo-180.png" alt="">
         <p>Earthdance Cape Town is part of a worldwide movement for peace, connection and collective celebration.</p>
@@ -273,13 +293,9 @@ alt=""></noscript>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="sustainability.html">Sustainability &amp; Waste</a></li>
-          <li><a href="https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/?ref=link-campaign&amp;lc=website#/" target="_blank" rel="noopener">Buy Tickets</a></li>
         </ul>
       </div>
     </div>
-        </div>
-        </div>
-        </div>
     <div class="footer-partners">
       <span class="footer-partners-label">Production Partners</span>
       <div class="footer-partners-logos">
@@ -294,6 +310,6 @@ alt=""></noscript>
     </div>
   </div>
 </footer>
-<script src="assets/js/site.js?v=20260812-capi1"></script>
+<script src="assets/js/site.js?v=20261005-signupmsg"></script>
 </body>
 </html>
