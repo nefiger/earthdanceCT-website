@@ -2729,7 +2729,7 @@ details.faq .a p { margin: 0 0 10px; }
   font-size: 14.5px;
   color: var(--ink-dim);
 }
-.archive-note p { margin: 0; max-width: 78ch; }
+.archive-note p { margin: 0; }
 .archive-note a { color: var(--cyan); font-weight: 600; }
 .footer-signup, #join-list { scroll-margin-top: 96px; }
 .cta-band .signup-form { max-width: 640px; margin: 24px auto 0; text-align: left; }
