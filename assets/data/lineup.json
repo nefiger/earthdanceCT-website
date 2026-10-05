@@ -3,8 +3,8 @@
   "note": "Source of truth for the announced lineup, grouped by stage and day. Set times are deliberately not published here — they live in schedule.json. Edit here, then run: python3 scripts/build_lineup.py.",
   "intro": {
     "id": "announced-artists",
-    "eyebrow": "Announced lineup",
-    "heading": "The lineup",
+    "eyebrow": "Who played",
+    "heading": "The 2026 lineup",
     "body": "Two stages, three days. These artists played Earthdance Cape Town 2026, listed in playing order."
   },
   "stages": [

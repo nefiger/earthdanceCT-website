@@ -159,7 +159,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20261006-banner">
+<link rel="stylesheet" href="assets/css/site.css?v=20261006-labels">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -275,7 +275,7 @@ alt=""></noscript>
         </a>
         <a href="lineup.html#announced-artists">
           <span>Everyone announced</span>
-          <strong>Full lineup &rarr;</strong>
+          <strong>The 2026 lineup &rarr;</strong>
         </a>
       </div>
     </div>

@@ -196,7 +196,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20261006-banner">
+<link rel="stylesheet" href="assets/css/site.css?v=20261006-labels">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
@@ -215,11 +215,11 @@ NAV_HTML = """    <nav id="site-nav" class="site-nav">
       <div class="nav-group">
         <button class="nav-group-btn" type="button">2026</button>
         <div class="nav-drop">
-          <a href="lineup.html">Lineup</a>
+          <a href="lineup.html">2026 Lineup</a>
           <a href="stages/mellow-meadow/">Mellow Meadow</a>
           <a href="stages/sonic-horizon/">Sonic Horizon</a>
-          <a href="vendor-directory.html">Vendor directory</a>
-          <a href="crew.html">Crew</a>
+          <a href="vendor-directory.html">2026 Vendors</a>
+          <a href="crew.html">2026 Crew</a>
           <a href="gallery.html">Gallery</a>
           <a href="gatherings.html">The Road to September</a>
           <a href="love-in-a-bowl.html">Heart at Love in a Bowl</a>
@@ -302,9 +302,9 @@ def footer() -> str:
         <h4>The Festival</h4>
         <ul>
           <li><a href="about.html">About Earthdance</a></li>
-          <li><a href="lineup.html">Lineup</a></li>
+          <li><a href="lineup.html">2026 Lineup</a></li>
           <li><a href="history.html">History</a></li>
-          <li><a href="crew.html">Crew</a></li>
+          <li><a href="crew.html">2026 Crew</a></li>
           <li><a href="https://earthdance.org/" target="_blank" rel="noopener">Earthdance Global</a></li>
           <li><a href="https://earthdance.org/event/earthdance-cape-town-south-africa-2026/" target="_blank" rel="noopener">Cape Town on Earthdance.org</a></li>
           <li><a href="gatherings.html">The Road to September</a></li>
@@ -324,7 +324,7 @@ def footer() -> str:
       <div>
         <h4>Plan</h4>
         <ul>
-          <li><a href="vendor-directory.html">Vendors</a></li>
+          <li><a href="vendor-directory.html">2026 Vendors</a></li>
           <li><a href="glamping-camping.html">Glamping &amp; Camping</a></li>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -462,7 +462,7 @@ def page_for(
         profile_nav = f"""<div class="artist-profile-nav artist-profile-nav-single">
         <a href="{lineup_href}">
           <span>Explore the artists</span>
-          <strong>Back to the lineup →</strong>
+          <strong>Back to the 2026 lineup →</strong>
         </a>
       </div>"""
 
@@ -486,7 +486,7 @@ alt=""></noscript>
     <div class="artist-hero-wash" aria-hidden="true"></div>
     <div class="container">
       <nav class="artist-breadcrumb" aria-label="Breadcrumb">
-        <a href="lineup.html">Lineup</a><span aria-hidden="true">/</span>{crumb_stage}<span>{name}</span>
+        <a href="lineup.html">2026 Lineup</a><span aria-hidden="true">/</span>{crumb_stage}<span>{name}</span>
       </nav>
       <div class="artist-hero-grid">
         <div class="artist-intro">
@@ -495,7 +495,7 @@ alt=""></noscript>
           <p class="artist-summary">{esc(artist['summary'])}</p>
           <div class="btn-row artist-actions">
             {primary_cta}
-            <a class="artist-back-link" href="{lineup_href}">Back to the lineup</a>
+            <a class="artist-back-link" href="{lineup_href}">Back to the 2026 lineup</a>
           </div>
         </div>
         <figure class="artist-portrait{image_class}" style="--artist-image-position:{position};--artist-image-scale:{image_scale};--artist-image-translate-x:{image_translate_x};--artist-image-translate-y:{image_translate_y};--artist-image-background:{image_background}">
