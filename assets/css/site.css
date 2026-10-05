@@ -2751,3 +2751,6 @@ details.faq .a p { margin: 0 0 10px; }
   box-shadow: 0 18px 60px rgba(0, 0, 0, .45);
 }
 .video-feature figcaption { margin-top: 12px; font-size: 14px; color: var(--ink-faint); }
+
+/* BetaState's wordmark has fine detail: a touch taller than the other footer logos. */
+.footer-partners-logos img[alt="BetaState"] { height: 22px; }

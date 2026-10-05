@@ -36,6 +36,26 @@
       "credit_line": "Powered by Barloworld Power",
       "stage": null,
       "stage_credit": null
+    },
+    {
+      "name": "BetaState",
+      "slug": "betastate",
+      "live": true,
+      "group": "Marketing Partner",
+      "role": "Marketing Partner",
+      "tagline": "Advertising, ticket tracking and the affiliate rep programme.",
+      "blurb": [
+        "BetaState is a Cape Town agency that builds and runs marketing for events and businesses, so they get professional advertising, content and analytics support without building that capability in-house. The team works as an extension of the brands it partners with.",
+        "For Earthdance Cape Town 2026, BetaState ran the Meta advertising campaign, tracked ticket sales through Quicket and managed the affiliate rep programme. Across the season the tracking showed which channels moved tickets (the website, paid social and email), and the campaign helped bring in over R600,000 in ticket income."
+      ],
+      "logo_wordmark": "assets/partners/images/betastate-wordmark.png",
+      "logo_full": "assets/partners/images/betastate-wordmark.png",
+      "logo_icon": "assets/partners/images/betastate-wordmark.png",
+      "url": "https://www.betastate.co.za/",
+      "instagram": null,
+      "credit_line": "Marketing by BetaState",
+      "stage": null,
+      "stage_credit": null
     }
   ]
 }

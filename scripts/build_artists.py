@@ -25,19 +25,23 @@ def live_partners() -> list[dict]:
 
 
 def footer_partners() -> str:
-    """Small credit strip in the footer for live production partners. Returns ""
-    when there are none yet, so the footer degrades cleanly."""
+    """Small credit strip in the footer for live partners, grouped by their
+    `group` (default "Production Partners"). Returns "" when there are none yet,
+    so the footer degrades cleanly."""
     partners = live_partners()
     if not partners:
         return ""
-    logos = "\n".join(_footer_logo(p) for p in partners)
-    return f"""    <div class="footer-partners">
-      <span class="footer-partners-label">Production Partners</span>
+    groups: dict[str, list[dict]] = {}
+    for p in partners:
+        groups.setdefault(p.get("group", "Production Partners"), []).append(p)
+    parts = []
+    for label, members in groups.items():
+        logos = "\n".join(_footer_logo(p) for p in members)
+        parts.append(f"""      <span class="footer-partners-label">{esc(label)}</span>
       <div class="footer-partners-logos">
 {logos}
-      </div>
-    </div>
-"""
+      </div>""")
+    return "    <div class=\"footer-partners\">\n" + "\n".join(parts) + "\n    </div>\n"
 
 
 def _footer_logo(p: dict) -> str:
@@ -195,7 +199,7 @@ fbq('track', 'PageView', {{}}, {{eventID: window.earthdanceMetaPageViewEventId}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&amp;family=Comfortaa:wght@600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20261003-linkup">
+<link rel="stylesheet" href="assets/css/site.css?v=20261006-betastate">
 <script type="application/ld+json">{schema_json}</script>
 </head>"""
 
